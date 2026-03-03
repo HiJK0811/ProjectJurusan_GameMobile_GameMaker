@@ -1,0 +1,1 @@
+target_room = room_explore_mainRoom;

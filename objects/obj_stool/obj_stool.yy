@@ -9,7 +9,10 @@
     "name":"Decorative Objects",
     "path":"folders/Objects/Decorative Objects.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"o_functional_wall",
+    "path":"objects/o_functional_wall/o_functional_wall.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

@@ -3,6 +3,16 @@ if (o_game.game_state != GameState.EXPLORE) {
 	exit;
 }
 
+if (keyboard_check_pressed(ord("F"))){
+	create_dialogue([
+	{
+		name: "hello",
+		msg: "yay"
+	}
+	]
+	)
+}
+
 // Get Input
 right_key	= (keyboard_check(vk_right)	or keyboard_check(ord("D")))
 left_key	= (keyboard_check(vk_left)	or keyboard_check(ord("A")))

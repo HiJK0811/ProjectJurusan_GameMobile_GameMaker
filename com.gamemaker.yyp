@@ -35,6 +35,7 @@
   },
   "name":"com.gamemaker",
   "resources":[
+    {"id":{"name":"debug_obj_speakblock","path":"objects/debug_obj_speakblock/debug_obj_speakblock.yy",},},
     {"id":{"name":"o_functional_interactibles","path":"objects/o_functional_interactibles/o_functional_interactibles.yy",},},
     {"id":{"name":"o_functional_wall","path":"objects/o_functional_wall/o_functional_wall.yy",},},
     {"id":{"name":"o_functional_warp","path":"objects/o_functional_warp/o_functional_warp.yy",},},
@@ -59,7 +60,6 @@
     {"id":{"name":"obj_plantBarrier","path":"objects/obj_plantBarrier/obj_plantBarrier.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
     {"id":{"name":"obj_roundTable","path":"objects/obj_roundTable/obj_roundTable.yy",},},
-    {"id":{"name":"obj_speakblock","path":"objects/obj_speakblock/obj_speakblock.yy",},},
     {"id":{"name":"obj_stool","path":"objects/obj_stool/obj_stool.yy",},},
     {"id":{"name":"obj_switch","path":"objects/obj_switch/obj_switch.yy",},},
     {"id":{"name":"Object21","path":"objects/Object21/Object21.yy",},},

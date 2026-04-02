@@ -1,17 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"obj_menuBox",
+  "%Name":"obj_input_player_data",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":64,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_menuBox",
+  "name":"obj_input_player_data",
   "overriddenProperties":[],
   "parent":{
-    "name":"Text Boxes",
-    "path":"folders/Objects/Functional/Text Boxes.yy",
+    "name":"Sprites",
+    "path":"folders/Sprites.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -32,8 +32,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_textBox_Purple1",
-    "path":"sprites/spr_textBox_Purple1/spr_textBox_Purple1.yy",
+    "name":"spr_player_data",
+    "path":"sprites/spr_player_data/spr_player_data.yy",
   },
   "spriteMaskId":null,
   "visible":true,

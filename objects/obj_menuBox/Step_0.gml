@@ -1,11 +1,22 @@
 // Tutorial by Peyton Burnham
 // How to Make a Menu System (with Submenus) in GameMaker Studio 2!
 // https://www.youtube.com/watch?v=xLasKr0ekHY
-
+menu_active = false;
+esc_pressed = false;
 // Get input for selecting options
 up_key = keyboard_check_pressed(vk_up)
 down_key = keyboard_check_pressed(vk_down)
 select_key = keyboard_check_pressed(vk_space)
+if(keyboard_check(vk_escape)){
+    
+    if(!esc_pressed){
+        menu_active = !menu_active;
+        esc_pressed = true;
+    }
+    
+}else{
+    esc_pressed = false;
+}
 
 // Number of options in current menu
 options_length = array_length(option[menu_level]);
@@ -39,6 +50,9 @@ if(select_key){
 				// Quit Game
 				case 2:
 					game_end();
+					break;
+				case 3:
+					room_goto(room_input_data);
 					break;
 			}
 		// Main Menu -> Settings
@@ -107,4 +121,10 @@ if(select_key){
 		select_position = 0;
 		options_length = array_length(option[menu_level]);
 	}
+}
+if(!paused) exit;
+if(paused){
+    game_set_speed(0, gamespeed_fps);
+}else{
+    game_set_speed(60, gamespeed_fps);
 }

@@ -1,7 +1,14 @@
 // Tutorial by Peyton Burnham
 // How to Make a Menu System (with Submenus) in GameMaker Studio 2!
 // https://www.youtube.com/watch?v=xLasKr0ekHY
-
+//tambahan dari rey :)
+paused = false;
+if(keyboard_check_pressed(vk_escape)){
+    paused = !paused;
+}
+if(paused){
+    exit; // stop logic di bawah
+}
 width = 0
 height = 0
 
@@ -15,6 +22,7 @@ options_length = 0;
 option[0, 0] = "Start Game"
 option[0, 1] = "Settings"
 option[0, 2] = "Quit Game"
+option[0, 3] ="input data"
 
 option[1, 0] = "Window Size"
 option[1, 1] = "Brightness"
@@ -32,3 +40,8 @@ option[3, 1] = "D-Pad"
 option[3, 2] = "Circle-Pad"
 option[3, 3] = "Touch"
 option[3, 4] = "< Back"
+
+option[4,0] ="input data"
+if(!instance_exists(obj_menuBox)){
+    instance_create_layer(0, 0, "Instances", obj_menuBox);
+}

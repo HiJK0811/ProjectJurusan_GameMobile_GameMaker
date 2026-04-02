@@ -1,7 +1,8 @@
 // Tutorial by Peyton Burnham
 // Branching Dialog System with Effects in GMS 2! (Part 2: Branching Dialog)
 // https://www.youtube.com/watch?v=6Bzj7GdSkJI
-
+//for cutscene
+//event_inherited()
 /// @param text_id
 function scr_gameText(_text_id){
 	switch(_text_id){

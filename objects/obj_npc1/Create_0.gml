@@ -13,4 +13,3 @@ sprite[LEFT] = spr_PlayerWalkLeft;
 sprite[DOWN] = spr_PlayerWalkDown;
 
 face = DOWN
-

@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_GlassBarrier",
-    "path":"sprites/spr_GlassBarrier/spr_GlassBarrier.yy",
+    "name":"spr_glassBarrier",
+    "path":"sprites/spr_glassBarrier/spr_glassBarrier.yy",
   },
   "spriteMaskId":null,
   "visible":true,

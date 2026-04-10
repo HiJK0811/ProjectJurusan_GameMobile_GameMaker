@@ -85,7 +85,7 @@ if (game_selesai) {
     var _pencet_spasi = keyboard_check_pressed(vk_alt);
     var _pencet_layar = mouse_check_button_pressed(mb_left);
 
-    if (_pencet_spasi || _pencet_layar) {
+    if (_pencet_spasi || _pencet_layar) {	
         status_pindah = true; // Panggil Alarm 1 untuk gerakkan box & conveyor
 		alarm[2] = 1;
     }
@@ -93,6 +93,12 @@ if (game_selesai) {
 
 // --- 3. MENEMPELKAN BOX KE KUKU ---
 if (box_terbawa != noone) {
-    box_terbawa.x = x; // Box selalu di tengah X kuku
-    box_terbawa.y = y + 48; // Sesuaikan offset ini agar pas di jepitan
+    // KUNCI: Cek dulu apakah box-nya benar-benar masih ada di room
+    if (instance_exists(box_terbawa)) {
+        box_terbawa.x = x; 
+        box_terbawa.y = y + 48; 
+    } else {
+        // Jika box tiba-tiba hilang secara misterius, reset kuku jadi kosong
+        box_terbawa = noone;
+    }
 }

@@ -1,13 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"obj_boxdec",
+  "%Name":"obj_box_parent",
   "eventList":[],
   "managed":true,
-  "name":"obj_boxdec",
+  "name":"obj_box_parent",
   "overriddenProperties":[],
   "parent":{
-    "name":"Decorative Objects",
-    "path":"folders/Objects/Decorative Objects.yy",
+    "name":"Minigame_Hanoi",
+    "path":"folders/Objects/Minigame_Hanoi.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -27,10 +27,7 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":{
-    "name":"spr_boxcomplex",
-    "path":"sprites/spr_boxcomplex/spr_boxcomplex.yy",
-  },
+  "spriteId":null,
   "spriteMaskId":null,
   "visible":true,
 }

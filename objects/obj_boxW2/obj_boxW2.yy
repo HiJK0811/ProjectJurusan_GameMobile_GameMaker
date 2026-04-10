@@ -1,15 +1,20 @@
 {
   "$GMObject":"",
-  "%Name":"obj_boxdec",
-  "eventList":[],
+  "%Name":"obj_boxW2",
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"obj_boxdec",
+  "name":"obj_boxW2",
   "overriddenProperties":[],
   "parent":{
-    "name":"Decorative Objects",
-    "path":"folders/Objects/Decorative Objects.yy",
+    "name":"Minigame_Hanoi",
+    "path":"folders/Objects/Minigame_Hanoi.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_box_parent",
+    "path":"objects/obj_box_parent/obj_box_parent.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -28,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_boxcomplex",
-    "path":"sprites/spr_boxcomplex/spr_boxcomplex.yy",
+    "name":"spr_boxW2",
+    "path":"sprites/spr_boxW2/spr_boxW2.yy",
   },
   "spriteMaskId":null,
   "visible":true,

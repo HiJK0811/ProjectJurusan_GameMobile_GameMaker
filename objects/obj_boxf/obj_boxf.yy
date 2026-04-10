@@ -36,8 +36,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_box",
-    "path":"sprites/spr_box/spr_box.yy",
+    "name":"spr_boxcomplex",
+    "path":"sprites/spr_boxcomplex/spr_boxcomplex.yy",
   },
   "spriteMaskId":null,
   "visible":true,

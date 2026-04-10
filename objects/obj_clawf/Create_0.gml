@@ -27,7 +27,7 @@ alarm[0] = 1;
 // OTOMATIS: Cari semua obj_box yang ada di room dan masukkan ke tumpukan[0]
 // Kita urutkan berdasarkan ukuran (besar ke kecil)
 var _temp_list = ds_list_create();
-with (obj_boxf) {
+with (obj_box_parent) {
     ds_list_add(_temp_list, id);
 }
 

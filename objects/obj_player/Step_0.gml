@@ -3,6 +3,7 @@ if (o_game.game_state != GameState.EXPLORE) {
 	exit;
 }
 
+/*
 if (keyboard_check_pressed(ord("F"))){
 	create_dialogue([
 	{
@@ -11,7 +12,7 @@ if (keyboard_check_pressed(ord("F"))){
 	}
 	]
 	)
-}
+} */
 
 // Get Input
 right_key	= (keyboard_check(vk_right)	or keyboard_check(ord("D")))

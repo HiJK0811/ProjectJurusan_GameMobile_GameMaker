@@ -35,5 +35,5 @@
     "path":"sprites/spr_Functional_Warp/spr_Functional_Warp.yy",
   },
   "spriteMaskId":null,
-  "visible":true,
+  "visible":false,
 }

@@ -1,1 +1,2 @@
-target_room = ""
+target_room = "";
+previous_room = "";

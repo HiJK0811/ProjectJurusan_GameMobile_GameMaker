@@ -49,9 +49,13 @@ if (x_speed == 0 and y_speed == 0){
 // Collision
 if place_meeting(x + x_speed, y, [o_functional_wall, o_functional_interactibles]) == true{
 	x_speed = 0;
+	y_speed = 0
+	image_index = 1;
 }	
 if place_meeting(x, y + y_speed, [o_functional_wall, o_functional_interactibles]) == true{
 	y_speed = 0;
+	x_speed = 0;
+	image_index = 1;
 }
 
 // Moving the Player

@@ -68,6 +68,7 @@
     {"id":{"name":"obj_officeTable","path":"objects/obj_officeTable/obj_officeTable.yy",},},
     {"id":{"name":"obj_plantBarrier","path":"objects/obj_plantBarrier/obj_plantBarrier.yy",},},
     {"id":{"name":"obj_player","path":"objects/obj_player/obj_player.yy",},},
+    {"id":{"name":"obj_quit_game","path":"objects/obj_quit_game/obj_quit_game.yy",},},
     {"id":{"name":"obj_roundTable","path":"objects/obj_roundTable/obj_roundTable.yy",},},
     {"id":{"name":"obj_stool","path":"objects/obj_stool/obj_stool.yy",},},
     {"id":{"name":"obj_switch","path":"objects/obj_switch/obj_switch.yy",},},

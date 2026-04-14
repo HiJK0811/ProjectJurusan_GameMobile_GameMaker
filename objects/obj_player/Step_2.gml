@@ -1,3 +1,4 @@
+// Fix Camera Jitter
 var cam = view_camera[0];
 var cam_width = camera_get_view_width(cam);
 var cam_height = camera_get_view_height(cam);

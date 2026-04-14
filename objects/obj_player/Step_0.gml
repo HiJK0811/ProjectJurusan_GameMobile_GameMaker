@@ -29,15 +29,15 @@ if (y_speed == 0){
 	if (x_speed > 0) {face = RIGHT};
 	if (x_speed < 0) {face = LEFT};
 }
-if (x_speed > 0 and face = LEFT) {face = RIGHT}
-if (x_speed < 0 and face = RIGHT) {face = LEFT}
+if (x_speed > 0 and face == LEFT) {face = RIGHT}
+if (x_speed < 0 and face == RIGHT) {face = LEFT}
 
 if (x_speed == 0){
 	if (y_speed > 0) {face = DOWN};
 	if (y_speed < 0) {face = UP};
 }
-if (y_speed > 0 and face = UP) {face = DOWN}
-if (y_speed < 0 and face = DOWN) {face = UP}
+if (y_speed > 0 and face == UP) {face = DOWN}
+if (y_speed < 0 and face == DOWN) {face = UP}
 
 sprite_index = sprite[face]
 
@@ -49,18 +49,34 @@ if (x_speed == 0 and y_speed == 0){
 // Collision
 if place_meeting(x + x_speed, y, [o_functional_wall, o_functional_interactibles]) == true{
 	x_speed = 0;
-	y_speed = 0
-	image_index = 1;
+	if (y_speed == 0) {
+		image_index = 1;
+	}
 }	
 if place_meeting(x, y + y_speed, [o_functional_wall, o_functional_interactibles]) == true{
 	y_speed = 0;
-	x_speed = 0;
-	image_index = 1;
+	if (x_speed == 0) {
+		image_index = 1;
+	}
+}
+
+// Sprint
+if (keyboard_check_pressed(vk_shift) || keyboard_check_pressed(ord("X"))) {
+	movement_speed += 1;	
+} else if (keyboard_check_released(vk_shift) || keyboard_check_released(ord("X"))) {
+	movement_speed -= 1;	
 }
 
 // Moving the Player
 x += x_speed;
 y += y_speed;
+
+// Fix diagonal speed
+var len = point_distance(0, 0, x_speed, y_speed);
+if (len > movement_speed) {
+    x_speed = (x_speed / len) * movement_speed;
+    y_speed = (y_speed / len) * movement_speed;
+}
 
 // Depth
 depth = -bbox_bottom;

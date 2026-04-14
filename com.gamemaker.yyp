@@ -38,6 +38,7 @@
   "name":"com.gamemaker",
   "resources":[
     {"id":{"name":"font_menu","path":"fonts/font_menu/font_menu.yy",},},
+    {"id":{"name":"font_title","path":"fonts/font_title/font_title.yy",},},
     {"id":{"name":"debug_obj_speakblock","path":"objects/debug_obj_speakblock/debug_obj_speakblock.yy",},},
     {"id":{"name":"o_functional_interactibles","path":"objects/o_functional_interactibles/o_functional_interactibles.yy",},},
     {"id":{"name":"o_functional_wall","path":"objects/o_functional_wall/o_functional_wall.yy",},},
@@ -70,6 +71,7 @@
     {"id":{"name":"obj_roundTable","path":"objects/obj_roundTable/obj_roundTable.yy",},},
     {"id":{"name":"obj_stool","path":"objects/obj_stool/obj_stool.yy",},},
     {"id":{"name":"obj_switch","path":"objects/obj_switch/obj_switch.yy",},},
+    {"id":{"name":"obj_title","path":"objects/obj_title/obj_title.yy",},},
     {"id":{"name":"Object21","path":"objects/Object21/Object21.yy",},},
     {"id":{"name":"room_explore_mainRoom","path":"rooms/room_explore_mainRoom/room_explore_mainRoom.yy",},},
     {"id":{"name":"room_explore_office","path":"rooms/room_explore_office/room_explore_office.yy",},},

@@ -9,8 +9,8 @@
   "name":"o_game",
   "overriddenProperties":[],
   "parent":{
-    "name":"Functional",
-    "path":"folders/Objects/Functional.yy",
+    "name":"Objects",
+    "path":"folders/Objects.yy",
   },
   "parentObjectId":null,
   "persistent":true,

@@ -1,4 +1,6 @@
 if (o_game.game_state != GameState.EXPLORE) {
+	x_speed = 0;
+	y_speed = 0;
 	image_index = 1;
 	exit;
 }
@@ -60,16 +62,12 @@ if place_meeting(x, y + y_speed, [o_functional_wall, o_functional_interactibles]
 	}
 }
 
-// Sprint
+// Sprint 
 if (keyboard_check_pressed(vk_shift) || keyboard_check_pressed(ord("X"))) {
 	movement_speed += 1;	
 } else if (keyboard_check_released(vk_shift) || keyboard_check_released(ord("X"))) {
 	movement_speed -= 1;	
 }
-
-// Moving the Player
-x += x_speed;
-y += y_speed;
 
 // Fix diagonal speed
 var len = point_distance(0, 0, x_speed, y_speed);
@@ -78,5 +76,6 @@ if (len > movement_speed) {
     y_speed = (y_speed / len) * movement_speed;
 }
 
-// Depth
-depth = -bbox_bottom;
+// Moving the Player
+x += x_speed;
+y += y_speed;

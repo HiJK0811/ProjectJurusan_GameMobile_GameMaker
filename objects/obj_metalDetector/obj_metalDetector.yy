@@ -6,12 +6,12 @@
   "name":"obj_metalDetector",
   "overriddenProperties":[],
   "parent":{
-    "name":"Decorative Objects",
-    "path":"folders/Objects/Decorative Objects.yy",
+    "name":"Security",
+    "path":"folders/Objects/Decorative Objects/Security.yy",
   },
   "parentObjectId":{
-    "name":"o_functional_wall",
-    "path":"objects/o_functional_wall/o_functional_wall.yy",
+    "name":"obj_Wall",
+    "path":"objects/obj_Wall/obj_Wall.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

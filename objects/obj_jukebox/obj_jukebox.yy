@@ -1,7 +1,9 @@
 {
   "$GMObject":"",
   "%Name":"obj_jukebox",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"obj_jukebox",
   "overriddenProperties":[],
@@ -10,8 +12,8 @@
     "path":"folders/Objects.yy",
   },
   "parentObjectId":{
-    "name":"o_functional_interactibles",
-    "path":"objects/o_functional_interactibles/o_functional_interactibles.yy",
+    "name":"obj_Interactibles",
+    "path":"objects/obj_Interactibles/obj_Interactibles.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

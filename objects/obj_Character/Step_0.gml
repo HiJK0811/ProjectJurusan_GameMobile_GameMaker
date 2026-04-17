@@ -1,3 +1,9 @@
+/*
+if(o_game.game_state != GameState.EXPLORE){
+	exit;
+}
+*/
+
 // Normalize input
 var len = point_distance(0, 0, input_x, input_y);
 if (len > 0) {

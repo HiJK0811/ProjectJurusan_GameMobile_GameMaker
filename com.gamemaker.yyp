@@ -61,6 +61,7 @@
     {"id":{"name":"obj_cafeStall","path":"objects/obj_cafeStall/obj_cafeStall.yy",},},
     {"id":{"name":"obj_Character","path":"objects/obj_Character/obj_Character.yy",},},
     {"id":{"name":"obj_circuitBuilder","path":"objects/obj_circuitBuilder/obj_circuitBuilder.yy",},},
+    {"id":{"name":"obj_cutsceneManager","path":"objects/obj_cutsceneManager/obj_cutsceneManager.yy",},},
     {"id":{"name":"obj_dialogBox","path":"objects/obj_dialogBox/obj_dialogBox.yy",},},
     {"id":{"name":"obj_Door_Side_Double","path":"objects/obj_Door_Side_Double/obj_Door_Side_Double.yy",},},
     {"id":{"name":"obj_Door_Side_Single","path":"objects/obj_Door_Side_Single/obj_Door_Side_Single.yy",},},

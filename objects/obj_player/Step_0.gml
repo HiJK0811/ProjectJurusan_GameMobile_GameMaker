@@ -5,6 +5,7 @@ if (o_game.game_state != GameState.EXPLORE) {
 	exit;
 }
 
+
 /*
 if (keyboard_check_pressed(ord("F"))){
 	create_dialogue([
@@ -79,3 +80,7 @@ if (len > movement_speed) {
 // Moving the Player
 x += x_speed;
 y += y_speed;
+
+if (global.transitioning) {
+    exit; // completely skip movement/input
+}

@@ -14,8 +14,8 @@
   "exportDir":"",
   "name":"snd_play_2",
   "parent":{
-    "name":"Sounds",
-    "path":"folders/Sounds.yy",
+    "name":"Soundtracks",
+    "path":"folders/Sounds/Soundtracks.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

@@ -14,8 +14,8 @@
   "exportDir":"",
   "name":"snd_menu",
   "parent":{
-    "name":"Sounds",
-    "path":"folders/Sounds.yy",
+    "name":"Soundtracks",
+    "path":"folders/Sounds/Soundtracks.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

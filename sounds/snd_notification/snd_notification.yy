@@ -1,6 +1,6 @@
 {
   "$GMSound":"v2",
-  "%Name":"snd_play",
+  "%Name":"snd_notification",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -10,17 +10,17 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":472.24164,
+  "duration":1.8480046,
   "exportDir":"",
-  "name":"snd_play",
+  "name":"snd_notification",
   "parent":{
-    "name":"Soundtracks",
-    "path":"folders/Sounds/Soundtracks.yy",
+    "name":"Sound Effects",
+    "path":"folders/Sounds/Sound Effects.yy",
   },
   "preload":false,
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"snd_play.mp3",
+  "soundFile":"snd_notification.mp3",
   "volume":1.0,
 }

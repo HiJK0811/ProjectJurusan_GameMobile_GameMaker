@@ -1,6 +1,6 @@
 {
   "$GMSound":"v2",
-  "%Name":"snd_play",
+  "%Name":"snd_click_button",
   "audioGroupId":{
     "name":"audiogroup_default",
     "path":"audiogroups/audiogroup_default",
@@ -10,17 +10,17 @@
   "compression":0,
   "compressionQuality":4,
   "conversionMode":0,
-  "duration":472.24164,
+  "duration":1.1520182,
   "exportDir":"",
-  "name":"snd_play",
+  "name":"snd_click_button",
   "parent":{
-    "name":"Soundtracks",
-    "path":"folders/Sounds/Soundtracks.yy",
+    "name":"Sound Effects",
+    "path":"folders/Sounds/Sound Effects.yy",
   },
   "preload":false,
   "resourceType":"GMSound",
   "resourceVersion":"2.0",
   "sampleRate":44100,
-  "soundFile":"snd_play.mp3",
+  "soundFile":"snd_click_button.mp3",
   "volume":1.0,
 }

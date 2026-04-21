@@ -1,6 +1,8 @@
 x_speed = 0;
 y_speed = 0;
 
+walk_sound_id = -1;
+
 sprite[RIGHT] = spr_PlayerWalkRight;
 sprite[UP] = spr_PlayerWalkUp;
 sprite[LEFT] = spr_PlayerWalkLeft;

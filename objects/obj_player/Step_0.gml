@@ -65,9 +65,11 @@ if place_meeting(x, y + y_speed, [o_functional_wall, o_functional_interactibles]
 
 // Sprint 
 if (keyboard_check_pressed(vk_shift) || keyboard_check_pressed(ord("X"))) {
-	movement_speed += 1;	
+	movement_speed += 1;
+	audio_sound_pitch(snd_walk_2, 1.25);
 } else if (keyboard_check_released(vk_shift) || keyboard_check_released(ord("X"))) {
 	movement_speed -= 1;	
+	audio_sound_pitch(snd_walk_2, 1);
 }
 
 // Fix diagonal speed
@@ -83,4 +85,19 @@ y += y_speed;
 
 if (global.transitioning) {
     exit; // completely skip movement/input
+}
+
+// Play Step Sound
+if (x_speed != 0 || y_speed != 0) {
+    // Start sound if not already playing
+    if (!audio_is_playing(walk_sound_id)) {
+        walk_sound_id = audio_play_sound(snd_walk_2, 0, true);
+		audio_sound_gain(snd_walk_2, 0.25, 0); // lower volume
+    }
+} else {
+    // Stop sound when player stops
+    if (audio_is_playing(walk_sound_id)) {
+        audio_stop_sound(walk_sound_id);
+        walk_sound_id = -1;
+    }
 }

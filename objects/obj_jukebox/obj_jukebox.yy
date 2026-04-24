@@ -6,8 +6,8 @@
   "name":"obj_jukebox",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Decorative Objects",
+    "path":"folders/Objects/Decorative Objects.yy",
   },
   "parentObjectId":{
     "name":"o_functional_interactibles",

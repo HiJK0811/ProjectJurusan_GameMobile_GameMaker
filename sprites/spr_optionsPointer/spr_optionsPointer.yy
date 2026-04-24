@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"Text Boxes",
-    "path":"folders/Sprites/Functional/Text Boxes.yy",
+    "name":"Minigame_LogicGates",
+    "path":"folders/Sprites/Minigame_LogicGates.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

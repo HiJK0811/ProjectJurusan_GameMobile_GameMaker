@@ -11,8 +11,8 @@
   "name":"o_close_button",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Objects.yy",
+    "name":"Functional",
+    "path":"folders/Objects/Functional.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"Sprite26",
-    "path":"sprites/Sprite26/Sprite26.yy",
+    "name":"spr_close_button",
+    "path":"sprites/spr_close_button/spr_close_button.yy",
   },
   "spriteMaskId":null,
   "visible":true,

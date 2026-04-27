@@ -11,8 +11,8 @@
   "name":"obj_menu_parent",
   "overriddenProperties":[],
   "parent":{
-    "name":"Functional",
-    "path":"folders/Objects/Functional.yy",
+    "name":"Menu Button",
+    "path":"folders/Objects/Functional/Menu Button.yy",
   },
   "parentObjectId":null,
   "persistent":false,

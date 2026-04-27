@@ -3,9 +3,9 @@
   "%Name":"spr_Stool",
   "bboxMode":2,
   "bbox_bottom":12,
-  "bbox_left":0,
-  "bbox_right":15,
-  "bbox_top":5,
+  "bbox_left":-1,
+  "bbox_right":16,
+  "bbox_top":6,
   "collisionKind":1,
   "collisionTolerance":0,
   "DynamicTexturePage":false,
@@ -14,8 +14,8 @@
   "frames":[
     {"$GMSpriteFrame":"v1","%Name":"bf084bf9-4844-46c2-b680-dcbbb5790aad","name":"bf084bf9-4844-46c2-b680-dcbbb5790aad","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
-  "gridX":0,
-  "gridY":0,
+  "gridX":16,
+  "gridY":16,
   "height":13,
   "HTile":false,
   "layers":[

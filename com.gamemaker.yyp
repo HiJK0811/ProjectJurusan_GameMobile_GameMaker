@@ -154,6 +154,7 @@
     {"id":{"name":"spr_textBox_Purple1","path":"sprites/spr_textBox_Purple1/spr_textBox_Purple1.yy",},},
     {"id":{"name":"spr_Tiles_1","path":"sprites/spr_Tiles_1/spr_Tiles_1.yy",},},
     {"id":{"name":"spr_TileSky","path":"sprites/spr_TileSky/spr_TileSky.yy",},},
+    {"id":{"name":"spr_TileSpace","path":"sprites/spr_TileSpace/spr_TileSpace.yy",},},
     {"id":{"name":"spr_ui_back","path":"sprites/spr_ui_back/spr_ui_back.yy",},},
     {"id":{"name":"spr_ui_box","path":"sprites/spr_ui_box/spr_ui_box.yy",},},
     {"id":{"name":"spr_ui_button","path":"sprites/spr_ui_button/spr_ui_button.yy",},},

@@ -1,5 +1,12 @@
 // Inherit the parent event
 event_inherited();
+if(path_active){
+	exit;
+}
+
+if(instance_exists(obj_cutscene)){
+	exit;
+}
 
 if(!path_active){
 	// Get Input

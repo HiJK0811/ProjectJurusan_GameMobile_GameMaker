@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_Functional_Warp",
-    "path":"sprites/spr_Functional_Warp/spr_Functional_Warp.yy",
+    "name":"spr_warp",
+    "path":"sprites/spr_warp/spr_warp.yy",
   },
   "spriteMaskId":null,
   "visible":true,

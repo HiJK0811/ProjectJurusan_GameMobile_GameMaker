@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_Table_Scalable",
-    "path":"sprites/spr_Table_Scalable/spr_Table_Scalable.yy",
+    "name":"spr_Table",
+    "path":"sprites/spr_Table/spr_Table.yy",
   },
   "spriteMaskId":null,
   "visible":true,

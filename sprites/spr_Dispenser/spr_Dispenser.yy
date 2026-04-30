@@ -1,11 +1,11 @@
 {
   "$GMSprite":"v2",
   "%Name":"spr_Dispenser",
-  "bboxMode":0,
+  "bboxMode":2,
   "bbox_bottom":29,
   "bbox_left":0,
   "bbox_right":13,
-  "bbox_top":0,
+  "bbox_top":25,
   "collisionKind":1,
   "collisionTolerance":0,
   "DynamicTexturePage":false,

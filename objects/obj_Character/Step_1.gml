@@ -21,6 +21,7 @@ if (path_active) {
 
 		if (point_index >= path_get_number(path)) {
 			path_active = false;
+			path_clear_points(path);
 			exit;
 		}
 

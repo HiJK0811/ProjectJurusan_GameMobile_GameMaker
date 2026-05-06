@@ -1,3 +1,3 @@
-target_x = 325;
-target_y = 60;
-target_room = room_explore_security;
+target_x = 310;
+target_y = 310;
+target_room = room_explore_storage;

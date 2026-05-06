@@ -29,6 +29,7 @@
     {"$GMFolder":"","%Name":"Decoration","folderPath":"folders/Sprites/Decoration.yy","name":"Decoration","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Functional","folderPath":"folders/Sprites/Functional.yy","name":"Functional","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Text Boxes","folderPath":"folders/Sprites/Functional/Text Boxes.yy","name":"Text Boxes","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Menu","folderPath":"folders/Sprites/Menu.yy","name":"Menu","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Minigame_LogicGates","folderPath":"folders/Sprites/Minigame_LogicGates.yy","name":"Minigame_LogicGates","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"NPC Sprites","folderPath":"folders/Sprites/NPC Sprites.yy","name":"NPC Sprites","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Player","folderPath":"folders/Sprites/Player.yy","name":"Player","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -40,6 +41,9 @@
   ],
   "IncludedFiles":[
     {"$GMIncludedFile":"","%Name":"blrrpixs016.ttf","CopyToMask":-1,"filePath":"datafiles","name":"blrrpixs016.ttf","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+    {"$GMIncludedFile":"","%Name":"DeterminationMonoWebRegular-Z5oq.ttf","CopyToMask":-1,"filePath":"datafiles","name":"DeterminationMonoWebRegular-Z5oq.ttf","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+    {"$GMIncludedFile":"","%Name":"DeterminationSansWebRegular-369X.ttf","CopyToMask":-1,"filePath":"datafiles","name":"DeterminationSansWebRegular-369X.ttf","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+    {"$GMIncludedFile":"","%Name":"info.txt","CopyToMask":-1,"filePath":"datafiles","name":"info.txt","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
   ],
   "isEcma":false,
   "LibraryEmitters":[],
@@ -49,6 +53,8 @@
   "name":"com.gamemaker",
   "resources":[
     {"id":{"name":"fnt_ui","path":"fonts/fnt_ui/fnt_ui.yy",},},
+    {"id":{"name":"font_hanoi_game_judul","path":"fonts/font_hanoi_game_judul/font_hanoi_game_judul.yy",},},
+    {"id":{"name":"font_hanoi_game_subjudul","path":"fonts/font_hanoi_game_subjudul/font_hanoi_game_subjudul.yy",},},
     {"id":{"name":"font_menu","path":"fonts/font_menu/font_menu.yy",},},
     {"id":{"name":"font_title","path":"fonts/font_title/font_title.yy",},},
     {"id":{"name":"debug_obj_speakblock","path":"objects/debug_obj_speakblock/debug_obj_speakblock.yy",},},

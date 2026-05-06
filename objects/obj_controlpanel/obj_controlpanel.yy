@@ -1,17 +1,19 @@
 {
   "$GMObject":"",
-  "%Name":"obj_metalDetector",
-  "eventList":[],
+  "%Name":"obj_controlpanel",
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"obj_metalDetector",
+  "name":"obj_controlpanel",
   "overriddenProperties":[],
   "parent":{
     "name":"Minigame_Hanoi",
     "path":"folders/Objects/Minigame_Hanoi.yy",
   },
   "parentObjectId":{
-    "name":"o_functional_wall",
-    "path":"objects/o_functional_wall/o_functional_wall.yy",
+    "name":"o_functional_interactibles",
+    "path":"objects/o_functional_interactibles/o_functional_interactibles.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -31,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_MetalDetector",
-    "path":"sprites/spr_MetalDetector/spr_MetalDetector.yy",
+    "name":"spr_controlpanel",
+    "path":"sprites/spr_controlpanel/spr_controlpanel.yy",
   },
   "spriteMaskId":null,
   "visible":true,

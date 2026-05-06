@@ -1,18 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"obj_metalDetector",
-  "eventList":[],
+  "%Name":"obj_conveyorbelt",
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
-  "name":"obj_metalDetector",
+  "name":"obj_conveyorbelt",
   "overriddenProperties":[],
   "parent":{
     "name":"Minigame_Hanoi",
     "path":"folders/Objects/Minigame_Hanoi.yy",
   },
-  "parentObjectId":{
-    "name":"o_functional_wall",
-    "path":"objects/o_functional_wall/o_functional_wall.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -31,8 +30,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_MetalDetector",
-    "path":"sprites/spr_MetalDetector/spr_MetalDetector.yy",
+    "name":"spr_conveyorbelt",
+    "path":"sprites/spr_conveyorbelt/spr_conveyorbelt.yy",
   },
   "spriteMaskId":null,
   "visible":true,

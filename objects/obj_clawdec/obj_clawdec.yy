@@ -1,18 +1,15 @@
 {
   "$GMObject":"",
-  "%Name":"obj_metalDetector",
+  "%Name":"obj_clawdec",
   "eventList":[],
   "managed":true,
-  "name":"obj_metalDetector",
+  "name":"obj_clawdec",
   "overriddenProperties":[],
   "parent":{
     "name":"Minigame_Hanoi",
     "path":"folders/Objects/Minigame_Hanoi.yy",
   },
-  "parentObjectId":{
-    "name":"o_functional_wall",
-    "path":"objects/o_functional_wall/o_functional_wall.yy",
-  },
+  "parentObjectId":null,
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -31,8 +28,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_MetalDetector",
-    "path":"sprites/spr_MetalDetector/spr_MetalDetector.yy",
+    "name":"spr_claw",
+    "path":"sprites/spr_claw/spr_claw.yy",
   },
   "spriteMaskId":null,
   "visible":true,

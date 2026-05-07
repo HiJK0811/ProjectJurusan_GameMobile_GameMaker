@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":4,
   "parent":{
-    "name":"Decoration",
-    "path":"folders/Sprites/Decoration.yy",
+    "name":"Cafe",
+    "path":"folders/Sprites/Decoration/Cafe.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

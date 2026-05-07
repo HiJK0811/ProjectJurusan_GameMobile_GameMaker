@@ -1,0 +1,1 @@
+set_path_to(mouse_x, mouse_y)

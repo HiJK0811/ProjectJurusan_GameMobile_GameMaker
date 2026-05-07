@@ -53,7 +53,14 @@ function scr_gameText(_text_id){
 				scr_text("It's a Sith legend. Darth Plagueis was a Dark Lord of the Sith, so powerful and so wise he could use the Force to influence the midichlorians to create life…", "Derpy Derp");
 				scr_text("To Room 1");
 				// room_goto(Room1);
-				break;			
-			
+				break;				
+		case "Adhila":
+			scr_text("Hello player! Aku Adhila", "Happy Derp", 1);
+			scr_text("Senang bertemu denganmu", "Happy Derp", 1);
+			break;
+		case "Lylia":
+			scr_text("Hello player! Aku Lylia", "Happy Derp", -1);
+			scr_text("It's dangerous to go alone. Take this!", "Happy Derp", -1);
+			break;
 	}
 }

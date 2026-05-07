@@ -1,11 +1,19 @@
-x_speed = 0;
-y_speed = 0;
+// Inherit the parent event
+event_inherited();
 
-movement_speed = 1.75;
+states = {
+	idle:{
+		right: spr_Player_Idle_Right,
+		up: spr_Player_Idle_Up,
+		left: spr_Player_Idle_Left,
+		down: spr_Player_Idle_Down
+	},
+	walking:{
+		right: spr_Player_Walk_Right,
+		up: spr_Player_Walk_Up,
+		left: spr_Player_Walk_Left,
+		down: spr_Player_Walk_Down
+	}
+}
 
-sprite[RIGHT] = spr_PlayerWalkRight;
-sprite[UP] = spr_PlayerWalkUp;
-sprite[LEFT] = spr_PlayerWalkLeft;
-sprite[DOWN] = spr_PlayerWalkDown;
-
-face = DOWN
+state = states.idle;

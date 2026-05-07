@@ -29,7 +29,7 @@
   "origin":4,
   "parent":{
     "name":"Player_Old",
-    "path":"folders/Sprites/Player_Old.yy",
+    "path":"folders/Main & NPC & Cutscenes/Sprites/Player_Old.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

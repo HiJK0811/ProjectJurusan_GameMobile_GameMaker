@@ -26,7 +26,7 @@
   "origin":4,
   "parent":{
     "name":"Functional",
-    "path":"folders/Sprites/Functional.yy",
+    "path":"folders/Main & NPC & Cutscenes/Sprites/Functional.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

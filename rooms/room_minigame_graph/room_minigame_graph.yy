@@ -21,7 +21,7 @@
   "name":"room_minigame_graph",
   "parent":{
     "name":"Rooms",
-    "path":"folders/Rooms.yy",
+    "path":"folders/Main & NPC & Cutscenes/Rooms.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

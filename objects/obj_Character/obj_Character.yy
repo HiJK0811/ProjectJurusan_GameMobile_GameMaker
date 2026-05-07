@@ -11,7 +11,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Characters",
-    "path":"folders/Objects/Characters.yy",
+    "path":"folders/Main & NPC & Cutscenes/Objects/Characters.yy",
   },
   "parentObjectId":null,
   "persistent":false,

@@ -26,7 +26,7 @@
   "origin":0,
   "parent":{
     "name":"Decoration",
-    "path":"folders/Sprites/Decoration.yy",
+    "path":"folders/Main & NPC & Cutscenes/Sprites/Decoration.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

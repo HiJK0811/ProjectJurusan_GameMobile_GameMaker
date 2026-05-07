@@ -45,7 +45,7 @@
   "origin":4,
   "parent":{
     "name":"Office",
-    "path":"folders/Sprites/Decoration/Office.yy",
+    "path":"folders/Main & NPC & Cutscenes/Sprites/Decoration/Office.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -126,7 +126,7 @@
   "name":"room_explore_office",
   "parent":{
     "name":"Rooms",
-    "path":"folders/Rooms.yy",
+    "path":"folders/Main & NPC & Cutscenes/Rooms.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

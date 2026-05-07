@@ -11,7 +11,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Text Boxes",
-    "path":"folders/Objects/Functional/Text Boxes.yy",
+    "path":"folders/Main & NPC & Cutscenes/Objects/Functional/Text Boxes.yy",
   },
   "parentObjectId":null,
   "persistent":false,

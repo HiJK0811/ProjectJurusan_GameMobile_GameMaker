@@ -9,7 +9,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
-    "path":"folders/Objects.yy",
+    "path":"folders/Main & NPC & Cutscenes/Objects.yy",
   },
   "parentObjectId":{
     "name":"obj_Interactibles",

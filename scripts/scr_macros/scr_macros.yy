@@ -6,7 +6,7 @@
   "name":"scr_macros",
   "parent":{
     "name":"Scripts",
-    "path":"folders/Scripts.yy",
+    "path":"folders/Main & NPC & Cutscenes/Scripts.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

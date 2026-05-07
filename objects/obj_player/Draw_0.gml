@@ -1,3 +1,7 @@
+if (o_game.game_state != GameState.EXPLORE) {
+	exit;
+}
+
 draw_self()
 
 draw_path(path, x, y, true)

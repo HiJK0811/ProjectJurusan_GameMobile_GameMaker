@@ -73,6 +73,7 @@
     {"name":"inst_1A778377","path":"rooms/room_explore_mainRoom/room_explore_mainRoom.yy",},
     {"name":"inst_1440423C","path":"rooms/room_explore_mainRoom/room_explore_mainRoom.yy",},
     {"name":"inst_22C61493","path":"rooms/room_explore_mainRoom/room_explore_mainRoom.yy",},
+    {"name":"inst_3152C7D0","path":"rooms/room_explore_mainRoom/room_explore_mainRoom.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -146,6 +147,7 @@
         {"$GMRInstance":"v4","%Name":"inst_6E558CFB","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_6E558CFB","objectId":{"name":"obj_glassBarrier_Vertical","path":"objects/obj_glassBarrier_Vertical/obj_glassBarrier_Vertical.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":446.0,"y":284.0,},
         {"$GMRInstance":"v4","%Name":"inst_1440423C","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_1440423C","objectId":{"name":"obj_NPC_Lylia","path":"objects/obj_NPC_Lylia/obj_NPC_Lylia.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":584.0,"y":275.0,},
         {"$GMRInstance":"v4","%Name":"inst_22C61493","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_22C61493","objectId":{"name":"obj_Camera","path":"objects/obj_Camera/obj_Camera.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":856.0,"y":359.0,},
+        {"$GMRInstance":"v4","%Name":"inst_3152C7D0","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_3152C7D0","objectId":{"name":"obj_Warp","path":"objects/obj_Warp/obj_Warp.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":376.0,"y":200.0,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"Tiles_Back","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Tiles_Back","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":38,"SerialiseWidth":75,"TileCompressedData":[
           -19,0,-50,2,-6,-2147483648,-19,0,-50,2,-6,-2147483648,-19,0,-50,2,-6,-2147483648,-19,0,-50,2,-6,-2147483648,
@@ -171,7 +173,7 @@
   "name":"room_explore_mainRoom",
   "parent":{
     "name":"Rooms",
-    "path":"folders/Rooms.yy",
+    "path":"folders/Main & NPC & Cutscenes/Rooms.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

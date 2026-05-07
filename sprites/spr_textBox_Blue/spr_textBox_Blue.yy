@@ -47,7 +47,7 @@
   "origin":0,
   "parent":{
     "name":"Text Boxes",
-    "path":"folders/Sprites/Functional/Text Boxes.yy",
+    "path":"folders/Main & NPC & Cutscenes/Sprites/Functional/Text Boxes.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

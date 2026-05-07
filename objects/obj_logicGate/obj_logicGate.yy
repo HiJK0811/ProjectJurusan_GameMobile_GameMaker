@@ -9,7 +9,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Minigame_LogicGates",
-    "path":"folders/Objects/Minigame_LogicGates.yy",
+    "path":"folders/Main & NPC & Cutscenes/Objects/Minigame_LogicGates.yy",
   },
   "parentObjectId":null,
   "persistent":false,

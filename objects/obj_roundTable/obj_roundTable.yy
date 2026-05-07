@@ -7,7 +7,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Cafe",
-    "path":"folders/Objects/Decorative Objects/Cafe.yy",
+    "path":"folders/Main & NPC & Cutscenes/Objects/Decorative Objects/Cafe.yy",
   },
   "parentObjectId":{
     "name":"obj_Wall",

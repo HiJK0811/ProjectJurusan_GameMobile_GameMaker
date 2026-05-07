@@ -41,7 +41,7 @@
   "origin":7,
   "parent":{
     "name":"Player_Idle",
-    "path":"folders/Sprites/Characters/Player/Player_Idle.yy",
+    "path":"folders/Main & NPC & Cutscenes/Sprites/Characters/Player/Player_Idle.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

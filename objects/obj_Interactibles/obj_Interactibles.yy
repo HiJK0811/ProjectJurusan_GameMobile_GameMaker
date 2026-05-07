@@ -11,7 +11,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Functional",
-    "path":"folders/Objects/Functional.yy",
+    "path":"folders/Main & NPC & Cutscenes/Objects/Functional.yy",
   },
   "parentObjectId":{
     "name":"obj_Wall",

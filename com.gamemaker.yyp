@@ -140,6 +140,7 @@
     {"id":{"name":"obj_Warp","path":"objects/obj_Warp/obj_Warp.yy",},},
     {"id":{"name":"obj_yellowChair","path":"objects/obj_yellowChair/obj_yellowChair.yy",},},
     {"id":{"name":"Object21","path":"objects/Object21/Object21.yy",},},
+    {"id":{"name":"room_a_mainMenu","path":"rooms/room_a_mainMenu/room_a_mainMenu.yy",},},
     {"id":{"name":"room_explore_mainRoom","path":"rooms/room_explore_mainRoom/room_explore_mainRoom.yy",},},
     {"id":{"name":"room_explore_office","path":"rooms/room_explore_office/room_explore_office.yy",},},
     {"id":{"name":"room_explore_security","path":"rooms/room_explore_security/room_explore_security.yy",},},
@@ -261,6 +262,7 @@
   "resourceType":"GMProject",
   "resourceVersion":"2.0",
   "RoomOrderNodes":[
+    {"roomId":{"name":"room_a_mainMenu","path":"rooms/room_a_mainMenu/room_a_mainMenu.yy",},},
     {"roomId":{"name":"room_explore_mainRoom","path":"rooms/room_explore_mainRoom/room_explore_mainRoom.yy",},},
     {"roomId":{"name":"room_explore_office","path":"rooms/room_explore_office/room_explore_office.yy",},},
     {"roomId":{"name":"room_explore_security","path":"rooms/room_explore_security/room_explore_security.yy",},},

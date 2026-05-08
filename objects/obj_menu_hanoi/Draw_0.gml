@@ -65,7 +65,7 @@ if (menu_aktif) {
             draw_set_alpha(1);
             draw_text(_menu_x, _txt_y, _txt);
         } else {
-            draw_set_color(c_blue); // Aqua lebih Sci-Fi dibanding Blue biasa
+            draw_set_color(c_white); // Aqua lebih Sci-Fi dibanding Blue biasa
             draw_text(_menu_x, _txt_y, pilihan[i]);
         }
     }

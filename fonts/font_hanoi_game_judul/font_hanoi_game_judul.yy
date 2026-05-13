@@ -655,8 +655,8 @@
   "maintainGms1Font":false,
   "name":"font_hanoi_game_judul",
   "parent":{
-    "name":"Font",
-    "path":"folders/Dan_Hanoi/Font.yy",
+    "name":"Fonts",
+    "path":"folders/Dan_Hanoi/Fonts.yy",
   },
   "pointRounding":0,
   "ranges":[

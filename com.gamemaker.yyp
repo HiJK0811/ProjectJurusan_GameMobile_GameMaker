@@ -11,7 +11,7 @@
   "defaultScriptType":1,
   "Folders":[
     {"$GMFolder":"","%Name":"Dan_Hanoi","folderPath":"folders/Dan_Hanoi.yy","name":"Dan_Hanoi","resourceType":"GMFolder","resourceVersion":"2.0",},
-    {"$GMFolder":"","%Name":"Font","folderPath":"folders/Dan_Hanoi/Font.yy","name":"Font","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Fonts","folderPath":"folders/Dan_Hanoi/Fonts.yy","name":"Fonts","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Objects","folderPath":"folders/Dan_Hanoi/Objects.yy","name":"Objects","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Functional","folderPath":"folders/Dan_Hanoi/Objects/Functional.yy","name":"Functional","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Minigame_Hanoi","folderPath":"folders/Dan_Hanoi/Objects/Minigame_Hanoi.yy","name":"Minigame_Hanoi","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -20,6 +20,7 @@
     {"$GMFolder":"","%Name":"Decoration","folderPath":"folders/Dan_Hanoi/Sprites/Decoration.yy","name":"Decoration","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Tile Sets","folderPath":"folders/Dan_Hanoi/Tile Sets.yy","name":"Tile Sets","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Main & NPC & Cutscenes","folderPath":"folders/Main & NPC & Cutscenes.yy","name":"Main & NPC & Cutscenes","resourceType":"GMFolder","resourceVersion":"2.0",},
+    {"$GMFolder":"","%Name":"Fonts","folderPath":"folders/Main & NPC & Cutscenes/Fonts.yy","name":"Fonts","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Objects","folderPath":"folders/Main & NPC & Cutscenes/Objects.yy","name":"Objects","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Characters","folderPath":"folders/Main & NPC & Cutscenes/Objects/Characters.yy","name":"Characters","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Cutscenes","folderPath":"folders/Main & NPC & Cutscenes/Objects/Cutscenes.yy","name":"Cutscenes","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -64,6 +65,8 @@
   },
   "name":"com.gamemaker",
   "resources":[
+    {"id":{"name":"fnt_menu","path":"fonts/fnt_menu/fnt_menu.yy",},},
+    {"id":{"name":"fnt_title","path":"fonts/fnt_title/fnt_title.yy",},},
     {"id":{"name":"font_hanoi_game_judul","path":"fonts/font_hanoi_game_judul/font_hanoi_game_judul.yy",},},
     {"id":{"name":"font_hanoi_game_subjudul","path":"fonts/font_hanoi_game_subjudul/font_hanoi_game_subjudul.yy",},},
     {"id":{"name":"debug_obj_speakblock","path":"objects/debug_obj_speakblock/debug_obj_speakblock.yy",},},
@@ -116,6 +119,7 @@
     {"id":{"name":"obj_lightBulb","path":"objects/obj_lightBulb/obj_lightBulb.yy",},},
     {"id":{"name":"obj_logicGate","path":"objects/obj_logicGate/obj_logicGate.yy",},},
     {"id":{"name":"obj_logicLevels","path":"objects/obj_logicLevels/obj_logicLevels.yy",},},
+    {"id":{"name":"obj_mainMenu","path":"objects/obj_mainMenu/obj_mainMenu.yy",},},
     {"id":{"name":"obj_menu_hanoi","path":"objects/obj_menu_hanoi/obj_menu_hanoi.yy",},},
     {"id":{"name":"obj_menuBox","path":"objects/obj_menuBox/obj_menuBox.yy",},},
     {"id":{"name":"obj_metalDetector","path":"objects/obj_metalDetector/obj_metalDetector.yy",},},

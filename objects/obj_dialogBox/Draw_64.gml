@@ -184,7 +184,6 @@ if (draw_character == text_length[page] && page == page_number - 1){
 	option_pos += keyboard_check_pressed(vk_down) - keyboard_check_pressed(vk_up)
 	option_pos = clamp(option_pos, 0, option_number - 1);
 	
-	
 	// Draw options
 	var _options_border = 4;
 	var _options_space = sprite_get_height(spr_font1) + _options_border;

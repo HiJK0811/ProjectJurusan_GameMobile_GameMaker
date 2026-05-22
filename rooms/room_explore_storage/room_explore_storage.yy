@@ -67,7 +67,7 @@
   "name":"room_explore_storage",
   "parent":{
     "name":"Rooms",
-    "path":"folders/Dan_Hanoi/Rooms.yy",
+    "path":"folders/Daniel_Hanoi/Rooms.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

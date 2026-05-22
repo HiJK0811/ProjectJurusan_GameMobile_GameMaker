@@ -13,7 +13,7 @@
   "out_tilevborder":2,
   "parent":{
     "name":"Tile Sets",
-    "path":"folders/Main & NPC & Cutscenes/Tile Sets.yy",
+    "path":"folders/Jason_Main NPC Cutscene/Tile Sets.yy",
   },
   "resourceType":"GMTileSet",
   "resourceVersion":"2.0",

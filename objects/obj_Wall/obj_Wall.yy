@@ -9,7 +9,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Functional",
-    "path":"folders/Main & NPC & Cutscenes/Objects/Functional.yy",
+    "path":"folders/Jason_Main NPC Cutscene/Objects/Functional.yy",
   },
   "parentObjectId":null,
   "persistent":false,

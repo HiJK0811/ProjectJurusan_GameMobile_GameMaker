@@ -26,7 +26,7 @@
   "origin":4,
   "parent":{
     "name":"Office",
-    "path":"folders/Main & NPC & Cutscenes/Sprites/Decoration/Office.yy",
+    "path":"folders/Jason_Main NPC Cutscene/Sprites/Decoration/Office.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

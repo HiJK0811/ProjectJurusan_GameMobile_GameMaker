@@ -26,7 +26,7 @@
   "origin":4,
   "parent":{
     "name":"Security",
-    "path":"folders/Main & NPC & Cutscenes/Sprites/Decoration/Security.yy",
+    "path":"folders/Jason_Main NPC Cutscene/Sprites/Decoration/Security.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -11,7 +11,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Functional",
-    "path":"folders/Dan_Hanoi/Objects/Functional.yy",
+    "path":"folders/Daniel_Hanoi/Objects/Functional.yy",
   },
   "parentObjectId":null,
   "persistent":false,

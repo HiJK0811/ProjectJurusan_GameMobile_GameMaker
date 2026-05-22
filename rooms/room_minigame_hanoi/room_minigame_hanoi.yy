@@ -43,7 +43,7 @@
   "name":"room_minigame_hanoi",
   "parent":{
     "name":"Rooms",
-    "path":"folders/Dan_Hanoi/Rooms.yy",
+    "path":"folders/Daniel_Hanoi/Rooms.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

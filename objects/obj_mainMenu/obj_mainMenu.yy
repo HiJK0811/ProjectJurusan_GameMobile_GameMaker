@@ -11,7 +11,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Main Menu",
-    "path":"folders/Main & NPC & Cutscenes/Objects/Main Menu.yy",
+    "path":"folders/Jason_Main NPC Cutscene/Objects/Main Menu.yy",
   },
   "parentObjectId":null,
   "persistent":false,

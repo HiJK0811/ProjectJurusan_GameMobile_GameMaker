@@ -9,7 +9,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Characters",
-    "path":"folders/Main & NPC & Cutscenes/Objects/Characters.yy",
+    "path":"folders/Jason_Main NPC Cutscene/Objects/Characters.yy",
   },
   "parentObjectId":{
     "name":"obj_NPC",

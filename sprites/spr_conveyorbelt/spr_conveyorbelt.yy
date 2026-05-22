@@ -45,7 +45,7 @@
   "origin":0,
   "parent":{
     "name":"Decoration",
-    "path":"folders/Dan_Hanoi/Sprites/Decoration.yy",
+    "path":"folders/Daniel_Hanoi/Sprites/Decoration.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

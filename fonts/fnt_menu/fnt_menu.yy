@@ -192,7 +192,7 @@
   "name":"fnt_menu",
   "parent":{
     "name":"Fonts",
-    "path":"folders/Main & NPC & Cutscenes/Fonts.yy",
+    "path":"folders/Jason_Main NPC Cutscene/Fonts.yy",
   },
   "pointRounding":0,
   "ranges":[

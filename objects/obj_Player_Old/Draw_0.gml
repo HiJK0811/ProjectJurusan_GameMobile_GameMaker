@@ -1,6 +1,6 @@
-if(o_game.game_state == GameState.EXPLORE){
+if(obj_gameStates.game_state == GameState.EXPLORE){
 	draw_self();
 }
-else if(o_game.game_state == GameState.MINIGAME){
+else if(obj_gameStates.game_state == GameState.MINIGAME){
 
 }

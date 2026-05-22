@@ -27,7 +27,7 @@
   "origin":4,
   "parent":{
     "name":"Minigame_LogicGates",
-    "path":"folders/Main & NPC & Cutscenes/Sprites/Minigame_LogicGates.yy",
+    "path":"folders/Jason_Main NPC Cutscene/Sprites/Minigame_LogicGates.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

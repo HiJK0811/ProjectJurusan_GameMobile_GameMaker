@@ -27,7 +27,7 @@
   "origin":7,
   "parent":{
     "name":"NPC_Lylia_Idle",
-    "path":"folders/Main & NPC & Cutscenes/Sprites/Characters/Lylia/NPC_Lylia_Idle.yy",
+    "path":"folders/Jason_Main NPC Cutscene/Sprites/Characters/Lylia/NPC_Lylia_Idle.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

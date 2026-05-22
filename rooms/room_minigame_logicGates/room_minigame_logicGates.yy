@@ -27,7 +27,7 @@
   "name":"room_minigame_logicGates",
   "parent":{
     "name":"Rooms",
-    "path":"folders/Main & NPC & Cutscenes/Rooms.yy",
+    "path":"folders/Jason_Main NPC Cutscene/Rooms.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

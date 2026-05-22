@@ -15,7 +15,7 @@
   "name":"snd_pop_up",
   "parent":{
     "name":"Sound Effects",
-    "path":"folders/Diatra/Sounds/Sound Effects.yy",
+    "path":"folders/Jason_Main NPC Cutscene/Sounds/Sound Effects.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

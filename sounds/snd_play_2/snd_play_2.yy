@@ -15,7 +15,7 @@
   "name":"snd_play_2",
   "parent":{
     "name":"Soundtracks",
-    "path":"folders/Diatra/Sounds/Soundtracks.yy",
+    "path":"folders/Jason_Main NPC Cutscene/Sounds/Soundtracks.yy",
   },
   "preload":false,
   "resourceType":"GMSound",

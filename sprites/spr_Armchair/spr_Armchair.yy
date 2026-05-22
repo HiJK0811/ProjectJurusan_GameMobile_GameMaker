@@ -26,7 +26,7 @@
   "origin":4,
   "parent":{
     "name":"Cafe",
-    "path":"folders/Main & NPC & Cutscenes/Sprites/Decoration/Cafe.yy",
+    "path":"folders/Jason_Main NPC Cutscene/Sprites/Decoration/Cafe.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

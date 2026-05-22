@@ -1,7 +1,7 @@
 camWidth = 320;
 camHeight = 180;
 
-follow = obj_Player
+follow = noone;
 
 if(follow != noone){
 	x = follow.x;

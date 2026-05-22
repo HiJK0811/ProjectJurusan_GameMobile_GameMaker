@@ -1,7 +1,7 @@
 // Inherit the parent event
 event_inherited();
 
-if (o_game.game_state != GameState.EXPLORE) {
+if (obj_gameStates.game_state != GameState.EXPLORE) {
 	exit;
 }
 

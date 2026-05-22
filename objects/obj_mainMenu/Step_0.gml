@@ -21,10 +21,18 @@ for (var i = 0; i < options_max; i++) {
         
         // If we click the left mouse button
         if (mouse_check_button_pressed(mb_left)) {
-            switch(i) {
-                case 0: room_goto(room_explore_mainRoom); break;
-                case 1: room_goto(room_explore_office); break;
-                case 2: game_end(); break;
+			audio_play_sound(snd_click_button, 1, false);
+					
+			switch(i) {
+                case 0:
+					scr_roomGoToFade(room_explore_mainRoom);
+					break;
+                case 1: 
+					room_goto(room_explore_office); 
+					break;
+                case 2: 
+					game_end(); 
+					break;
             }
         }
     }

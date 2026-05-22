@@ -29,7 +29,7 @@
   "origin":7,
   "parent":{
     "name":"NPC_Lylia_Walk",
-    "path":"folders/Main & NPC & Cutscenes/Sprites/Characters/Lylia/NPC_Lylia_Walk.yy",
+    "path":"folders/Jason_Main NPC Cutscene/Sprites/Characters/Lylia/NPC_Lylia_Walk.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

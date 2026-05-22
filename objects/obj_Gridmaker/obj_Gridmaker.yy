@@ -10,7 +10,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Characters",
-    "path":"folders/Main & NPC & Cutscenes/Objects/Characters.yy",
+    "path":"folders/Jason_Main NPC Cutscene/Objects/Characters.yy",
   },
   "parentObjectId":null,
   "persistent":false,
@@ -30,7 +30,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"Sprite105",
+    "path":"sprites/Sprite105/Sprite105.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

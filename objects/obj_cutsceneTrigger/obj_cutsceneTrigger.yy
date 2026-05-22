@@ -10,7 +10,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Cutscenes",
-    "path":"folders/Main & NPC & Cutscenes/Objects/Cutscenes.yy",
+    "path":"folders/Jason_Main NPC Cutscene/Objects/Cutscenes.yy",
   },
   "parentObjectId":null,
   "persistent":false,

@@ -26,7 +26,7 @@
   "origin":4,
   "parent":{
     "name":"Sprites",
-    "path":"folders/Main & NPC & Cutscenes/Sprites.yy",
+    "path":"folders/Jason_Main NPC Cutscene/Sprites.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

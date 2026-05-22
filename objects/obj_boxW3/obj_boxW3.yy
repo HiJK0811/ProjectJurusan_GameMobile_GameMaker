@@ -9,7 +9,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Minigame_Hanoi",
-    "path":"folders/Dan_Hanoi/Objects/Minigame_Hanoi.yy",
+    "path":"folders/Daniel_Hanoi/Objects/Minigame_Hanoi.yy",
   },
   "parentObjectId":{
     "name":"obj_box_parent",

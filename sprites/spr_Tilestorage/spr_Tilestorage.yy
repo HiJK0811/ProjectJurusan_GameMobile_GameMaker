@@ -26,7 +26,7 @@
   "origin":0,
   "parent":{
     "name":"Sprites",
-    "path":"folders/Dan_Hanoi/Sprites.yy",
+    "path":"folders/Daniel_Hanoi/Sprites.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -29,7 +29,7 @@
   "origin":7,
   "parent":{
     "name":"NPC_Adhila_Walk",
-    "path":"folders/Main & NPC & Cutscenes/Sprites/Characters/Adhila/NPC_Adhila_Walk.yy",
+    "path":"folders/Jason_Main NPC Cutscene/Sprites/Characters/Adhila/NPC_Adhila_Walk.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

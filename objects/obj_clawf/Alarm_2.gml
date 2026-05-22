@@ -3,7 +3,7 @@
 // Masukkan nama room tujuan Daniel di sini
 if (room_exists(room_explore_storage)) {
     room_goto(room_explore_storage);
-	o_game.game_state = GameState.EXPLORE
+	obj_gameStates.game_state = GameState.EXPLORE
 } else {
     // Jika room belum ada, restart saja untuk sementara
     room_restart();

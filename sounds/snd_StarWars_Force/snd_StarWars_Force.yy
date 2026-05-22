@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"snd_StarWars_Force",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":0,
+  "compression":0,
+  "compressionQuality":4,
+  "conversionMode":0,
+  "duration":273.144,
+  "exportDir":"",
+  "name":"snd_StarWars_Force",
+  "parent":{
+    "name":"Soundtracks",
+    "path":"folders/Jason_Main NPC Cutscene/Sounds/Soundtracks.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":44100,
+  "soundFile":"snd_StarWars_Force.mp3",
+  "volume":1.0,
+}

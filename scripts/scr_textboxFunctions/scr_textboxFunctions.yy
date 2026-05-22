@@ -6,7 +6,7 @@
   "name":"scr_textboxFunctions",
   "parent":{
     "name":"Text Boxes",
-    "path":"folders/Main & NPC & Cutscenes/Scripts/Text Boxes.yy",
+    "path":"folders/Jason_Main NPC Cutscene/Scripts/Text Boxes.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

@@ -4,13 +4,14 @@
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":2,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
   "name":"obj_Warp",
   "overriddenProperties":[],
   "parent":{
     "name":"Functional",
-    "path":"folders/Main & NPC & Cutscenes/Objects/Functional.yy",
+    "path":"folders/Jason_Main NPC Cutscene/Objects/Functional.yy",
   },
   "parentObjectId":null,
   "persistent":false,

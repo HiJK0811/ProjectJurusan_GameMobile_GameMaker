@@ -7,7 +7,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Office",
-    "path":"folders/Main & NPC & Cutscenes/Objects/Decorative Objects/Office.yy",
+    "path":"folders/Jason_Main NPC Cutscene/Objects/Decorative Objects/Office.yy",
   },
   "parentObjectId":{
     "name":"obj_Wall",

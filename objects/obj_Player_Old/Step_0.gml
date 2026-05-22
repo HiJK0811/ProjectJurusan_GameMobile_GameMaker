@@ -1,4 +1,4 @@
-if (o_game.game_state != GameState.EXPLORE) {
+if (obj_gameStates.game_state != GameState.EXPLORE) {
 	image_index = 1;
 	exit;
 }

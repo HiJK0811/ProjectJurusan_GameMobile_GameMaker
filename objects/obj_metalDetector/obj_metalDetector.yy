@@ -7,7 +7,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Security",
-    "path":"folders/Main & NPC & Cutscenes/Objects/Decorative Objects/Security.yy",
+    "path":"folders/Jason_Main NPC Cutscene/Objects/Decorative Objects/Security.yy",
   },
   "parentObjectId":{
     "name":"obj_Wall",

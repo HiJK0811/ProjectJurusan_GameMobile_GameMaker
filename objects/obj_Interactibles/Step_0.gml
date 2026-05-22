@@ -5,7 +5,7 @@ if (instance_exists(obj_Player) && distance_to_object(obj_Player) < min_distance
 	if(keyboard_check_pressed(input_key)){
 		// create dialogue
 		room_goto(target_minigame);
-		o_game.game_state = GameState.MINIGAME;
+		obj_gameStates.game_state = GameState.MINIGAME;
 	}
 }
 else{

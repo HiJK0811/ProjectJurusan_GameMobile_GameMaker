@@ -23,7 +23,7 @@
   ],
   "name":"spr_claw",
   "nineSlice":null,
-  "origin":5,
+  "origin":4,
   "parent":{
     "name":"Minigame_Hanoi",
     "path":"folders/Sprites/Minigame_Hanoi.yy",
@@ -75,7 +75,7 @@
     ],
     "visibleRange":null,
     "volume":1.0,
-    "xorigin":320,
+    "xorigin":160,
     "yorigin":222,
   },
   "swatchColours":null,

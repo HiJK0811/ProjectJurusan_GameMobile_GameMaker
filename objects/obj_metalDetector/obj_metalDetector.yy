@@ -6,8 +6,8 @@
   "name":"obj_metalDetector",
   "overriddenProperties":[],
   "parent":{
-    "name":"Minigame_Hanoi",
-    "path":"folders/Objects/Minigame_Hanoi.yy",
+    "name":"Decorative Objects",
+    "path":"folders/Objects/Decorative Objects.yy",
   },
   "parentObjectId":{
     "name":"o_functional_wall",

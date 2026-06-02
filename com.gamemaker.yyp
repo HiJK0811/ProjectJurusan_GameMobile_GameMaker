@@ -84,7 +84,6 @@
     {"id":{"name":"obj_menu_music","path":"objects/obj_menu_music/obj_menu_music.yy",},},
     {"id":{"name":"obj_menu_parent","path":"objects/obj_menu_parent/obj_menu_parent.yy",},},
     {"id":{"name":"obj_menuBox","path":"objects/obj_menuBox/obj_menuBox.yy",},},
-    {"id":{"name":"obj_metalDetector","path":"objects/obj_metalDetector/obj_metalDetector.yy",},},
     {"id":{"name":"obj_music_controller","path":"objects/obj_music_controller/obj_music_controller.yy",},},
     {"id":{"name":"obj_npc1","path":"objects/obj_npc1/obj_npc1.yy",},},
     {"id":{"name":"obj_officeChair","path":"objects/obj_officeChair/obj_officeChair.yy",},},

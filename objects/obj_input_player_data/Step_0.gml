@@ -1,142 +1,236 @@
-if(global.focused_input == noone){
-    keyboard_string = "";
-}
-if(mouse_check_button_pressed(mb_left)){
-    
-    if(point_in_rectangle(mouse_x, mouse_y, input_x, pos_y[0], input_x+box_w, pos_y[0]+box_h)){
-        global.focused_input = "name";
-        keyboard_string = "";
-    }
-    else if(point_in_rectangle(mouse_x, mouse_y, input_x, pos_y[1], input_x+box_w, pos_y[1]+box_h)){
-        global.focused_input = "age";
-        keyboard_string = input_age;
-    }
-    else if(point_in_rectangle(mouse_x, mouse_y, input_x, pos_y[2], input_x+box_w, pos_y[2]+box_h)){
-        global.focused_input = "email";
-        keyboard_string = input_email;
-    }
-    else if(point_in_rectangle(mouse_x, mouse_y, input_x, pos_y[3], input_x+box_w, pos_y[3]+box_h)){
-        global.focused_input = "phone";
-        keyboard_string = input_phone;
-    }
-    else{
-        global.focused_input = noone;
-        keyboard_string = "";
-    }
-}
-var key = keyboard_lastchar;
+// ================= GUI MOUSE =================
+var mx = device_mouse_x_to_gui(0);
+var my = device_mouse_y_to_gui(0);
+var click = mouse_check_button_pressed(mb_left);
 
-// NAME
-if(global.focused_input == "name"){
-    input_name = string_copy(keyboard_string, 1, 20);
+// ================= LAYOUT =================
+var start_x = 200;
+var input_x = 340;
+
+var box_w = 260;
+var box_h = 24;
+var gap = 34;
+
+// posisi Y
+var pos_y = [];
+for(var i=0;i<6;i++){
+    pos_y[i] = 460 + i * gap;
 }
 
-// AGE (filter angka)
-if(global.focused_input == "age"){
-    
-    var temp = "";
-    
-    for(var i = 1; i <= string_length(keyboard_string); i++){
-        var c = string_char_at(keyboard_string, i);
-        if(string_digits(c) != "") temp += c;
-    }
-    
-    input_age = string_copy(temp, 1, 3);
-}
+// ================= SHORTCUT =================
+var form = global.form;
+var ui   = global.ui_state;
 
-// EMAIL
-if(global.focused_input == "email"){
-    input_email = string_copy(keyboard_string, 1, 30);
-}
+// ================= FIELD =================
+var fields = ["name","age","email","phone"];
 
-// PHONE
-if(global.focused_input == "phone"){
-    
-    var temp = "";
-    
-    for(var i = 1; i <= string_length(keyboard_string); i++){
-        var c = string_char_at(keyboard_string, i);
-        if(string_digits(c) != "") temp += c;
+// ================= CLICK =================
+if(click){
+
+    var found = false;
+
+    // === INPUT FIELD ===
+    for(var i=0;i<4;i++){
+        if(point_in_rectangle(mx,my,
+            input_x, pos_y[i],
+            input_x + box_w, pos_y[i] + box_h)){
+            
+            global.focused_input = fields[i];
+            found = true;
+        }
     }
-    
-    input_phone = string_copy(temp, 1, 14);
-}
-// BACKSPACE
-if(keyboard_check_pressed(vk_backspace)){
-    if(global.focused_input == "name"){
-        input_name = string_delete(input_name, string_length(input_name), 1);
-    }
-    if(global.focused_input == "age"){
-        input_age = string_delete(input_age, string_length(input_age), 1);
-    }
-    if(global.focused_input == "email"){
-        input_email = string_delete(input_email, string_length(input_email), 1);
-    }
-    if(global.focused_input == "phone"){
-        input_phone = string_delete(input_phone, string_length(input_phone), 1);
-    }
-}
-// klik Last Education
-if(mouse_check_button_pressed(mb_left)){
-    
-    // box Last Education
-    if(point_in_rectangle(mouse_x, mouse_y,
+
+    // === DROPDOWN EDU ===
+    if(point_in_rectangle(mx,my,
         input_x, pos_y[4],
         input_x + box_w, pos_y[4] + box_h)){
         
-        edu_open = !edu_open;
+        ui.edu_open = !ui.edu_open;
+        ui.major_open = false;
+        global.focused_input = noone;
+        found = true;
     }
-}
-if(edu_open && mouse_check_button_pressed(mb_left)){
-    
-    // SMA
-    if(point_in_rectangle(mouse_x, mouse_y,
-        input_x, pos_y[4] + box_h,
-        input_x + box_w, pos_y[4] + box_h * 2)){
+
+    // === PILIH SMA / SMK ===
+    if(ui.edu_open){
         
-        selected_edu = "SMA";
-        selected_major = "";
-    }
-    
-    // SMK
-    if(point_in_rectangle(mouse_x, mouse_y,
-        input_x, pos_y[4] + box_h * 2,
-        input_x + box_w, pos_y[4] + box_h * 3)){
-        
-        selected_edu = "SMK";
-        selected_major = "";
-    }
-}
-if(mouse_check_button_pressed(mb_left)){
-    
-    var list = (selected_edu == "SMA") ? majors_SMA : majors_SMK;
-    
-    for(var i = 0; i < array_length(list); i++){
-        
-        var yes = pos_y[5] + i * box_h;
-        
-        if(point_in_rectangle(mouse_x, mouse_y,
-            input_x, yes,
-            input_x + box_w, yes+box_h)){
+        if(point_in_rectangle(mx,my,
+            input_x, pos_y[4] + box_h,
+            input_x + box_w, pos_y[4] + box_h * 2)){
             
-            selected_major = list[i];
-            edu_open = false;
+            form.edu = "SMA";
+            form.major = "";
+            ui.scroll = 0;
+            ui.major_open = false;
+            ui.edu_open = false;
+            found = true;
+        }
+
+        if(point_in_rectangle(mx,my,
+            input_x, pos_y[4] + box_h * 2,
+            input_x + box_w, pos_y[4] + box_h * 3)){
+            
+            form.edu = "SMK";
+            form.major = "";
+            ui.scroll = 0;
+            ui.major_open = false;
+            ui.edu_open = false;
+            found = true;
         }
     }
-}
-if(mouse_check_button_pressed(mb_left)){
-    
-    if(!point_in_rectangle(mouse_x, mouse_y,
-        input_x, pos_y[4],
-        input_x+box_w, pos_y[4]+box_h*3)){
+
+    // === TOGGLE MAJOR ===
+    if(form.edu != ""){
         
-        edu_open = false;
+        var major_base = pos_y[5];
+
+        if(point_in_rectangle(mx,my,
+            input_x, major_base,
+            input_x + box_w, major_base + box_h)){
+            
+            ui.major_open = !ui.major_open;
+            found = true;
+        }
+    }
+
+    // === PILIH MAJOR ===
+    if(form.edu != "" && ui.major_open){
+        
+        var list = (form.edu=="SMA") ? global.majors_SMA : global.majors_SMK;
+
+        var major_base = pos_y[5];
+        var list_y = major_base + box_h + 8;
+        var list_h = box_h * global.config.max_visible;
+
+        for(var i=0;i<array_length(list);i++){
+            
+            var yy = list_y + i * box_h + ui.scroll;
+
+            if(point_in_rectangle(mx,my,
+                input_x, yy,
+                input_x + box_w, yy + box_h)){
+                
+                if(yy >= list_y && yy <= list_y + list_h){
+                    form.major = list[i];
+                    ui.major_open = false;
+                    found = true;
+                }
+            }
+        }
+    }
+
+    // === SUBMIT BUTTON ===
+    if(point_in_rectangle(mx,my,900,620,1000,680)){
+        
+        show_debug_message("=== SUBMIT ===");
+        show_debug_message("Name: " + form.name);
+        show_debug_message("Age: " + form.age);
+        show_debug_message("Email: " + form.email);
+        show_debug_message("Phone: " + form.phone);
+        show_debug_message("Education: " + form.edu);
+        show_debug_message("Major: " + form.major);
+
+        // 🔥 MASUKIN KE DATABASE ARRAY
+        array_push(global.users, form);
+
+        // reset form biar bisa input lagi
+        global.form = {
+            name  : "",
+            age   : "",
+            email : "",
+            phone : "",
+            edu   : "",
+            major : ""
+        };
+
+        found = true;
+    }
+
+    // === CLICK LUAR ===
+    if(!found){
+        global.focused_input = noone;
+        ui.major_open = false;
+        ui.edu_open = false;
     }
 }
 
-if(global.focused_input == "name"){
-    input_name += key;
+// ================= INPUT =================
+var str = keyboard_string;
+
+if(str != ""){
+    
+    for(var i=1; i<=string_length(str); i++){
+        
+        var ch = string_char_at(str, i);
+        
+        switch(global.focused_input){
+            
+            case "name":
+                if(string_length(form.name) < 20)
+                    form.name += ch;
+            break;
+            
+            case "age":
+                if(string_digits(ch) != "" && string_length(form.age) < 3)
+                    form.age += ch;
+            break;
+            
+            case "email":
+                if(ord(ch) >= 32 && ord(ch) <= 126 && string_length(form.email) < 40)
+                    form.email += ch;
+            break;
+            
+            case "phone":
+                if(string_digits(ch) != "" && string_length(form.phone) < 14)
+                    form.phone += ch;
+            break;
+        }
+    }
 }
-global.name = input_name;
-global.phone = input_phone;
-global.email = input_email;
+
+// reset anti spam
+keyboard_string = "";
+
+// ================= BACKSPACE =================
+if(keyboard_check_pressed(vk_backspace)){
+    
+    if(global.focused_input=="name" && string_length(form.name)>0)
+        form.name = string_delete(form.name,string_length(form.name),1);
+        
+    if(global.focused_input=="age" && string_length(form.age)>0)
+        form.age = string_delete(form.age,string_length(form.age),1);
+        
+    if(global.focused_input=="email" && string_length(form.email)>0)
+        form.email = string_delete(form.email,string_length(form.email),1);
+        
+    if(global.focused_input=="phone" && string_length(form.phone)>0)
+        form.phone = string_delete(form.phone,string_length(form.phone),1);
+}
+
+// ================= TAB =================
+if(keyboard_check_pressed(vk_tab)){
+    var idx = array_index_of(fields, global.focused_input);
+    idx = (idx+1) mod 4;
+    global.focused_input = fields[idx];
+}
+
+// ================= SCROLL =================
+if(form.edu != "" && ui.major_open){
+    
+    var list = (form.edu=="SMA") ? global.majors_SMA : global.majors_SMK;
+
+    var major_base = pos_y[5];
+    var list_y = major_base + box_h + 8;
+    var list_h = box_h * global.config.max_visible;
+
+    if(point_in_rectangle(mx,my,
+        input_x, list_y,
+        input_x + box_w, list_y + list_h)){
+        
+        var scroll = mouse_wheel_up() - mouse_wheel_down();
+        ui.scroll += scroll * global.config.scroll_speed;
+    }
+
+    var max_scroll = max(0, array_length(list)*box_h - list_h);
+    ui.scroll = clamp(ui.scroll, -max_scroll, 0);
+}

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_fadeToRoom",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_fadeToRoom",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Diatra_Assets/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

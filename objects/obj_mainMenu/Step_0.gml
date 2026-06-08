@@ -31,9 +31,9 @@ for (var i = 0; i < options_max; i++) {
 					room_goto(room_tutorial); 
 					break;
                 case 2: 
-					if (!instance_exists(obj_fade_da)) {
-						global.quitting = true;
-						fadeToRoom(room, 90, c_black);
+					if (!instance_exists(obj_fade_quit)) {
+						// global.quitting = true;
+						fadeToQuit(room, 90, c_black);
 					}
 					break;
             }

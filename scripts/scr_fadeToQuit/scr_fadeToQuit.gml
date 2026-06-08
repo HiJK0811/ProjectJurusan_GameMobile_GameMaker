@@ -1,4 +1,4 @@
-function fadeToRoom(){
+function fadeToQuit(){
 	// Arguments
 	var fade_room = argument[0];
 	var fade_dur = argument[1];
@@ -8,7 +8,7 @@ function fadeToRoom(){
     global.transitioning = true;
 	
 	// Create
-	var fade_inst = instance_create_depth(0, 0, 0, obj_fade_room);
+	var fade_inst = instance_create_depth(0, 0, 0, obj_fade_quit);
 	
 	// Set Properties
 	with (fade_inst) {

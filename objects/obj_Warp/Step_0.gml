@@ -1,4 +1,4 @@
-if place_meeting(x, y, obj_Player) && !instance_exists(obj_fade_da){
+if place_meeting(x, y, obj_Player) && !instance_exists(obj_fade_room){
 	// Fade
 	fadeToRoom(target_room, 15, c_black);
 	// roomGoToFade(target_room);

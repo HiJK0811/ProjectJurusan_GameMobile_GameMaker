@@ -1,4 +1,4 @@
-title = "Binus Mobile Game"
+title = "Binusian Space Lounge"
 
 menu[0] = "Play Game"
 menu[1] = "Tutorial"

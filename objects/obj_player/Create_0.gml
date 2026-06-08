@@ -1,6 +1,8 @@
 // Inherit the parent event
 event_inherited();
 
+global.transitioning = false;
+
 states = {
 	idle:{
 		right: spr_Player_Idle_Right,

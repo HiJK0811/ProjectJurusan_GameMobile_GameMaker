@@ -45,4 +45,15 @@ if place_meeting(x, y + y_spd, [obj_Wall, obj_Character, obj_Interactibles]) == 
 x += x_spd;
 y += y_spd;
 
+// Sprint 
+if (keyboard_check_pressed(vk_shift)) {
+	moveSpeed += 1;
+} else if (keyboard_check_released(vk_shift)) {
+	moveSpeed -= 1;	
+}
+
+if (global.transitioning) {
+    exit; // completely skip movement/input
+}
+
 depth = -bbox_bottom;

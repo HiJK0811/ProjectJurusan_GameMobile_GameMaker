@@ -1,3 +1,3 @@
-target_x = 800;
-target_y = 390;
+target_x = 885;
+target_y = 425;
 target_room = room_explore_mainRoom;

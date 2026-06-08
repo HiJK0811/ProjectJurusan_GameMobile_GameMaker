@@ -28,7 +28,7 @@ for (var i = 0; i < options_max; i++) {
 					scr_roomGoToFade(room_explore_mainRoom);
 					break;
                 case 1: 
-					room_goto(room_explore_office); 
+					room_goto(room_tutorial); 
 					break;
                 case 2: 
 					game_end(); 

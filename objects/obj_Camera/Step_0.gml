@@ -1,6 +1,6 @@
-if(follow != noone){
-	xTo = follow.x;
-	yTo = follow.y;
+if (instance_exists(follow)) {
+    xTo = follow.x;
+    yTo = follow.y;
 }
 
 x += (xTo - x) / 10

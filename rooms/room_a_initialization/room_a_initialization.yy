@@ -9,6 +9,11 @@
     {"name":"inst_15CCC7C7","path":"rooms/room_a_initialization/room_a_initialization.yy",},
     {"name":"inst_349692EB","path":"rooms/room_a_initialization/room_a_initialization.yy",},
     {"name":"inst_2736845C","path":"rooms/room_a_initialization/room_a_initialization.yy",},
+    {"name":"inst_B0EEEC6","path":"roomui/RoomUI/RoomUI.yy",},
+    {"name":"inst_12F7E395","path":"roomui/RoomUI/RoomUI.yy",},
+    {"name":"inst_7B560D7F","path":"roomui/RoomUI/RoomUI.yy",},
+    {"name":"inst_62197362","path":"roomui/RoomUI/RoomUI.yy",},
+    {"name":"inst_6EFB50B9","path":"roomui/RoomUI/RoomUI.yy",},
   ],
   "isDnd":false,
   "layers":[

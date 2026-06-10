@@ -5,6 +5,8 @@ switch(button_id) {
 		break;
 		
 	case 2: // Tutorial
+		layer_set_visible("PauseLayer", false);
+		layer_set_visible("TutorialLayer", true);
 		break;
 	
 	case 3: // Return to Main Menu
@@ -18,6 +20,11 @@ switch(button_id) {
 		// global.quitting = true;
 		fadeToQuit(room, 90, c_black);
 		layer_set_visible(layer_name, false);
+		break;
+		
+	case 5: // Back Button
+		layer_set_visible("PauseLayer", true);
+		layer_set_visible("TutorialLayer", false);
 		break;
 }
 

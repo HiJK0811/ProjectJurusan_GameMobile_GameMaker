@@ -18,7 +18,7 @@ for (var i = 0; i < options_max; i++) {
     var _y = (_gui_height / 2) + (i * (height + margin));
     
     // Visual feedback: Change color and scale slightly if hovered
-    var _color = c_gray;
+    var _color = c_dkgray;
     var _txt_color = c_white;
     var _s = 1;
     

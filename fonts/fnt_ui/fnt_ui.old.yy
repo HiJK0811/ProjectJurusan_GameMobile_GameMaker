@@ -137,7 +137,7 @@
   "name":"fnt_ui",
   "parent":{
     "name":"Fonts",
-    "path":"folders/Fonts.yy",
+    "path":"folders/Diatra_Assets/Fonts.yy",
   },
   "pointRounding":0,
   "ranges":[

@@ -288,6 +288,7 @@
     {"id":{"name":"spr_Player_Idle_Down","path":"sprites/spr_Player_Idle_Down/spr_Player_Idle_Down.yy",},},
     {"id":{"name":"spr_Player_Idle_Left","path":"sprites/spr_Player_Idle_Left/spr_Player_Idle_Left.yy",},},
     {"id":{"name":"spr_Player_Idle_Right","path":"sprites/spr_Player_Idle_Right/spr_Player_Idle_Right.yy",},},
+    {"id":{"name":"spr_Player_Idle_Up_emote","path":"sprites/spr_Player_Idle_Up_emote/spr_Player_Idle_Up_emote.yy",},},
     {"id":{"name":"spr_Player_Idle_Up","path":"sprites/spr_Player_Idle_Up/spr_Player_Idle_Up.yy",},},
     {"id":{"name":"spr_Player_Walk_Down","path":"sprites/spr_Player_Walk_Down/spr_Player_Walk_Down.yy",},},
     {"id":{"name":"spr_Player_Walk_Left","path":"sprites/spr_Player_Walk_Left/spr_Player_Walk_Left.yy",},},

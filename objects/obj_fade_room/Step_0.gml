@@ -1,4 +1,4 @@
-// Enter ST=tate
+// Enter State
 if (state == 0) {
 	timer++;
 	

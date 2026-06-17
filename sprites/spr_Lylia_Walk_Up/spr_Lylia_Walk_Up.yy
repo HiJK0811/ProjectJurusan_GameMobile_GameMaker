@@ -1,10 +1,10 @@
 {
   "$GMSprite":"v2",
   "%Name":"spr_Lylia_Walk_Up",
-  "bboxMode":0,
+  "bboxMode":2,
   "bbox_bottom":31,
-  "bbox_left":9,
-  "bbox_right":22,
+  "bbox_left":8,
+  "bbox_right":23,
   "bbox_top":1,
   "collisionKind":1,
   "collisionTolerance":0,

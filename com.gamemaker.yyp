@@ -111,6 +111,7 @@
     {"id":{"name":"obj_boxW4","path":"objects/obj_boxW4/obj_boxW4.yy",},},
     {"id":{"name":"obj_boxW5_1","path":"objects/obj_boxW5_1/obj_boxW5_1.yy",},},
     {"id":{"name":"obj_boxW5","path":"objects/obj_boxW5/obj_boxW5.yy",},},
+    {"id":{"name":"obj_button_desc","path":"objects/obj_button_desc/obj_button_desc.yy",},},
     {"id":{"name":"obj_button_play","path":"objects/obj_button_play/obj_button_play.yy",},},
     {"id":{"name":"obj_button_quit","path":"objects/obj_button_quit/obj_button_quit.yy",},},
     {"id":{"name":"obj_button_tutorial_desc","path":"objects/obj_button_tutorial_desc/obj_button_tutorial_desc.yy",},},

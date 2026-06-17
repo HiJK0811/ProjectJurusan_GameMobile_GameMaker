@@ -6,7 +6,7 @@
         {"$GMRFlexPanel":"","%Name":"Panel","alignItems":2,"children":[
             {"$GMRFlexPanel":"","%Name":"Tutorial_Text","alignItems":2,"children":[
                 {"$GMRFlexPanel":"","%Name":"Text","alignItems":2,"children":[
-                    {"$GMRTextItem":"v3","%Name":"text_1BCE6977","alignment":1,"charSpacing":0.0,"colour":4294967295,"flexProperties":{"$InstanceFlexProps":"v1","anchor":0,"resourceType":"InstanceFlexProps",},"fontId":{"name":"fnt_ui","path":"fonts/fnt_ui/fnt_ui.yy",},"frameH":228.0,"frameW":795.0,"frozen":false,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"lineSpacing":0.0,"name":"text_1BCE6977","paragraphSpacing":0.0,"resourceType":"GMRTextItem","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"text":"Goal:\r\nHelp repair the ship by completing minigames!\r\n\r\nControls:\r\nMove - WASD / Arrow Keys\r\nInteract - Space Bar","wrap":false,"x":0.0,"y":0.0,},
+                    {"$GMRTextItem":"v3","%Name":"text_1BCE6977","alignment":1,"charSpacing":0.0,"colour":4294967295,"flexProperties":{"$InstanceFlexProps":"v1","anchor":0,"resourceType":"InstanceFlexProps",},"fontId":{"name":"fnt_ui","path":"fonts/fnt_ui/fnt_ui.yy",},"frameH":228.0,"frameW":795.0,"frozen":false,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"lineSpacing":0.0,"name":"text_1BCE6977","paragraphSpacing":0.0,"resourceType":"GMRTextItem","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"text":"Goal:\r\nHelp repair the ship by completing minigames!\r\n\r\nControls:\r\nMove - WASD / Arrow Keys\r\nSprint - Hold Shift\r\nInteract - Space Bar","wrap":false,"x":0.0,"y":0.0,},
                   ],"flexDirection":0,"height":{"unit":3,"value":38.0,},"justifyContent":1,"name":"Text","nodeColour":4294068433,"resourceType":"GMRFlexPanel","resourceVersion":"2.0","width":{"unit":3,"value":165.0,},},
               ],"flexDirection":0,"height":{"unit":3,"value":50.0,},"justifyContent":1,"marginBottom":{"unit":1,"value":32.0,},"marginLeft":{"unit":1,"value":32.0,},"marginRight":{"unit":1,"value":32.0,},"marginTop":{"unit":1,"value":32.0,},"name":"Tutorial_Text","nodeColour":4282970849,"resourceType":"GMRFlexPanel","resourceVersion":"2.0","width":{"unit":3,"value":80.0,},},
             {"$GMRFlexPanel":"","%Name":"BackButton","alignItems":1,"children":[
@@ -19,7 +19,7 @@
               ],"flexDirection":0,"height":{"unit":3,"value":48.0,},"justifyContent":0,"marginBottom":{"unit":1,"value":32.0,},"marginLeft":{"unit":1,"value":32.0,},"marginRight":{"unit":1,"value":32.0,},"marginTop":{"unit":1,"value":32.0,},"name":"BackButton","nodeColour":4291381490,"resourceType":"GMRFlexPanel","resourceVersion":"2.0","width":{"unit":3,"value":48.0,},},
             {"$GMRSpriteGraphic":"v1","%Name":"graphic_164F39C","animationSpeed":1.0,"colour":4294967295,"flexProperties":{"$InstanceFlexProps":"v1","anchor":0,"resourceType":"InstanceFlexProps","stretchHeight":true,"stretchWidth":true,},"frozen":false,"headPosition":0.0,"ignore":false,"inheritedItemId":null,"inheritItemSettings":false,"name":"graphic_164F39C","resourceType":"GMRSpriteGraphic","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"spriteId":{"name":"spr_ui_box","path":"sprites/spr_ui_box/spr_ui_box.yy",},"x":0.0,"y":0.0,},
           ],"flexDirection":0,"height":{"unit":3,"value":100.0,},"justifyContent":1,"name":"Panel","nodeColour":4286466290,"resourceType":"GMRFlexPanel","resourceVersion":"2.0","width":{"unit":3,"value":0.0,},},
-      ],"flexDirection":0,"gridX":32,"gridY":32,"justifyContent":1,"name":"TutorialLayer","nodeColour":4282970700,"paddingBottom":{"unit":1,"value":80.0,},"paddingLeft":{"unit":1,"value":80.0,},"paddingRight":{"unit":1,"value":80.0,},"paddingTop":{"unit":1,"value":80.0,},"resourceType":"GMRUILayer","resourceVersion":"2.0","visible":false,},
+      ],"flexDirection":0,"gridX":32,"gridY":32,"justifyContent":1,"name":"TutorialLayer","nodeColour":4282970700,"paddingBottom":{"unit":1,"value":80.0,},"paddingLeft":{"unit":1,"value":80.0,},"paddingRight":{"unit":1,"value":80.0,},"paddingTop":{"unit":1,"value":80.0,},"resourceType":"GMRUILayer","resourceVersion":"2.0",},
     {"$GMRUILayer":"v1","%Name":"PauseLayer","alignItems":2,"children":[
         {"$GMRFlexPanel":"","%Name":"PausePanel","alignItems":2,"children":[
             {"$GMRFlexPanel":"","%Name":"ResumeButton","alignItems":2,"children":[
@@ -67,5 +67,5 @@
   "resourceType":"GMRoomUI",
   "resourceVersion":"2.0",
   "viewspaceChildren":[],
-  "visible":true,
+  "visible":false,
 }

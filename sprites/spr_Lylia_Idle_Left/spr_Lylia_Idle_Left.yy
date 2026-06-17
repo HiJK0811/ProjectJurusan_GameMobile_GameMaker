@@ -1,7 +1,7 @@
 {
   "$GMSprite":"v2",
   "%Name":"spr_Lylia_Idle_Left",
-  "bboxMode":0,
+  "bboxMode":2,
   "bbox_bottom":31,
   "bbox_left":11,
   "bbox_right":20,

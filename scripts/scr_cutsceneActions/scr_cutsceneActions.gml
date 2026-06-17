@@ -5,6 +5,8 @@ function cutscene_next() {
     // If we've reached the end of the scene_info array, destroy the controller
     if (scene_index > array_length(scene_info)-1) {
         instance_destroy(obj_cutscene);
+		// instance_activate(obj_pause)
+		var _inst = instance_create_layer(0, 0, "Instances_Functional", obj_pause);
     }
 }
 

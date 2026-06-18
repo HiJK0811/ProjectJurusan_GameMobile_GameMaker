@@ -80,3 +80,54 @@ function update_inputs(){
 
 	set_state(result);
 }
+	
+//function update_logic() {
+//    // 1. Grab the input states (default to false/OFF if nothing is connected)
+//    var _in1 = false;
+//    var _in2 = false;
+    
+//    if (array_length(inputsFrom) > 0) {
+//        _in1 = (inputsFrom[0].currentState == logicState.ON);
+//    }
+//    if (array_length(inputsFrom) > 1) {
+//        _in2 = (inputsFrom[1].currentState == logicState.ON);
+//    }
+
+//    // 2. Do the math based on the gate type
+//    var _result = false;
+    
+//    switch (gateType) { // (Assuming you saved the type in a variable called gateType)
+//        case logicGateType.BUFFER:
+//            _result = _in1;
+//            break;
+            
+//        case logicGateType.INVERTER: // NOT gate
+//            _result = !_in1;
+//            break;
+            
+//        case logicGateType.AND:
+//            _result = (_in1 && _in2);
+//            break;
+            
+//        case logicGateType.NAND:
+//            _result = !(_in1 && _in2);
+//            break;
+            
+//        case logicGateType.OR:
+//            _result = (_in1 || _in2);
+//            break;
+            
+//        case logicGateType.NOR:
+//            _result = !(_in1 || _in2);
+//            break;
+            
+//        // You can add XOR and XNOR here later!
+//    }
+
+//    // 3. Update this gate's state
+//    if (_result == true) {
+//        currentState = logicState.ON;
+//    } else {
+//        currentState = logicState.OFF;
+//    }
+//}

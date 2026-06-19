@@ -56,7 +56,7 @@ for (var i = 0; i < global.total_levels; i++) {
     
     if (_is_completed) {
         draw_text(_x1 + (box_width / 2), _y1 + (box_height / 2) - 10, "Level " + string(_level_num));
-        draw_text(_x1 + (box_width / 2), _y1 + (box_height / 2) + 15, "DONE");
+        draw_text(_x1 + (box_width / 2), _y1 + (box_height / 2) + 15, "Completed");
     } else if (_is_unlocked) {
         draw_text(_x1 + (box_width / 2), _y1 + (box_height / 2), "Level " + string(_level_num));
     } else {

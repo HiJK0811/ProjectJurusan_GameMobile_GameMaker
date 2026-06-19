@@ -168,8 +168,12 @@ function connect_nodes(source_node, target_node) {
 // 2. The data-driven builder function
 function load_level_from_data(level_data) {
     var _instances = {}; 
+    
+    // Track the outer boundaries of the level
+    var _min_x = 99999, _max_x = -99999;
+    var _min_y = 99999, _max_y = -99999;
 
-    // Step 1: Spawn Components
+    // --- STEP 1: Spawn Components ---
     for (var i = 0; i < array_length(level_data.components); i++) {
         var _comp = level_data.components[i];
         var _inst = instance_create_layer(_comp.x, _comp.y, "Instances", _comp.type);
@@ -179,9 +183,32 @@ function load_level_from_data(level_data) {
         }
 
         _instances[$ _comp.id] = _inst; 
+        
+        // Update the bounding box math
+        _min_x = min(_min_x, _comp.x);
+        _max_x = max(_max_x, _comp.x);
+        _min_y = min(_min_y, _comp.y);
+        _max_y = max(_max_y, _comp.y);
     }
 
-    // Step 2: Wire Connections
+    // --- STEP 1.5: Auto-Center the Circuit ---
+    // Calculate the center of the circuit
+    var _circuit_center_x = _min_x + ((_max_x - _min_x) / 2);
+    var _circuit_center_y = _min_y + ((_max_y - _min_y) / 2);
+    
+    // Calculate how far to push it so it lands perfectly in the middle of the room
+    var _shift_x = (room_width / 2) - _circuit_center_x;
+    var _shift_y = (room_height / 2) - _circuit_center_y;
+
+    // Apply the shift to all instances we just created!
+    var _keys = variable_struct_get_names(_instances);
+    for (var i = 0; i < array_length(_keys); i++) {
+        var _inst = _instances[$ _keys[i]];
+        _inst.x += _shift_x;
+        _inst.y += _shift_y;
+    }
+
+    // --- STEP 2: Wire Connections ---
     for (var i = 0; i < array_length(level_data.connections); i++) {
         var _conn = level_data.connections[i];
         var _source = _instances[$ _conn.from];

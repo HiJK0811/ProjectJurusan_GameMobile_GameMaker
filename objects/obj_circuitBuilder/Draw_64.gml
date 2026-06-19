@@ -21,7 +21,7 @@ if (level_completed) {
     // 2. Draw Text (Moved higher up to not cover the logic gates)
     if (game_beaten) {
         draw_set_color(c_yellow);
-        draw_text_transformed(_cx, _cy - 120, "LOGIC MASTER!", 2, 2, 0);
+        draw_text_transformed(_cx, _cy - 120, "Mission Complete", 2, 2, 0);
         draw_set_color(c_white);
         draw_text(_cx, _cy - 80, "You completed all 10 levels!");
     } else {
@@ -33,34 +33,50 @@ if (level_completed) {
     }
 
     // 3. Draw Buttons
-    var _menu_x1 = _cx - 160;   var _menu_y1 = _cy + 40;
-    var _menu_x2 = _cx - 20;    var _menu_y2 = _cy + 100;
+    // I widened the boxes slightly to 160px so the new text fits perfectly
+    var _btn_left_x1 = _cx - 170;   var _btn_y1 = _cy + 40;
+    var _btn_left_x2 = _cx - 10;    var _btn_y2 = _cy + 100;
     
-    if (point_in_rectangle(_mx, _my, _menu_x1, _menu_y1, _menu_x2, _menu_y2)) {
+    var _btn_right_x1 = _cx + 10;   var _btn_y1 = _cy + 40;
+    var _btn_right_x2 = _cx + 170;  var _btn_y2 = _cy + 100;
+
+    // --- DRAW LEFT BUTTON (Always Menu) ---
+    if (point_in_rectangle(_mx, _my, _btn_left_x1, _btn_y1, _btn_left_x2, _btn_y2)) {
         draw_set_color(c_silver);
     } else {
         draw_set_color(c_dkgray);
     }
-    draw_rectangle(_menu_x1, _menu_y1, _menu_x2, _menu_y2, false);
+    draw_rectangle(_btn_left_x1, _btn_y1, _btn_left_x2, _btn_y2, false);
     draw_set_color(c_white);
-    draw_rectangle(_menu_x1, _menu_y1, _menu_x2, _menu_y2, true);
-    draw_text(_cx - 90, _cy + 70, "Menu");
+    draw_rectangle(_btn_left_x1, _btn_y1, _btn_left_x2, _btn_y2, true);
+    draw_text(_btn_left_x1 + 80, _cy + 70, "Menu");
 
+    // --- DRAW RIGHT BUTTON (Dynamic) ---
     if (!game_beaten) {
-        var _next_x1 = _cx + 20;    var _next_y1 = _cy + 40;
-        var _next_x2 = _cx + 160;   var _next_y2 = _cy + 100;
-        
-        if (point_in_rectangle(_mx, _my, _next_x1, _next_y1, _next_x2, _next_y2)) {
+        // State: Next Level
+        if (point_in_rectangle(_mx, _my, _btn_right_x1, _btn_y1, _btn_right_x2, _btn_y2)) {
             draw_set_color(c_lime);
         } else {
             draw_set_color(c_green);
         }
-        draw_rectangle(_next_x1, _next_y1, _next_x2, _next_y2, false);
+        draw_rectangle(_btn_right_x1, _btn_y1, _btn_right_x2, _btn_y2, false);
         draw_set_color(c_white);
-        draw_rectangle(_next_x1, _next_y1, _next_x2, _next_y2, true);
-        draw_text(_cx + 90, _cy + 70, "Next Level");
+        draw_rectangle(_btn_right_x1, _btn_y1, _btn_right_x2, _btn_y2, true);
+        draw_text(_btn_right_x1 + 80, _cy + 70, "Next Level");
+    } else {
+        // State: Return to Game (Game is beaten!)
+        if (point_in_rectangle(_mx, _my, _btn_right_x1, _btn_y1, _btn_right_x2, _btn_y2)) {
+            draw_set_color(c_aqua); // Nice blue hover effect
+        } else {
+            draw_set_color(c_teal); // Dark blue idle effect
+        }
+        draw_rectangle(_btn_right_x1, _btn_y1, _btn_right_x2, _btn_y2, false);
+        draw_set_color(c_white);
+        draw_rectangle(_btn_right_x1, _btn_y1, _btn_right_x2, _btn_y2, true);
+        draw_text(_btn_right_x1 + 80, _cy + 70, "Return to Game");
     }
 
+    // Reset alignment
     draw_set_halign(fa_left);
     draw_set_valign(fa_top);
 }

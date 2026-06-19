@@ -8,8 +8,8 @@
   "name":"obj_jukebox",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Jason_Main NPC Cutscene/Objects.yy",
+    "name":"Cafe",
+    "path":"folders/Jason_Main NPC Cutscene/Objects/Decorative Objects/Cafe.yy",
   },
   "parentObjectId":{
     "name":"obj_Interactibles",

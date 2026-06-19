@@ -10,8 +10,8 @@
   "name":"obj_Player_Old",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Jason_Main NPC Cutscene/Objects.yy",
+    "name":"Characters",
+    "path":"folders/Jason_Main NPC Cutscene/Objects/Characters.yy",
   },
   "parentObjectId":null,
   "persistent":true,

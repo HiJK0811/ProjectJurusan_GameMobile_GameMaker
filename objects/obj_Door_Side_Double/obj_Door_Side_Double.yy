@@ -9,8 +9,8 @@
   "name":"obj_Door_Side_Double",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Jason_Main NPC Cutscene/Objects.yy",
+    "name":"Functional",
+    "path":"folders/Jason_Main NPC Cutscene/Objects/Functional.yy",
   },
   "parentObjectId":{
     "name":"obj_Wall",

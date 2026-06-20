@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"src_menu_database",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"src_menu_database",
+  "parent":{
+    "name":"Src_generate_Food_sorting",
+    "path":"folders/Scripts/Src_generate_Food_sorting.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -132,11 +132,23 @@ draw_rectangle(
     false
 );
 
-     for(var i=0;i<array_length(menu_data);i++)
+   /*var start_index =
+floor(
+    //scroll_offset /
+    menu_slot_h
+);
+
+var end_index =
+min(
+    start_index + //visible_rows,
+    array_length(menu_data)
+);*/
+
+for(var i=0;i<array_length(menu_data);i++)
 {
     var yy =
-        menu_start_y +
-        i * menu_slot_h;
+    menu_start_y +
+    i * menu_slot_h;
 
     // ================= HOVER =================
 
@@ -234,6 +246,7 @@ draw_rectangle(
     draw_text(menu_start_x + 340,yy,d[3]);
 
 }
+
 if(i == selected_index)
 {
     draw_set_alpha(0.3);
@@ -567,5 +580,4 @@ draw_text(
     btn_backmain_y + 5,
     "back to\nmain Miguel"
 );
-
 }

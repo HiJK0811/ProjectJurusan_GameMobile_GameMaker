@@ -129,6 +129,9 @@ switch(requirement)
 
     break;
 }
+// ================= GENERATE MENU =================
+
+src_generate_menu();
 
 // ================= RESET MINIGAME =================
 
@@ -189,7 +192,9 @@ repeat(20)
 old_npc_name = npc_name;
 old_npc_color = npc_color;
 old_requirement = requirement;
-// ================= RANDOM MENU =================
+has_player_sorted = false;
+can_search = false;
+/*// ================= RANDOM MENU =================
 
 for(var i=0;i<50;i++)
 {
@@ -207,5 +212,5 @@ for(var i=0;i<50;i++)
 
     menu_data[b] =
         temp;
-}
+}*/
 }

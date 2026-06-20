@@ -10,6 +10,7 @@
   },
   "defaultScriptType":1,
   "Folders":[
+    {"$GMFolder":"","%Name":"Src_generate_Food_sorting","folderPath":"folders/Scripts/Src_generate_Food_sorting.yy","name":"Src_generate_Food_sorting","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Objects","folderPath":"folders/Objects.yy","name":"Objects","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Decorative Objects","folderPath":"folders/Objects/Decorative Objects.yy","name":"Decorative Objects","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Functional","folderPath":"folders/Objects/Functional.yy","name":"Functional","resourceType":"GMFolder","resourceVersion":"2.0",},
@@ -85,7 +86,10 @@
     {"id":{"name":"scr_textboxFunctions","path":"scripts/scr_textboxFunctions/scr_textboxFunctions.yy",},},
     {"id":{"name":"src_check_sorting","path":"scripts/src_check_sorting/src_check_sorting.yy",},},
     {"id":{"name":"src_generate_customer","path":"scripts/src_generate_customer/src_generate_customer.yy",},},
+    {"id":{"name":"src_generate_menu","path":"scripts/src_generate_menu/src_generate_menu.yy",},},
     {"id":{"name":"src_get_correct_answer","path":"scripts/src_get_correct_answer/src_get_correct_answer.yy",},},
+    {"id":{"name":"src_menu_database","path":"scripts/src_menu_database/src_menu_database.yy",},},
+    {"id":{"name":"src_shuffle_menu","path":"scripts/src_shuffle_menu/src_shuffle_menu.yy",},},
     {"id":{"name":"start_cutscene","path":"scripts/start_cutscene/start_cutscene.yy",},},
     {"id":{"name":"ChatGPT_Image_Jun_6__2026__06_02_42_PM","path":"sprites/ChatGPT_Image_Jun_6__2026__06_02_42_PM/ChatGPT_Image_Jun_6__2026__06_02_42_PM.yy",},},
     {"id":{"name":"spr_Armchair","path":"sprites/spr_Armchair/spr_Armchair.yy",},},

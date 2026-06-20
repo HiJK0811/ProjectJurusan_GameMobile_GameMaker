@@ -223,16 +223,18 @@ if(mouse_check_button_pressed(mb_left))
     else
     {
         if(selected_index != hover_menu)
-        {
-            var temp =
-                menu_data[selected_index];
+{
+    var temp =
+        menu_data[selected_index];
 
-            menu_data[selected_index] =
-                menu_data[hover_menu];
+    menu_data[selected_index] =
+        menu_data[hover_menu];
 
-            menu_data[hover_menu] =
-                temp;
-        }
+    menu_data[hover_menu] =
+        temp;
+
+    has_player_sorted = true;
+}
 
         selected_index = -1;
     }
@@ -265,6 +267,7 @@ if(mouse_check_button_pressed(mb_left))
 
                     menu_data[hover_index] =
                         dragged;
+						has_player_sorted = true;
                 }
             }
         }
@@ -273,16 +276,24 @@ if(mouse_check_button_pressed(mb_left))
         // CHECK SORTING
         // =============================================
 
-        if(src_check_sorting())
-        {
-            is_sorted_correctly = true;
-            can_search = true;
-        }
-        else
-        {
-            is_sorted_correctly = false;
-            can_search = false;
-        }
+      if(has_player_sorted)
+{
+    if(src_check_sorting())
+    {
+        is_sorted_correctly = true;
+        can_search = true;
+    }
+    else
+    {
+        is_sorted_correctly = false;
+        can_search = false;
+    }
+}
+else
+{
+    is_sorted_correctly = false;
+    can_search = false;
+}
 
         // =============================================
         // SEARCH BUTTON
@@ -546,3 +557,29 @@ if(time_up)
 				room_goto(room_explore_mainRoom)
 			}
 		}
+/*scroll_offset = 0;
+scroll_offset -= mouse_wheel_up() * 50;
+scroll_offset += mouse_wheel_down() * 50;
+if(mouse_wheel_up())
+{
+    scroll_offset -= menu_slot_h;
+}
+
+if(mouse_wheel_down())
+{
+    scroll_offset += menu_slot_h;
+}
+
+var max_scroll =
+max(
+    0,
+    (array_length(menu_data) - visible_rows)
+    * menu_slot_h
+);
+
+scroll_offset =
+clamp(
+    scroll_offset,
+    0,
+    max_scroll
+); buat scroll*/

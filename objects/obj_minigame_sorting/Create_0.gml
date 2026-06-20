@@ -1,3 +1,11 @@
+src_menu_database();
+
+
+old_npc_name = "";
+old_npc_color = c_white;
+old_requirement = "";
+customer_log = [];
+
 enum ORDER_STATE
 {
     ARRIVAL,
@@ -25,7 +33,7 @@ npc_colors =
     c_yellow,
     c_purple
 ];
-menu_data =
+/*menu_data =
 [
     "Kopi|18|Pahit|Minuman",
     "Mie Goreng|20|Gurih|Makanan",
@@ -33,11 +41,9 @@ menu_data =
     "Kentang Goreng|10|Gurih|Cemilan",
     "Air Putih|5|Tawar|Minuman"
 ];
-
-old_npc_name = "";
-old_npc_color = c_white;
-old_requirement = "";
-customer_log = [];
+*/
+src_generate_customer();
+src_shuffle_menu();
 // BARU
 
 
@@ -59,7 +65,7 @@ customer_log = [];
 
 
 // randomize menu
-for(var i=0;i<50;i++)
+/*for(var i=0;i<50;i++)
 {
     var a = irandom(array_length(menu_data)-1);
     var b = irandom(array_length(menu_data)-1);
@@ -68,13 +74,13 @@ for(var i=0;i<50;i++)
     menu_data[a] = menu_data[b];
     menu_data[b] = temp;
 }
-
+*/
 
 // =====================================================
 // REQUEST
 // =====================================================
 
-requirement =
+/*requirement =
 choose(
     "MINUMAN_TERMURAH",
     "MINUMAN_TERMAHAL",
@@ -82,7 +88,7 @@ choose(
     "CEMILAN_TERMAHAL",
     "MAKANAN_TERMURAH",
     "MAKANAN_TERMAHAL"
-);
+);*/
 
 req_text = "";
 dialog_req="";
@@ -286,4 +292,7 @@ hover_winrate = false;
 hover_submit = false;
 
 can_submit = false;
-src_generate_customer();
+scroll_offset = 0;
+
+visible_rows = 8;
+has_player_sorted = false;

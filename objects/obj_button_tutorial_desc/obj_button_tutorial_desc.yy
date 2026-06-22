@@ -9,7 +9,7 @@
   "managed":true,
   "name":"obj_button_tutorial_desc",
   "overriddenProperties":[
-    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_menu_parent","path":"objects/obj_menu_parent/obj_menu_parent.yy",},"propertyId":{"name":"button_text","path":"objects/obj_menu_parent/obj_menu_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Move - WASD / Arrow Keys \\n Interact - Enter / Left Click",},
+    {"$GMOverriddenProperty":"v1","%Name":"","name":"","objectId":{"name":"obj_menu_parent","path":"objects/obj_menu_parent/obj_menu_parent.yy",},"propertyId":{"name":"button_text","path":"objects/obj_menu_parent/obj_menu_parent.yy",},"resourceType":"GMOverriddenProperty","resourceVersion":"2.0","value":"Move - WASD / Arrow Keys \\n Interact - Enter / Space / Left Click",},
   ],
   "parent":{
     "name":"Menu Button",

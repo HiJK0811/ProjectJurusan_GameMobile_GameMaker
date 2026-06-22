@@ -5,7 +5,7 @@
 display_set_gui_size(640, 360)
 
 // Episode 2
-accept_key = keyboard_check_pressed(vk_space)
+accept_key = keyboard_check_pressed(vk_space) || keyboard_check_pressed(vk_enter)
 
 // Episode 1
 dialogBox_x = 0;

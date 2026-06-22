@@ -34,7 +34,7 @@ if (game_selesai) {
     // Teks Sub (Headed to next task)
     draw_set_color(c_white);
     draw_set_font(font_hanoi_game_subjudul); // Gunakan font standar yang lebih kecil atau font khusus lain
-    draw_text_transformed(_mid_x, _mid_y + 25, "-- Headed to next task --", 0.7, 0.7, 0);
+	draw_text_transformed(_mid_x, _mid_y + 25, "-- Headed to next task --", 0.7, 0.7, 0);
 
     draw_set_alpha(1); // Reset alpha
 }

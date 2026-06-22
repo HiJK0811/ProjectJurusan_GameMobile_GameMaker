@@ -74,7 +74,9 @@
     {"$GMFolder":"","%Name":"Tile Sets","folderPath":"folders/Jason_Main NPC Cutscene/Tile Sets.yy","name":"Tile Sets","resourceType":"GMFolder","resourceVersion":"2.0",},
   ],
   "ForcedPrefabProjectReferences":[],
-  "IncludedFiles":[],
+  "IncludedFiles":[
+    {"$GMIncludedFile":"","%Name":"8094231822.ttf","CopyToMask":-1,"filePath":"datafiles","name":"8094231822.ttf","resourceType":"GMIncludedFile","resourceVersion":"2.0",},
+  ],
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{

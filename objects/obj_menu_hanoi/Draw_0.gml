@@ -46,7 +46,7 @@ if (menu_aktif) {
     draw_set_valign(fa_middle);
 
     draw_set_color(c_aqua);
-    draw_text(_menu_x, _y1 + 80, "> Select Difficulty <");
+    draw_text(_menu_x, _y1 + 80, "-- Select Difficulty --");
 
     var _start_y = _y1 + 140; // Disesuaikan agar lebih ke tengah
     var _spacing = 40;

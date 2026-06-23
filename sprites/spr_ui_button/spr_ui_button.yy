@@ -45,7 +45,7 @@
   "origin":0,
   "parent":{
     "name":"Menu",
-    "path":"folders/Diatra_Assets/Sprites/Functional/Menu.yy",
+    "path":"folders/Diatra_Version/Sprites/Functional/Menu.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -24,7 +24,7 @@
   "name":"room_tutorial",
   "parent":{
     "name":"Rooms",
-    "path":"folders/Diatra_Assets/Rooms.yy",
+    "path":"folders/Diatra_Version/Rooms.yy",
   },
   "parentRoom":null,
   "physicsSettings":{

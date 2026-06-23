@@ -10,7 +10,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Functional",
-    "path":"folders/Diatra_Assets/Objects/Functional.yy",
+    "path":"folders/Diatra_Version/Objects/Functional.yy",
   },
   "parentObjectId":null,
   "persistent":false,

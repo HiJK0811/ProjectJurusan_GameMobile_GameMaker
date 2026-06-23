@@ -137,7 +137,7 @@
   "name":"font_menu",
   "parent":{
     "name":"Fonts",
-    "path":"folders/Diatra_Assets/Fonts.yy",
+    "path":"folders/Diatra_Version/Fonts.yy",
   },
   "pointRounding":0,
   "ranges":[

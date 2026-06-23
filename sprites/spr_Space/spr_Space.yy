@@ -26,7 +26,7 @@
   "origin":0,
   "parent":{
     "name":"Sprites",
-    "path":"folders/Diatra_Assets/Sprites.yy",
+    "path":"folders/Diatra_Version/Sprites.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

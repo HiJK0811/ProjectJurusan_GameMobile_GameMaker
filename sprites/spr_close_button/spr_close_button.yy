@@ -26,7 +26,7 @@
   "origin":4,
   "parent":{
     "name":"Functional",
-    "path":"folders/Diatra_Assets/Sprites/Functional.yy",
+    "path":"folders/Diatra_Version/Sprites/Functional.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

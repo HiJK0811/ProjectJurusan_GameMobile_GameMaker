@@ -13,7 +13,7 @@
   "out_tilevborder":2,
   "parent":{
     "name":"Tile Sets",
-    "path":"folders/Diatra_Assets/Tile Sets.yy",
+    "path":"folders/Diatra_Version/Tile Sets.yy",
   },
   "resourceType":"GMTileSet",
   "resourceVersion":"2.0",

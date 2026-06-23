@@ -6,7 +6,7 @@
   "name":"scr_fadeToRoom",
   "parent":{
     "name":"Scripts",
-    "path":"folders/Diatra_Assets/Scripts.yy",
+    "path":"folders/Diatra_Version/Scripts.yy",
   },
   "resourceType":"GMScript",
   "resourceVersion":"2.0",

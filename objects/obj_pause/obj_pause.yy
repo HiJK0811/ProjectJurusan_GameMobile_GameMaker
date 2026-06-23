@@ -11,7 +11,7 @@
   "overriddenProperties":[],
   "parent":{
     "name":"Pause Menu",
-    "path":"folders/Diatra_Assets/Objects/Functional/Pause Menu.yy",
+    "path":"folders/Diatra_Version/Objects/Functional/Pause Menu.yy",
   },
   "parentObjectId":null,
   "persistent":false,

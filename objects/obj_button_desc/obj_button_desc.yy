@@ -13,7 +13,7 @@
   ],
   "parent":{
     "name":"Menu Button",
-    "path":"folders/Diatra_Assets/Objects/Functional/Menu Button.yy",
+    "path":"folders/Diatra_Version/Objects/Functional/Menu Button.yy",
   },
   "parentObjectId":{
     "name":"obj_menu_parent",

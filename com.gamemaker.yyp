@@ -193,7 +193,9 @@
     {"id":{"name":"room_a_initialization","path":"rooms/room_a_initialization/room_a_initialization.yy",},},
     {"id":{"name":"room_a_mainMenu","path":"rooms/room_a_mainMenu/room_a_mainMenu.yy",},},
     {"id":{"name":"room_explore_arcade","path":"rooms/room_explore_arcade/room_explore_arcade.yy",},},
+    {"id":{"name":"room_explore_control","path":"rooms/room_explore_control/room_explore_control.yy",},},
     {"id":{"name":"room_explore_mainRoom","path":"rooms/room_explore_mainRoom/room_explore_mainRoom.yy",},},
+    {"id":{"name":"room_explore_meeting","path":"rooms/room_explore_meeting/room_explore_meeting.yy",},},
     {"id":{"name":"room_explore_office","path":"rooms/room_explore_office/room_explore_office.yy",},},
     {"id":{"name":"room_explore_security","path":"rooms/room_explore_security/room_explore_security.yy",},},
     {"id":{"name":"room_explore_storage","path":"rooms/room_explore_storage/room_explore_storage.yy",},},
@@ -363,6 +365,8 @@
     {"roomId":{"name":"room_minigame_hanoi","path":"rooms/room_minigame_hanoi/room_minigame_hanoi.yy",},},
     {"roomId":{"name":"room_tutorial","path":"rooms/room_tutorial/room_tutorial.yy",},},
     {"roomId":{"name":"room_explore_arcade","path":"rooms/room_explore_arcade/room_explore_arcade.yy",},},
+    {"roomId":{"name":"room_explore_control","path":"rooms/room_explore_control/room_explore_control.yy",},},
+    {"roomId":{"name":"room_explore_meeting","path":"rooms/room_explore_meeting/room_explore_meeting.yy",},},
   ],
   "templateType":"game",
   "TextureGroups":[

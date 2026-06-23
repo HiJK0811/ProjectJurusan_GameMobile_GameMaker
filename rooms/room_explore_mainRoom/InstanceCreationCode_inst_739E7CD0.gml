@@ -1,1 +1,1 @@
-button_text = "Control Tower"
+button_text = "Control Room"

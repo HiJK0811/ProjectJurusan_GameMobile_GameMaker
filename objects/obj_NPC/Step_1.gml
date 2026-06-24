@@ -14,10 +14,25 @@ if(!path_active){
 		// Wait and select random path
 		wander_timer--;
 		if(wander_timer <= 0){
-			var _targetX = home_x + irandom_range(-wander_range, wander_range);
-			var _targetY = home_y + irandom_range(-wander_range, wander_range);
+			var _tries = 20;
+			
+			var _targetX, _targetY;
+
+			repeat (_tries) {
+				_targetX = home_x + irandom_range(-wander_range, wander_range);
+				_targetY = home_y + irandom_range(-wander_range, wander_range);
+
+				// Check that the destination isn't occupied
+				if (!place_meeting(_targetX, _targetY, obj_Wall) && !place_meeting(_targetX, _targetY, obj_Interactibles)) {
+					set_path_to(_targetX, _targetY);
+					break;
+				}
+			}
+			
+			// var _targetX = home_x + irandom_range(-wander_range, wander_range);
+			// var _targetY = home_y + irandom_range(-wander_range, wander_range);
 		
-			set_path_to(_targetX, _targetY);
+			// set_path_to(_targetX, _targetY);
 		
 			wander_timer = irandom_range(wander_min_time, wander_max_time);
 		}

@@ -106,7 +106,8 @@ if (_select) {
             roomGoToFade(room_explore_mainRoom);
             break;
         case 1: 
-            room_goto(room_tutorial); 
+			room_goto(room_tutorial)
+            layer_set_visible("TutorialLayer_Main", true);
             break;
         case 2: 
             if (!instance_exists(obj_fade_quit)) {

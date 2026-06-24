@@ -207,3 +207,7 @@ if (draw_character == text_length[page] && page == page_number - 1){
 for (var c = 0; c < draw_character; c++){
 	draw_text(chara_x[c, page], chara_y[c, page], chara[c, page])
 }
+
+
+// Reset the GUI back to the menu's standard resolution
+display_set_gui_size(1280, 720);

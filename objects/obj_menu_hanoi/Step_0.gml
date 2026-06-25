@@ -1,6 +1,6 @@
 if (menu_aktif) {
-    if (keyboard_check_pressed(vk_up)) index_pilih = max(0, index_pilih - 1);
-    if (keyboard_check_pressed(vk_down)) index_pilih = min(2, index_pilih + 1);
+    if (keyboard_check_pressed(vk_up)) || keyboard_check_pressed(ord("W")) index_pilih = max(0, index_pilih - 1);
+    if (keyboard_check_pressed(vk_down)) || keyboard_check_pressed(ord("S")) index_pilih = min(2, index_pilih + 1);
     
     if (keyboard_check_pressed(vk_enter) || keyboard_check_pressed(vk_space)) {
         var _jumlah = 3 + index_pilih; // 0=3, 1=4, 2=5

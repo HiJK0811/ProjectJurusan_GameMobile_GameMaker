@@ -3,14 +3,14 @@ if (!game_selesai) {
     // --- 1. GERAK KIRI - KANAN ---
     var _target_x = posisi_x_alas[indeks_alas];
     
-    if (keyboard_check_pressed(vk_left))  indeks_alas = max(0, indeks_alas - 1);
-    if (keyboard_check_pressed(vk_right)) indeks_alas = min(2, indeks_alas + 1);
+    if (keyboard_check_pressed(vk_left)) || keyboard_check_pressed(ord("A"))  indeks_alas = max(0, indeks_alas - 1);
+    if (keyboard_check_pressed(vk_right)) || keyboard_check_pressed(ord("D")) indeks_alas = min(2, indeks_alas + 1);
 
     // Pergerakan halus
     x = lerp(x, _target_x, 0.2);
 
     // --- 2. INTERAKSI AMBIL / LETAK (SPASI) ---
-    if (keyboard_check_pressed(vk_space)) {
+    if (keyboard_check_pressed(vk_space) || keyboard_check_pressed(vk_enter)) {
         var _stack_skrg = tumpukan[indeks_alas];
 
         if (box_terbawa == noone) {

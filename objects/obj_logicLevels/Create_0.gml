@@ -99,15 +99,32 @@ level_0 = {
 };
 
 // ==========================================
-// LEVEL 2: OR Cascade
+// LEVEL 2: Introduction to AND
 // ==========================================
 level_1 = {
+    components: [
+        { id: "sw1",   type: obj_switch,    x: 100, y: 100 },
+        { id: "sw2",   type: obj_switch,    x: 100, y: 200 },
+        { id: "and1",  type: obj_logicGate, x: 300, y: 150, gate_type: logicGateType.AND },
+        { id: "bulb1", type: obj_lightBulb, x: 500, y: 150 }
+    ],
+    connections: [
+        { from: "sw1",  to: "and1" },
+        { from: "sw2",  to: "and1" },
+        { from: "and1", to: "bulb1" }
+    ]
+};
+
+// ==========================================
+// LEVEL 3: OR Cascade
+// ==========================================
+level_2 = {
     components: [
         { id: "sw1",   type: obj_switch,    x: 0, y: 0 },
         { id: "sw2",   type: obj_switch,    x: 0, y: 100 },
         { id: "sw3",   type: obj_switch,    x: 0, y: 200 },
         
-        { id: "or1",   type: obj_logicGate, x: 150, y: 50, gate_type: logicGateType.OR },
+        { id: "or1",   type: obj_logicGate, x: 150, y: 50, gate_type: logicGateType.AND },
         { id: "or2",   type: obj_logicGate, x: 300, y: 125, gate_type: logicGateType.OR },
         { id: "bulb1", type: obj_lightBulb, x: 450, y: 125 }
     ],
@@ -122,22 +139,7 @@ level_1 = {
     ]
 };
 
-// ==========================================
-// LEVEL 3: Introduction to AND
-// ==========================================
-level_2 = {
-    components: [
-        { id: "sw1",   type: obj_switch,    x: 100, y: 100 },
-        { id: "sw2",   type: obj_switch,    x: 100, y: 200 },
-        { id: "and1",  type: obj_logicGate, x: 300, y: 150, gate_type: logicGateType.AND },
-        { id: "bulb1", type: obj_lightBulb, x: 500, y: 150 }
-    ],
-    connections: [
-        { from: "sw1",  to: "and1" },
-        { from: "sw2",  to: "and1" },
-        { from: "and1", to: "bulb1" }
-    ]
-};
+
 
 // ==========================================
 // LEVEL 4: AND Cascade

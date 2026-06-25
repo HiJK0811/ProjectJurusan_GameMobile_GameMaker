@@ -48,30 +48,57 @@ if (obj_pause.menu_index == button_id) {
             case 1: // Resume
                 obj_pause.paused = false;
                 obj_pause.update_pause();
+				
+				if (!audio_is_playing(snd_unpause)) {
+					audio_play_sound(snd_unpause, 0, false);
+				}
+				
                 break;
                 
             case 2: // Tutorial
                 layer_set_visible("PauseLayer", false);
                 layer_set_visible("TutorialLayer", true);
+				
+				if (!audio_is_playing(snd_click_button)) {
+					audio_play_sound(snd_click_button, 0, false);
+				}
+				
                 break;
             
             case 3: // Return to Main Menu
+				if (instance_exists(obj_Player)) instance_destroy(obj_Player); 
+				if (instance_exists(obj_Camera)) instance_destroy(obj_Camera);
                 fadeToRoom(target_room, 60, c_black);
                 layer_set_visible(layer_name, false);
                 // audio_stop_sound(snd_play);
+				
+				if (!audio_is_playing(snd_click_button)) {
+					audio_play_sound(snd_click_button, 0, false);
+				}
+				
                 break;
                 
             case 4: // Quit Game
                 // global.quitting = true;
                 fadeToQuit(room, 90, c_black);
                 layer_set_visible(layer_name, false);
+				
+				if (!audio_is_playing(snd_click_button)) {
+					audio_play_sound(snd_click_button, 0, false);
+				}
+				
                 break;
                 
             case 5: // Back Button
                 layer_set_visible("PauseLayer", true);
                 layer_set_visible("TutorialLayer", false);
                 // Reset index back to Tutorial button when returning
-                obj_pause.menu_index = 2; 
+                obj_pause.menu_index = 2;
+				
+				if (!audio_is_playing(snd_close_button)) {
+					audio_play_sound(snd_close_button, 0, false);
+				}
+				
                 break;
         }
     }

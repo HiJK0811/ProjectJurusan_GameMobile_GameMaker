@@ -330,6 +330,7 @@
     {"id":{"name":"spr_speakblock1","path":"sprites/spr_speakblock1/spr_speakblock1.yy",},},
     {"id":{"name":"spr_Stool","path":"sprites/spr_Stool/spr_Stool.yy",},},
     {"id":{"name":"spr_Table","path":"sprites/spr_Table/spr_Table.yy",},},
+    {"id":{"name":"spr_textBox_Blue_1","path":"sprites/spr_textBox_Blue_1/spr_textBox_Blue_1.yy",},},
     {"id":{"name":"spr_textBox_Blue","path":"sprites/spr_textBox_Blue/spr_textBox_Blue.yy",},},
     {"id":{"name":"spr_textBox_Purple","path":"sprites/spr_textBox_Purple/spr_textBox_Purple.yy",},},
     {"id":{"name":"spr_textBox_Purple1","path":"sprites/spr_textBox_Purple1/spr_textBox_Purple1.yy",},},

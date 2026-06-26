@@ -15,7 +15,7 @@ dialogBox_y = 270;
 // Setup
 if (setup == false){
 	setup = true;
-	draw_set_font(global.font_main);
+	draw_set_font(font_menu);
 	draw_set_valign(fa_top);
 	draw_set_halign(fa_left);
 	

@@ -9,6 +9,11 @@ if(path_active){
 	exit;
 }
 
+// STOP generating new paths if a cutscene OR a dialogue box exists
+if(instance_exists(obj_cutscene) || instance_exists(obj_dialogBox)){
+	exit;
+}
+
 if(instance_exists(obj_cutscene)){
 	exit;
 }

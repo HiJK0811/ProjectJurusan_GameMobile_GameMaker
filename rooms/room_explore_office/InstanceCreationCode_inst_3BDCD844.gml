@@ -1,4 +1,4 @@
-permanent = true;
+permanent = false; // debug: true
 trigger_scene_info = [
 	[cutscene_move_camera, 248, 200],
 	[cutscene_move_character, obj_NPC_Adhila, 232, 200],

@@ -82,7 +82,7 @@ function scr_gameText(_text_id){
 			// Input Player
 			scr_text("?", "Player", -1);
 			scr_option("Saya butuh bantuan!", "jb_1");
-			scr_option("Tidak ada, terima kasih", "jb2")
+			scr_option("Tidak ada, terima kasih", "jb_2")
 			break;
 			
 				case "jb_1":
@@ -95,7 +95,7 @@ function scr_gameText(_text_id){
 					scr_text("Logic NOR adalah kebalikan OR dan akan benar jika tidak ada input", "Happy Derp", 1);
 					scr_text("Dan Logic Gate NAND adalah kebalikan AND dan akan salah jika ada kedua input!", "Happy Derp", 1);
 					scr_text("Semoga kamu bisa menmperbaiki jukeboxnya!", "Happy Derp", 1);
-					scr_text("Saya akan menunggu di Cafe setelah kamu selesai!", "Happy Derp", -1);
+					scr_text("Saya akan menunggu di Cafe setelah kamu selesai!", "Happy Derp", 1);
 					break;
 					
 				case "jb_2":

@@ -4,6 +4,18 @@ if(o_game.game_state != GameState.EXPLORE){
 }
 */
 
+// Stop movement if talking
+if (instance_exists(obj_dialogBox)) {
+	input_x = 0;
+	input_y = 0;
+	
+	// If you use GameMaker's built-in path movement, you also need to end the path
+	if (path_active) {
+		path_end(); 
+		path_active = false;
+	}
+}
+
 // Normalize input
 var len = point_distance(0, 0, input_x, input_y);
 if (len > 0) {

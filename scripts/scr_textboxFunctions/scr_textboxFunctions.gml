@@ -39,6 +39,10 @@ function scr_text(_text){
 				speaker_sprite[page_number] = spr_portrait_derpyDerp;
 				dialogBox_sprite[page_number] = spr_textBox_Purple;
 				break;
+			case "Adhila":
+				speaker_sprite[page_number] = spr_portrait_adhila_1;
+				dialogBox_sprite[page_number] = spr_textBox_Blue;
+				break;
 			default:
 				speaker_sprite[page_number] = noone;
 				break;

@@ -55,12 +55,22 @@ function scr_gameText(_text_id){
 				// room_goto(Room1);
 				break;				
 		case "Adhila":
-			scr_text("Hello player! Aku Adhila", "Happy Derp", 1);
-			scr_text("Senang bertemu denganmu", "Happy Derp", 1);
+			scr_text("Hello player! Aku Adhila", "Adhila", 1);
+			scr_text("Senang bertemu denganmu", "Adhila", 1);
 			break;
 		case "Lylia":
 			scr_text("Hello player! Aku Lylia", "Happy Derp", -1);
 			scr_text("It's dangerous to go alone. Take this!", "Happy Derp", -1);
 			break;
+		case "Adhoc - calling":
+				scr_text("Next in line please", "Adhila", 1);
+				break;	
+		case "Adhoc - dialog":
+				scr_text("Hello, where are you flying today", "Adhila", 1);
+				scr_text("... hey, i know you", "Adhila", 1);
+				scr_text("you're the new worker, right?", "Adhila", 1);
+				scr_text("what was your name again?", "Adhila", 1);
+				scr_text("alright then, you're all good, thank you", "Adhila", 1);
+				break;
 	}
 }

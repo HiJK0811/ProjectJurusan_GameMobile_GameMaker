@@ -103,7 +103,7 @@ if (_select) {
             
     switch(index) {
         case 0:
-            roomGoToFade(room_explore_mainRoom);
+            roomGoToFade(room_explore_security);
             break;
         case 1: 
 			room_goto(room_tutorial)

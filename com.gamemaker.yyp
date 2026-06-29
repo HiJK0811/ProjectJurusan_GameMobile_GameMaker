@@ -82,7 +82,7 @@
   "isEcma":false,
   "LibraryEmitters":[],
   "MetaData":{
-    "IDEVersion":"2024.14.4.222",
+    "IDEVersion":"2026.0.0.16",
   },
   "name":"com.gamemaker",
   "resources":[
@@ -316,6 +316,8 @@
     {"id":{"name":"spr_PlayerWalkLeft","path":"sprites/spr_PlayerWalkLeft/spr_PlayerWalkLeft.yy",},},
     {"id":{"name":"spr_PlayerWalkRight","path":"sprites/spr_PlayerWalkRight/spr_PlayerWalkRight.yy",},},
     {"id":{"name":"spr_PlayerWalkUp","path":"sprites/spr_PlayerWalkUp/spr_PlayerWalkUp.yy",},},
+    {"id":{"name":"spr_portrait_adhila_1","path":"sprites/spr_portrait_adhila_1/spr_portrait_adhila_1.yy",},},
+    {"id":{"name":"spr_portrait_adhila","path":"sprites/spr_portrait_adhila/spr_portrait_adhila.yy",},},
     {"id":{"name":"spr_portrait_derpyDerp","path":"sprites/spr_portrait_derpyDerp/spr_portrait_derpyDerp.yy",},},
     {"id":{"name":"spr_portrait_happyDerp","path":"sprites/spr_portrait_happyDerp/spr_portrait_happyDerp.yy",},},
     {"id":{"name":"spr_portrait_player","path":"sprites/spr_portrait_player/spr_portrait_player.yy",},},

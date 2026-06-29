@@ -1,0 +1,6 @@
+permanent = false
+trigger_scene_info = [
+	[cutscene_move_camera, 248, 200],
+	[cutscene_show_dialogue, "Adhoc - dialog"],
+	[cutscene_move_camera, obj_Player]
+]

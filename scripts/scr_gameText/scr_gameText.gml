@@ -6,39 +6,40 @@
 function scr_gameText(_text_id){
 	switch(_text_id){
 		
+	// == LYLIA ==
 		// Lylia Intro
 		case "Lylia_intro":
-			scr_text("Halo, Selamat datang di Binusian Space Lounge", "Happy Derp", 1);
-			scr_text("Perkenalkan nama saya Lylia, saya adalah pengurus tempat ini!", "Happy Derp", 1);
-			scr_text("Kamu adalah player bukan?", "Happy Derp", 1);
+			scr_text("Halo, Selamat datang di Binusian Space Lounge", "Lylia", 1);
+			scr_text("Perkenalkan nama saya Lylia, saya adalah pengurus tempat ini!", "Lylia", 1);
+			scr_text("Kamu adalah Player bukan?", "Lylia", 1);
 			// Input Player
 			scr_text("?", "Player", -1);
-			scr_option("Iya, saya player", "intro_1");
+			scr_option("Iya, saya Player", "intro_1");
 			scr_option("Siapa?", "intro_2");
 			break;
 	
 				case "intro_1":
-					scr_text("Baik, senang bertemu denganmu, player!", "Happy Derp", 1);
+					scr_text("Baik, senang bertemu denganmu, Player!", "Lylia", 1);
 					scr_gameText("Lylia_intro_cont");
 					break;
 		
 				case "intro_2":
-					scr_text("Haha, lucu sekali player!", "Happy Derp", 1);
-					scr_text("Senang bertemu dneganmu!", "Happy Derp", 1);
+					scr_text("Iya, itu kamu Player! hahaha", "Lylia", 1);
+					scr_text("Senang bertemu denganmu!", "Lylia", 1);
 					scr_gameText("Lylia_intro_cont");
 					break;
 			
 			case "Lylia_intro_cont":
-				scr_text("Ok player, kamu pasti bingung apa tempat ini!", "Happy Derp", 1)
-				scr_text("Ini adalah Binusian Space Lounge!", "Happy Derp", 1);
-				scr_text("Tempat berkumpul mahasiswa dan karyawan BINUS di luar angkasa!", "Happy Derp", 1);
-				scr_text("Iya, tempat ini beneran di luar angkasa", "Happy Derp", 1);
+				scr_text("Ok Player, kamu pasti bingung dengan tempat ini! Saya jelaskan!", "Lylia", 1)
+				scr_text("Ini adalah Binusian Space Lounge!", "Lylia", 1);
+				scr_text("Tempat berkumpul mahasiswa dan karyawan BINUS di luar angkasa!", "Lylia", 1);
+				scr_text("Iya, tempat ini beneran di luar angkasa", "Lylia", 1);
 			
-				scr_text("Tempat ini sudah berjalan mulus selama beberapa bulan...", "Happy Derp", 1);
-				scr_text("Tetapi belakangan ini, mulai muncul beberapa masalah!", "Happy Derp", 1);
-				scr_text("Seperti jukebox yang rusak, sistem navigasi yang kurang optimal, dan lain-lain...", "Happy Derp", 1);
+				scr_text("Tempat ini sudah berjalan mulus selama beberapa bulan...", "Lylia", 1);
+				scr_text("Tetapi belakangan ini, mulai muncul beberapa masalah!", "Lylia", 1);
+				scr_text("Seperti jukebox yang rusak, sistem navigasi yang kurang optimal, dan lain-lain...", "Lylia", 1);
 			
-				scr_text("Intinya, saya ingin kamu untuk membantu memyelesaikan masalah tersebut!", "Happy Derp", 1);
+				scr_text("Intinya, saya ingin kamu untuk membantu saya memyelesaikan masalah-masalah tersebut!", "Lylia", 1);
 				// Input Player
 				scr_text("?", "Player", -1);
 				scr_option("Kenapa saya?", "intro_3");
@@ -46,27 +47,26 @@ function scr_gameText(_text_id){
 				break;
 						
 					case "intro_3":
-						scr_text("Saya yakin kalau kamu bisa melaksanakan tugas ini dengan baik...", "Happy Derp", 1);
-						scr_text("Dan kamu adalah orang yang paling cocok dibandingkan dengan orang lain!", "Happy Derp", 1);
+						scr_text("Saya yakin kamu adalah orang yang paling sesuai untuk melaksanakan tugas ini!.", "Lylia", 1);
 						scr_gameText("Lylia_intro_last");
 						break;
 					case "intro_4":
-						scr_text("Karena berdasarkan permasalahan yang ada sekarang...", "Happy Derp", 1);
-						scr_text("Saya yakin kamu akan menyelesaikan masalah tersebut lebih baik daripada orang lain!", "Happy Derp", 1);
+						scr_text("Karena berdasarkan permasalahan yang ada sekarang...", "Lylia", 1);
+						scr_text("Saya yakin kamu akan menyelesaikan masalah tersebut lebih baik daripada orang lain!", "Lylia", 1);
 						scr_gameText("Lylia_intro_last");
 						break;
 			
 			case "Lylia_intro_last":
-				scr_text("~Sepertinya saya ditugaskan untuk menyelesaikan permasalahan lounge!~");
-				scr_text("Jadi, kamu akan menyelesaikan beberapa masalah di ruang-ruang berbeda!", "Happy Derp", 1);
-				scr_text("Tidak apa-apa, kamu tidak harus menyelesaikan masalahanya secepatnya!", "Happy Derp", 1);
-				scr_text("Kamu bisa keliling lounge ini terelebih dahulu untuk memperkenalkan diri!", "Happy Derp", 1);
+				scr_text("~ Sepertinya saya ditugaskan untuk menyelesaikan permasalahan lounge! ~");
+				scr_text("Jadi, kamu akan menyelesaikan masalah-masalah di beberapa ruagan di lounge!", "Lylia", 1);
+				scr_text("Tidak apa-apa, kamu tidak harus menyelesaikan masalah tersebut secepatnya!", "Lylia", 1);
+				scr_text("Kamu bisa keliling lounge terelebih dahulu untuk memperkenalkan diri!", "Lylia", 1);
 				
-				scr_text("Untuk masalah pertama, saya anjurkan untuk memeperbaiki jukebox di Cafe!", "Happy Derp", 1);
-				scr_text("Jukeboxnya mengalami masalah kelistrikan yang menyebabkannya tidak berjalan!", "Happy Derp", 1);
+				scr_text("Untuk masalah pertama, saya anjurkan kamu untuk memperbaiki jukebox di Cafe!", "Lylia", 1);
+				scr_text("Jukeboxnya mengalami masalah kelistrikan yang menyebabkannya tidak berjalan!", "Lylia", 1);
 				
-				scr_text("Ok player, semoga sukses dalam tugasnya!", "Happy Derp", 1);
-				scr_text("Jika kamu ingin bantuan, kamu bisa bicara ke saya!", "Happy Derp", 1);
+				scr_text("Ok Player, semoga sukses dalam tugasnya!", "Lylia", 1);
+				scr_text("Jika kamu ingin bantuan, kamu bisa bicara ke saya!", "Lylia", 1);
 				
 				obj_cutscene.introCompleted = true;
 				//with (obj_cutsceneController) {
@@ -77,8 +77,8 @@ function scr_gameText(_text_id){
 		
 		// Lylia Logic Gate
 		case "Lylia_post_intro":
-			scr_text("Halo player!", "Happy Derp", -1);
-			scr_text("Apakah kamu ada masalah dalam memperbaiki jukeboxnya?", "Happy Derp", -1);
+			scr_text("Halo player!", "Lylia", -1);
+			scr_text("Apakah kamu ada masalah dalam memperbaiki jukeboxnya?", "Lylia", -1);
 			// Input Player
 			scr_text("?", "Player", -1);
 			scr_option("Saya butuh bantuan!", "jb_1");
@@ -86,30 +86,30 @@ function scr_gameText(_text_id){
 			break;
 			
 				case "jb_1":
-					scr_text("Ah, sepertinya kamu kurang tahu tentang Logic Gate! Saya jelaskan!", "Happy Derp", 1);
-					scr_text("Jadi, tugasmu adalah menyalakan lampu dengan menekan sakelar yang disesuaikan dengan Logic Gate sebagai input agar arus di kabel bisa mengalir ke lampu!", "Happy Derp", 1);
-					scr_text("Logic Gatenya terdiri dari: OR, AND, NOT, NOR, dan NAND!", "Happy Derp", 1);
-					scr_text("Logic Gate OR akan benar jika ada salah satu input", "Happy Derp", 1);
-					scr_text("Logic Gate AND akan benar jika ada semua input", "Happy Derp", 1);
-					scr_text("Logic Gate NOT akan membalikkan input", "Happy Derp", 1);
-					scr_text("Logic NOR adalah kebalikan OR dan akan benar jika tidak ada input", "Happy Derp", 1);
-					scr_text("Dan Logic Gate NAND adalah kebalikan AND dan akan salah jika ada kedua input!", "Happy Derp", 1);
-					scr_text("Semoga kamu bisa menmperbaiki jukeboxnya!", "Happy Derp", 1);
-					scr_text("Saya akan menunggu di Cafe setelah kamu selesai!", "Happy Derp", 1);
+					scr_text("Ah, sepertinya kamu kurang tahu tentang Logic Gate! Saya jelaskan!", "Lylia", 1);
+					scr_text("Jadi, tugasmu adalah menyalakan lampu dengan menekan sakelar yang disesuaikan dengan kondisi Logic Gate sebagai input agar arus di kabel bisa mengalir ke lampu!", "Lylia", 1);
+					scr_text("Logic Gatenya terdiri dari: OR, AND, NOT, NOR, dan NAND!", "Lylia", 1);
+					scr_text("Logic Gate OR akan benar jika ada salah satu input saja", "Lylia", 1);
+					scr_text("Logic Gate AND akan benar jika ada semua input", "Lylia", 1);
+					scr_text("Logic Gate NOT akan membalikkan input sekarang", "Lylia", 1);
+					scr_text("Logic NOR adalah kebalikan OR dan akan benar jika tidak ada input sama sekali", "Lylia", 1);
+					scr_text("Dan Logic Gate NAND adalah kebalikan AND dan akan salah jika ada kedua input!", "Lylia", 1);
+					scr_text("Semoga kamu bisa memperbaiki jukeboxnya!", "Lylia", 1);
+					scr_text("Saya akan menunggu di Cafe setelah kamu selesai memperbaiki jukeboxnya!", "Lylia", 1);
 					break;
 					
 				case "jb_2":
-					scr_text("Ok player", "Happy Derp", 1);
-					scr_text("Saya akan menunggu di Cafe setelah kamu selesai!", "Happy Derp", 1);
+					scr_text("Ok Player", "Lylia", 1);
+					scr_text("Saya akan menunggu di Cafe setelah kamu selesai memperbaiki jukeboxnya!", "Lylia", 1);
 					break;
 			
 	
 			
 			
-			
+	// // == Adhila ==
 		case "Adhila":
-			scr_text("Hello player! Aku Adhila", "Happy Derp", 1);
-			scr_text("Senang bertemu denganmu", "Happy Derp", 1);
+			scr_text("Hello player! Aku Adhila", "Adhila", 1);
+			scr_text("Senang bertemu denganmu", "Adhila", 1);
 			break;
 		
 			

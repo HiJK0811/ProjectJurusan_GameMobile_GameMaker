@@ -27,18 +27,33 @@ function scr_text(_text){
 				speaker_sprite[page_number] = spr_portrait_player;
 				dialogBox_sprite[page_number] = spr_textBox_Purple;
 				break;
+				
+			case "Adhila":
+				speaker_sprite[page_number] = spr_Adhila_Portrait;
+				dialogBox_sprite[page_number] = spr_textBox_Purple;
+				break;
+				
+			case "Lylia":
+				speaker_sprite[page_number] = spr_Lylia_Portrait;
+				dialogBox_sprite[page_number] = spr_textBox_Purple;
+				break;
+				
+				
+			
 			case "Happy Derp":
 				speaker_sprite[page_number] = spr_portrait_happyDerp;
 				dialogBox_sprite[page_number] = spr_textBox_Blue;
 				break;
-			case "Sad Derp":
-				speaker_sprite[page_number] = spr_portrait_sadDerp;
-				dialogBox_sprite[page_number] = spr_textBox_Blue;
-				break;
-			case "Derpy Derp":
-				speaker_sprite[page_number] = spr_portrait_derpyDerp;
-				dialogBox_sprite[page_number] = spr_textBox_Purple;
-				break;
+				
+			//case "Sad Derp":
+			//	speaker_sprite[page_number] = spr_portrait_sadDerp;
+			//	dialogBox_sprite[page_number] = spr_textBox_Blue;
+			//	break;
+			//case "Derpy Derp":
+			//	speaker_sprite[page_number] = spr_portrait_derpyDerp;
+			//	dialogBox_sprite[page_number] = spr_textBox_Purple;
+			//	break;
+				
 			default:
 				speaker_sprite[page_number] = noone;
 				break;

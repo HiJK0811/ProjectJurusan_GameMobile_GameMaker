@@ -37,8 +37,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_Player_Idle_Down",
-    "path":"sprites/spr_Player_Idle_Down/spr_Player_Idle_Down.yy",
+    "name":"spr_Player_Alt_Idle_Down",
+    "path":"sprites/spr_Player_Alt_Idle_Down/spr_Player_Alt_Idle_Down.yy",
   },
   "spriteMaskId":null,
   "visible":true,

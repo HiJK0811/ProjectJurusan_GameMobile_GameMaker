@@ -4,6 +4,12 @@ if(o_game.game_state != GameState.EXPLORE){
 }
 */
 
+// Stop movement if paused
+if (instance_exists(obj_pause) && obj_pause.paused) {
+	input_x = 0;
+	input_y = 0;
+}
+
 // Stop movement if talking
 if (instance_exists(obj_dialogBox)) {
 	input_x = 0;

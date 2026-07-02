@@ -39,7 +39,7 @@ function scr_gameText(_text_id){
 				scr_text("Tetapi belakangan ini, mulai muncul beberapa masalah!", "Lylia", 1);
 				scr_text("Seperti jukebox yang rusak, sistem navigasi yang kurang optimal, dan lain-lain...", "Lylia", 1);
 			
-				scr_text("Intinya, saya ingin kamu untuk membantu saya memyelesaikan masalah-masalah tersebut!", "Lylia", 1);
+				scr_text("Intinya, saya ingin kamu untuk membantu saya menyelesaikan masalah-masalah tersebut!", "Lylia", 1);
 				// Input Player
 				scr_text("?", "Player", -1);
 				scr_option("Kenapa saya?", "intro_3");
@@ -77,8 +77,8 @@ function scr_gameText(_text_id){
 		
 		// Lylia Logic Gate
 		case "Lylia_post_intro":
-			scr_text("Halo player!", "Lylia", -1);
-			scr_text("Apakah kamu ada masalah dalam memperbaiki jukeboxnya?", "Lylia", -1);
+			scr_text("Halo player!", "Lylia", 1);
+			scr_text("Apakah kamu ada masalah dalam memperbaiki jukeboxnya?", "Lylia", 1);
 			// Input Player
 			scr_text("?", "Player", -1);
 			scr_option("Saya butuh bantuan!", "jb_1");

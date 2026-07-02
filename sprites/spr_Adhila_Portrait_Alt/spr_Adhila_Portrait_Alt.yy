@@ -12,17 +12,17 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"36c6f2af-68ab-4549-a878-0b3874a59819","name":"36c6f2af-68ab-4549-a878-0b3874a59819","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"v1","%Name":"3bedb046-4a86-4cd3-abd5-fc0da1034a61","name":"3bedb046-4a86-4cd3-abd5-fc0da1034a61","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"v1","%Name":"08a89432-81e2-40f4-b826-9cddb88b12ea","name":"08a89432-81e2-40f4-b826-9cddb88b12ea","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
-    {"$GMSpriteFrame":"v1","%Name":"3c385671-e94b-4a1b-9aed-6d2a2457b7c2","name":"3c385671-e94b-4a1b-9aed-6d2a2457b7c2","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"f6ea3e43-aa6e-4d5a-a59d-c6066fa2142b","name":"f6ea3e43-aa6e-4d5a-a59d-c6066fa2142b","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"9888deb2-c327-44fc-80ca-7b674ea0235a","name":"9888deb2-c327-44fc-80ca-7b674ea0235a","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"da9dd817-0c6f-4622-8de9-8f87c6888600","name":"da9dd817-0c6f-4622-8de9-8f87c6888600","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"85359ce3-17c6-4b42-bd79-137f870ff3f7","name":"85359ce3-17c6-4b42-bd79-137f870ff3f7","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":64,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"58e53612-2095-4985-ae92-ec6649337157","blendMode":0,"displayName":"default","isLocked":false,"name":"58e53612-2095-4985-ae92-ec6649337157","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"fc78f970-04ae-4e1b-bdeb-2afa913bc9ed","blendMode":0,"displayName":"default","isLocked":false,"name":"fc78f970-04ae-4e1b-bdeb-2afa913bc9ed","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_Adhila_Portrait_Alt",
   "nineSlice":null,
@@ -62,7 +62,7 @@
     },
     "name":"spr_Adhila_Portrait_Alt",
     "playback":1,
-    "playbackSpeed":12.0,
+    "playbackSpeed":8.0,
     "playbackSpeedType":0,
     "resourceType":"GMSequence",
     "resourceVersion":"2.0",
@@ -72,17 +72,17 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"36c6f2af-68ab-4549-a878-0b3874a59819","path":"sprites/spr_Adhila_Portrait_Alt/spr_Adhila_Portrait_Alt.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"3b50fd29-f4d3-47cf-8e99-fdf2bc2e6cb9","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"f6ea3e43-aa6e-4d5a-a59d-c6066fa2142b","path":"sprites/spr_Adhila_Portrait_Alt/spr_Adhila_Portrait_Alt.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"31f21dd1-ea3f-4005-b74b-be4db2bb565c","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"3bedb046-4a86-4cd3-abd5-fc0da1034a61","path":"sprites/spr_Adhila_Portrait_Alt/spr_Adhila_Portrait_Alt.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"b581bce4-4564-4c5b-ac38-0aae9f98a72f","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"9888deb2-c327-44fc-80ca-7b674ea0235a","path":"sprites/spr_Adhila_Portrait_Alt/spr_Adhila_Portrait_Alt.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"8181a4f0-ed88-46eb-821b-e8537217667e","IsCreationKey":false,"Key":1.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"08a89432-81e2-40f4-b826-9cddb88b12ea","path":"sprites/spr_Adhila_Portrait_Alt/spr_Adhila_Portrait_Alt.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"c32c18aa-f253-42fb-bc4f-f62c981414ed","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"da9dd817-0c6f-4622-8de9-8f87c6888600","path":"sprites/spr_Adhila_Portrait_Alt/spr_Adhila_Portrait_Alt.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"aae8383d-df85-4663-ad00-0b604cf85d58","IsCreationKey":false,"Key":2.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"3c385671-e94b-4a1b-9aed-6d2a2457b7c2","path":"sprites/spr_Adhila_Portrait_Alt/spr_Adhila_Portrait_Alt.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"f1317d39-abe6-458f-b013-99b68dba3759","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"85359ce3-17c6-4b42-bd79-137f870ff3f7","path":"sprites/spr_Adhila_Portrait_Alt/spr_Adhila_Portrait_Alt.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"60c1333c-dd89-4285-be67-4ac78b4e6b9c","IsCreationKey":false,"Key":3.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

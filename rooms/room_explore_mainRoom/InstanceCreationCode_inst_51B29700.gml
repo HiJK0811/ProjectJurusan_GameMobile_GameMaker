@@ -9,3 +9,5 @@ trigger_scene_info = [
 	[cutscene_move_character, obj_NPC_Lylia, 548, 200],
 	[cutscene_move_camera, obj_Player]
 ]
+
+cutscene_id = "lylia_intro_scene";

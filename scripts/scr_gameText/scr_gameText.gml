@@ -103,8 +103,36 @@ function scr_gameText(_text_id){
 					scr_text("Saya akan menunggu di Cafe setelah kamu selesai memperbaiki jukeboxnya!", "Lylia", 1);
 					break;
 			
-	
+		// Lylia after completing logic gate
+		case "Lylia_post_logic":
+			scr_text("Halo player!", "Lylia", 1);
+			scr_text("Terima kasih telah memperbaiki jukeboxnya!", "Lylia", 1);
+			scr_text("Bagaimana? Apakah tugas tersebut susah?", "Lylia", 1);
+			// Input Player
+			scr_text("?", "Player", -1);
+			scr_option("Gampang sekali!", "jb_3");
+			scr_option("Tadi sedikit susah!", "jb_4")
+			break;
 			
+				case "jb_3":
+					scr_text("Wow, kamu memang orang hebat!", "Lylia", 1);
+					scr_text("Logic gate memerlukan pemikiran logika yang baik, dan kamu sanggup menyelesaikannya dengan mudah!", "Lylia", 1);
+					scr_gameText("Lylia_post_logic_cont");
+					break;
+					
+				case "jb_4":
+					scr_text("Tidak apa-apa Player, yang penting kamu sudah berusaha dan berkat kamu, ...", "Lylia", 1);
+					scr_text("Jukeboxnya mampu dibenarkan dan pengalaman pengunjung meningkat!", "Lylia", 1);
+					scr_gameText("Lylia_post_logic_cont");
+					break;
+					
+		case "Lylia_post_logic_cont":
+			scr_text("Karena kamu sudah memperbaiki jukebox...", "Lylia", 1);
+			scr_text("Selanjutnya, kamu bisa pergi ke office, ruangan di paling kanan, dan bertemu dengan Adhila!", "Lylia", 1);
+			scr_text("Di sana, dia akan menjelaskan apa yang akan kamu kerjakan!", "Lylia", 1);
+			scr_text("Player, jika kamu butuh istirahat, kamu bisa duduk sebentar di cafe sebelum ke sana! Ok!", "Lylia", 1);
+			scr_text("Ambil waktu kamu Player!", "Lylia", 1);
+			break;
 			
 	// // == Adhila ==
 		case "Adhila":

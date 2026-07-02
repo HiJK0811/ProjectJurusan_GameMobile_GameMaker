@@ -64,6 +64,7 @@ if (!level_completed) {
         // Check if this was the final level (Level 10 is index 9)
         if (global.current_level == global.total_levels - 1) {
             game_beaten = true;
+			global.logic_gate_completed = true;
         }
     }
 }

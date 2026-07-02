@@ -9,3 +9,5 @@ trigger_scene_info = [
 	[cutscene_move_character, obj_Player, 248, 232],
 	[cutscene_move_camera, obj_Player]
 ]
+
+cutscene_id = "adhila_intro_scene";

@@ -141,6 +141,7 @@
     {"id":{"name":"obj_conveyorbelt","path":"objects/obj_conveyorbelt/obj_conveyorbelt.yy",},},
     {"id":{"name":"obj_customFontSettings","path":"objects/obj_customFontSettings/obj_customFontSettings.yy",},},
     {"id":{"name":"obj_cutscene","path":"objects/obj_cutscene/obj_cutscene.yy",},},
+    {"id":{"name":"obj_cutsceneManager","path":"objects/obj_cutsceneManager/obj_cutsceneManager.yy",},},
     {"id":{"name":"obj_cutsceneTrigger","path":"objects/obj_cutsceneTrigger/obj_cutsceneTrigger.yy",},},
     {"id":{"name":"obj_dialogBox","path":"objects/obj_dialogBox/obj_dialogBox.yy",},},
     {"id":{"name":"obj_dispenser","path":"objects/obj_dispenser/obj_dispenser.yy",},},

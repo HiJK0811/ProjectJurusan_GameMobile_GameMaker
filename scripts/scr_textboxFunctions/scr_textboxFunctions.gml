@@ -27,7 +27,7 @@ function scr_text(_text){
 				speaker_sprite[page_number] = spr_portrait_player;
 				dialogBox_sprite[page_number] = spr_textBox_Purple;
 				break;
-				
+			
 			case "Adhila":
 				speaker_sprite[page_number] = spr_Adhila_Portrait;
 				dialogBox_sprite[page_number] = spr_textBox_Purple;

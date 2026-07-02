@@ -1,3 +1,4 @@
+timer++;
 var curr_action = scene_info[scene_index]
 
 var len = array_length(curr_action) - 1;

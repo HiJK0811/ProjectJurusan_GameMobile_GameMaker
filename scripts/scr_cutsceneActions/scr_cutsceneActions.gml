@@ -62,11 +62,8 @@ function cutscene_rotate_character(_obj_id, _direction) {
     cutscene_next();
 }
 
-function cutscene_wait(_seconds) {
-    timer--; // 'timer' is a variable in your obj_cutscene
-    
-    if (timer <= 0) {
+function cutscene_wait(_duration){
+    if(timer >= _duration){
         cutscene_next();
     }
 }
-

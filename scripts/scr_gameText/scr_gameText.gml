@@ -59,8 +59,7 @@ function scr_gameText(_text_id){
 			scr_text("Senang bertemu denganmu", "Adhila", 1);
 			break;
 		case "Lylia":
-			scr_text("Hello player! Aku Lylia", "Happy Derp", -1);
-			scr_text("It's dangerous to go alone. Take this!", "Happy Derp", -1);
+			scr_text("hey, can you help me fix this jukebox? i'd appreciate it", "Happy Derp", -1);
 			break;
 		case "Adhoc - calling":
 				scr_text("Next in line please", "Adhila", 1);
@@ -72,5 +71,11 @@ function scr_gameText(_text_id){
 				scr_text("what was your name again?", "Adhila", 1);
 				scr_text("alright then, you're all good, thank you", "Adhila", 1);
 				break;
+				
+		case "Lylia - problem":
+				scr_text("hey, the music box stopped playing","Happy Derp",1);
+				scr_text("yeah, it seems like it, we've been trying to fix it, but we haven't really got the time", "Lylia", 1);
+				scr_text("Really? that's a shame","Happy Derp",1);
+				break;	
 	}
 }

@@ -17,3 +17,10 @@ input_alt = vk_enter;
 can_interact = false;
 
 text_id = ""
+
+// Cutscene
+post_cutscene_check = ""; // The ID of the cutscene this NPC is waiting for
+post_cutscene_text_id = ""; // The text to show after that cutscene is done
+
+// Minigame
+post_logic_text_id = ""; // NEW: Variable for dialogue after the minigame

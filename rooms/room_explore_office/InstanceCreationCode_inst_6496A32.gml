@@ -1,4 +1,13 @@
 min_distance_to_player = 4;
-text_id = "Adhila"
 
-wander_range = 13 * 13
+// Default
+text_id = "Adhila_default"
+
+// Cutscene
+post_cutscene_check = "adhila_intro_scene"; // cutscene name
+post_cutscene_text_id = "Adhila_post_intro";
+
+// Minigame
+post_logic_text_id = "Adhila_post_logic";
+
+wander_range = 15 * 15

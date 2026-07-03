@@ -4,15 +4,37 @@ if(o_game.game_state != GameState.EXPLORE){
 }
 */
 
-// Stop movement if talking
-if (instance_exists(obj_dialogBox)) {
+// Stop movement 
+// 1. Check Game State
+if (obj_gameStates.game_state != GameState.EXPLORE) {
 	input_x = 0;
 	input_y = 0;
+	exit;
+}
+
+// 2. Cutscene / Dialogue Override
+if (instance_exists(obj_cutscene) || instance_exists(obj_dialogBox)) {
 	
-	// If you use GameMaker's built-in path movement, you also need to end the path
-	if (path_active) {
-		path_end(); 
-		path_active = false;
+	// Force the player to stop holding keyboard keys
+	// (We check !path_active so the cutscene scripts can still move the player!)
+	if (!path_active) {
+		input_x = 0;
+		input_y = 0;
+	}
+	
+} 
+// 3. Normal Player Control
+else {
+	
+	// Only read keyboard if we aren't being moved by a path
+	if (!path_active) {
+		right_key	= (keyboard_check(vk_right)	or keyboard_check(ord("D")));
+		left_key	= (keyboard_check(vk_left)	or keyboard_check(ord("A")));
+		up_key		= (keyboard_check(vk_up)	or keyboard_check(ord("W")));
+		down_key	= (keyboard_check(vk_down)	or keyboard_check(ord("S")));
+
+		input_x = (right_key - left_key);
+		input_y = (down_key - up_key);
 	}
 }
 

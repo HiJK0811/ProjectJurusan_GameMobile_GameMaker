@@ -7,6 +7,11 @@ function scr_gameText(_text_id){
 	switch(_text_id){
 		
 	// == LYLIA ==
+		case "Lylia_default":
+			scr_text("Halo Player!", "Lylia", 1);
+			scr_text("Senang bertemu denganmu!", "Lylia", 1);
+			break;
+			
 		// Lylia Intro
 		case "Lylia_intro":
 			scr_text("Halo, Selamat datang di Binusian Space Lounge", "Lylia", 1);
@@ -134,12 +139,86 @@ function scr_gameText(_text_id){
 			scr_text("Ambil waktu kamu Player!", "Lylia", 1);
 			break;
 			
-	// // == Adhila ==
-		case "Adhila":
-			scr_text("Hello player! Aku Adhila", "Adhila", 1);
-			scr_text("Senang bertemu denganmu", "Adhila", 1);
+	// == ADHILA ==
+		case "Adhila_default":
+			scr_text("Hai player!", "Adhila", 1);
+			scr_text("Nama aku Adhila!", "Adhila", 1);
+			scr_text("Aku mahasiswa BINUS yang sekarang lagi magang di lounge ini!", "Adhila", 1);
+			scr_text("Salam kenal!", "Adhila", 1);
 			break;
-		
+			
+		case "Adhila_intro":
+			scr_text("Hai player!", "Adhila", 1);
+			scr_text("Aku dengar kamu sudah memperbaiki jukebox...", "Adhila", 1);
+			scr_text("Itu benar kan?", "Adhila", 1);
+			// Input Player
+			scr_text("?", "Player", -1);
+			scr_option("Iya, saya memperbaikinya!", "adhila_intro_1");
+			scr_option("Bukan saya", "adhila_intro_2");
+			scr_option("Jukeboxnya memperbaiki sendiri!", "adhila_intro_3")
+			break;
+			
+				case "adhila_intro_1":
+					scr_text("Wow, terima kasih iya sudah memperbaikinya!", "Adhila", 1);
+					scr_text("Memang Kak Lylia tidak bohong kalau kamu itu orang berbakat!", "Adhila", 1);
+					scr_text("Karena kamu, cafenya tidak lagi membosankan karena sekarang sudah ada musik lagi!", "Adhila", 1);
+					scr_gameText("Adhila_intro_cont");
+					break;
+					
+				case "adhila_intro_2":
+					scr_text("Haha jangan berbohong Player!", "Adhila", 1);
+					scr_text("Aku sudah tahu kamu yang memperbaiknya karena Kak Lylia bilang ke aku", "Adhila", 1);
+					scr_text("Jadi, terima kasih sudah memperbaikinya!", "Adhila", 1);
+					scr_text("Karena kamu, cafenya tidak lagi membosankan karena sekarang sudah ada musik lagi!", "Adhila", 1);
+					scr_gameText("Adhila_intro_cont");
+					break;
+					
+				case "adhila_intro_3":
+					scr_text("Wah, benarkah?", "Adhila", 1);
+					scr_text("Terakhir kali aku cek, jukeboxnya rusak...", "Adhila", 1);
+					scr_text("Kok tiba-tiba jadi benar dengan sendirinya?", "Adhila", 1);
+					scr_text("Hmmm..., kira-kira siapa yang memperbaikinya ya?", "Adhila", 1);
+					scr_text("...", "Player", -1);
+					
+					scr_text("Kenapa Player? apakah kamu setuju kalau jukeboxnya memperbaiki sendirinya?", "Adhila", 1)
+					// Input Layer	
+					scr_text("?", "Player", -1);
+					scr_option("Iya...", "adhila_intro_4");
+					scr_option("Mungkin saja", "adhila_intro_5")
+					break;
+					
+						case "adhila_intro_4":
+							scr_text("Kok kamu kelihatan tidak yakin?", "Adhila", 1);
+							scr_text("Aku sudah tahu kalau kamu memperbaikinya!", "Adhila", 1);
+							scr_text("Karena Kak Lylia sudah memberi tahu saya...", "Adhila", 1);
+							scr_text("Jadi, terima kasih ya sudah memperbaikinya!", "Adhila", 1);
+							scr_gameText("Adhila_intro_cont");
+						break;
+					
+						case "adhila_intro_5":
+							scr_text("Iya kalau gitu, kemungkinan juga kamu yang memperbaikinya!", "Adhila", 1);
+							scr_text("Jadi, terima kasih ya sudah memperbaikinya!", "Adhila", 1);
+							scr_text("Aku sudah tahu kalau kamu memperbaikinya!", "Adhila", 1);
+							scr_text("Karena Kak Lylia sudah memberi tahu saya tadi!", "Adhila", 1);
+							scr_gameText("Adhila_intro_cont");
+						break;
+					
+			case "Adhila_intro_cont":
+				scr_text("Ok, jadi untuk permasalahan di ruang ini...", "Adhila", 1);
+				scr_text("Sistem navigasi kita untuk rute antar-planet kurang optimal...", "Adhila", 1);
+				scr_text("Ini menyebabkan gangguan navigasi dan keterlambatan datanganya kapal angkasa ke planet tujuan...", "Adhila", 1);
+				scr_text("Untuk meneyelsaikan masalah ini, aku ingin kamu membantu aku dalam memperbaiki sistem navgisanya!", "Adhila", 1);
+				scr_text("Ok Player, untuk melaksanakan tugasnya bisa pergi ke ruang meeting yang berada di belakang pintu ini!", "Adhila", 1);
+				scr_text("Semoga sukses player!", "Adhila", 1);
+				break;
+				
+		case "Adhila_post_intro":
+			scr_text("Hai player!", "Adhila", 1);
+			scr_text("Kamu boleh masuk ke ruang meeting di belakang pintu untuk memulai tugasnya!", "Adhila", 1);
+			scr_text("Tidak harus cepat selesainya, kamu bisa ke kafe dulu kalau kamu butuh istirahat", "Adhila", 1);
+			scr_text("Dan jika nanti kamu kesusahan mengerjakan, kamu bisa nanya ke staf yang sedang bekerja di sana!", "Adhila", 1);
+			scr_text("Ok Player, semoga sukses!", "Adhila", 1);
+			break;
 			
 		//case "npc 1":
 		//	scr_text("Hi I'm Happy Derp", "Happy Derp", -1);

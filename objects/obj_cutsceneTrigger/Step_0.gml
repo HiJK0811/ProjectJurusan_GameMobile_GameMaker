@@ -16,6 +16,9 @@ if (!instance_exists(obj_cutscene)) {
 		instance_deactivate_object(obj_pause);
 		_inst.scene_info = trigger_scene_info;
 		
+		//// --- NEW DEBUG MESSAGE ---
+		//show_debug_message(">>> TRIGGER SAVED TO MEMORY: " + string(cutscene_id));
+		
 		if (!permanent) {
 			// Save to our global memory that THIS specific cutscene is done
 			global.played_cutscenes[$ cutscene_id] = true;

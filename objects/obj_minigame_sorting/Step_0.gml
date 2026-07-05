@@ -26,33 +26,41 @@ switch(state)
     // =================================================
     // ARRIVAL
     // =================================================
+case ORDER_STATE.ARRIVAL:
 
-    case ORDER_STATE.ARRIVAL:
-	if(!npc_arrived)
-{
-    npc_x += npc_speed;
-
-    if(npc_x >= npc_target_x)
+    if(!npc_arrived)
     {
-        npc_x = npc_target_x;
-        npc_arrived = true;
-    }
-}
-else
+        npc_x -= npc_speed;
+		npc_facing = 1;
+
+       npc_walk_timer++;
+
+if(npc_walk_timer >= npc_walk_speed)
 {
-    npc_arrived = true;
+    npc_walk_timer = 0;
+    npc_walk_frame = 1 - npc_walk_frame;
 }
 
-if(npc_arrived)
-{
-    if(mouse_check_button_pressed(mb_left))
+        if(npc_x <= npc_target_x)
+        {
+            npc_x = npc_target_x;
+
+            npc_arrived = true;
+
+            npc_walk_frame = 0;
+            npc_walk_timer = 0;
+        }
+    }
+
+    if(npc_arrived)
     {
-        state = ORDER_STATE.MINIGAME;
+        if(mouse_check_button_pressed(mb_left))
+        {
+            state = ORDER_STATE.MINIGAME;
+        }
     }
-}
 
-
-    break;
+break;
 
     // =================================================
     // MINIGAME
@@ -462,80 +470,84 @@ else
 
     case ORDER_STATE.REACTION:
 
-        if(mouse_check_button_pressed(mb_left))
-        {
-            state =
-                ORDER_STATE.LEAVE;
-        }
+    if(mouse_check_button_pressed(mb_left))
+    {
+       npc_arrived = false;
 
-    break;
+npc_arrived = false;
+
+npc_facing = 1;
+
+npc_walk_frame = 0;
+npc_walk_timer = 0;
+
+
+
+
+state = ORDER_STATE.LEAVE;
+    }
+
+break;
 
     // =================================================
     // LEAVE
     // =================================================
 
-    case ORDER_STATE.LEAVE:
+case ORDER_STATE.LEAVE:
 
-        npc_x += 4;
+     npc_x -= npc_speed;
+	 show_debug_message(
+    "X = " + string(npc_x) +
+    " Exit = " + string(npc_exit_x)
+);
+	 npc_facing = 1;
 
-        if(npc_x > room_width + 150)
-        {
-            current_customer++;
+   npc_walk_timer++;
 
-            if(current_customer >= total_customer)
+if(npc_walk_timer >= npc_walk_speed)
+{
+    npc_walk_timer = 0;
+    npc_walk_frame = 1 - npc_walk_frame;
+}
+
+   
+
+    if(npc_x <= npc_exit_x)
+{
+    npc_walk_frame = 0;
+    npc_walk_timer = 0;
+
+    current_customer++;
+
+    if(current_customer >= total_customer)
+    {
+        final_accuracy = round(correct_count / total_customer * 100);
+
+        if(final_accuracy >= 80)
+            final_rank = "A";
+        else if(final_accuracy >= 60)
+            final_rank = "B";
+        else
+            final_rank = "C";
+
+        state = ORDER_STATE.STAGE_COMPLETE;
+    }
+    else
+    {
+        src_generate_customer();
+        state = ORDER_STATE.ARRIVAL;
+    }
+}
+
+break;
+
+case ORDER_STATE.STAGE_COMPLETE:
+if(mouse_check_button_pressed(mb_left))
             {
-                final_accuracy =
-                    round(
-                        correct_count /
-                        total_customer *
-                        100
-                    );
+				room_goto(room_explore_mainRoom)
+			}
 
-                if(final_accuracy >= 80)
-                {
-                    final_rank = "A";
-                }
-                else if(final_accuracy >= 60)
-                {
-                    final_rank = "B";
-                }
-                else
-                {
-                    final_rank = "C";
-                }
-
-                state =
-                    ORDER_STATE.STAGE_COMPLETE;
-            }
-            else
-            {
-                src_generate_customer();
-				
-
-npc_x = -200;
-npc_y = 120;
-npc_arrived = false;
-
-
-                state =
-                    ORDER_STATE.ARRIVAL;
-            }
-        }
-
-    break;
-
-    // =================================================
-    // COMPLETE
-    // =================================================
-
-    case ORDER_STATE.STAGE_COMPLETE:
-	//sementara
-	if(mouse_check_button_pressed(mb_left))
-        {
-            room_goto(room_explore_mainRoom)
-        }
-
-    break;
+break;
 }
 if(time_up)
 {
@@ -557,6 +569,8 @@ if(time_up)
 				room_goto(room_explore_mainRoom)
 			}
 		}
+	
+
 /*scroll_offset = 0;
 scroll_offset -= mouse_wheel_up() * 50;
 scroll_offset += mouse_wheel_down() * 50;

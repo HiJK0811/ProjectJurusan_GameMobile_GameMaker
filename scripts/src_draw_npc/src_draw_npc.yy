@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"src_draw_npc",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"src_draw_npc",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

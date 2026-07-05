@@ -1,10 +1,95 @@
+randomize();
 src_menu_database();
 
 
 old_npc_name = "";
 old_npc_color = c_white;
 old_requirement = "";
+
+old_npc_name_index = -1;
+old_npc_sprite_index = -1;
 customer_log = [];
+//====================
+// NPC SPRITE
+//====================
+
+npc_scale = 5;
+
+npc_speed = 2.5;
+npc_walk_speed = 8.5;
+
+npc_start_x = 720;      // depan pintu
+npc_target_x = 150;     // depan kasir
+npc_start_y = 305;
+npc_target_y = 305;
+
+npc_y = 310;
+npc_walk_frame = 0;
+npc_walk_timer = 0;
+
+//npc_facing = 1; // 1 = kanan
+
+/*npc_direction = "ENTER";
+
+npc_frame = 0;
+npc_anim_speed = 0.18;*/
+
+npc_walk1 =
+[
+    spr_npc1_walk,
+    spr_npc2_walk,
+    spr_npc3_walk,
+    spr_npc4_walk,
+    spr_npc5_walk,
+    spr_npc6_walk,
+    spr_npc7_walk,
+    spr_npc8_walk,
+    spr_npc9_walk,
+    spr_npc10_walk
+];
+
+/*npc_walk2 =
+[
+    spr_npc1_walk_2,
+    spr_npc2_walk_2,
+    spr_npc3_walk_2,
+    spr_npc4_walk_2,
+    spr_npc5_walk_2,
+    spr_npc6_walk_2,
+    spr_npc7_walk_2,
+    spr_npc8_walk_2,
+    spr_npc9_walk_2,
+    spr_npc10_walk_2
+];*/
+
+npc_idle =
+[
+    spr_npc1_walk_stay,
+    spr_npc2_walk_stay,
+    spr_npc3_walk_stay,
+    spr_npc4_walk_stay,
+    spr_npc5_walk_stay,
+    spr_npc6_walk_stay,
+    spr_npc7_walk_stay,
+    spr_npc8_walk_stay,
+    spr_npc9_walk_stay,
+    spr_npc10_walk_stay
+];
+
+npc_portrait =
+[
+    spr_npc1_portrait,
+    spr_npc2_portrait,
+    spr_npc3_portrait,
+    spr_npc4_portrait,
+    spr_npc5_portrait,
+    spr_npc6_portrait,
+    spr_npc7_portrait,
+    spr_npc8_portrait,
+    spr_npc9_portrait,
+    spr_npc10_portrait
+];
+portrait_scale = 5;
 
 enum ORDER_STATE
 {
@@ -18,20 +103,37 @@ enum ORDER_STATE
 }
 npc_names =
 [
-    "Rena",
-    "Nova",
-    "Milo",
-    "Dante",
-    "Luna"
+    "Rena","Nova","Milo","Dante","Luna",
+    "Aiden","Kai","Riku","Hana","Sora",
+    "Yuna","Aria","Liam","Niko","Ayla",
+    "Noah","Ren","Hiro","Aoi","Mika",
+    "Ethan","Ruby","Luca","Kira","Zane",
+    "Felix","Nina","Yuki","Leo","Elena",
+    "Rin","Asher","Celine","Rei","Maya"
 ];
 
 npc_colors =
 [
+    c_white,
     c_red,
     c_blue,
     c_green,
     c_yellow,
-    c_purple
+    c_orange,
+    c_lime,
+    c_aqua,
+    c_teal,
+    c_fuchsia,
+    c_purple,
+    c_maroon,
+    c_navy,
+    c_olive,
+    c_silver,
+    make_color_rgb(255,170,0),
+    make_color_rgb(255,120,180),
+    make_color_rgb(120,220,255),
+    make_color_rgb(180,255,120),
+    make_color_rgb(255,210,120)
 ];
 /*menu_data =
 [
@@ -177,27 +279,7 @@ sad_quotes =
     "Coba lebih fokus lain kali."
 ];
 
-// =====================================================
-// NPC POSITION
-// =====================================================
 
-npc_panel_x = 20;
-npc_panel_y = 80;
-
-npc_panel_w = 220;
-npc_panel_h = 320;
-
-npc_x =
-    npc_panel_x + 50;
-
-npc_y =
-    npc_panel_y + 50;
-	npc_target_x = 80;
-npc_speed = 4;
-
-npc_x = -200;
-npc_y = 120;
-npc_arrived = false;
 // =====================================================
 // MENU PANEL
 // =====================================================
@@ -293,6 +375,8 @@ hover_submit = false;
 
 can_submit = false;
 scroll_offset = 0;
-
+npc_exit_x = -120;
 visible_rows = 8;
 has_player_sorted = false;
+old_npc_name_index = -1;
+old_npc_sprite_index = -1;

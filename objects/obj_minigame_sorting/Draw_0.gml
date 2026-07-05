@@ -1,52 +1,9 @@
 
 // ================= DRAW EVENT =================
-// ================= NPC PANEL =================
-
-draw_set_alpha(0.8);
-draw_set_color(c_black);
-
-draw_rectangle(
-    npc_panel_x,
-    npc_panel_y,
-    npc_panel_x + npc_panel_w,
-    npc_panel_y + npc_panel_h,
-    false
-);
-
-draw_set_alpha(1);
-
-draw_set_color(npc_color);
-
-draw_rectangle(
-    npc_x,
-    npc_y,
-    npc_x + 80,
-    npc_y + 120,
-    false
-);
-
-
-draw_text(
-    npc_x + 10,
-    npc_y + 130,
-    npc_name
-);
-draw_sprite_ext(
-    spr_chatbox,
-    0,
-    220,
-    100,
-    0.7,
-    0.7,
-    0,
-    c_white,
-    1
-);
-
-
 switch(state)
 {
     case ORDER_STATE.ARRIVAL:
+	src_draw_npc();
 
 
         draw_set_color(c_white);
@@ -60,6 +17,7 @@ switch(state)
     break;
 
     case ORDER_STATE.MINIGAME:
+	src_draw_npc();
 
         var sec = ceil(time_left / room_speed);
         var ratio = time_left / (time_limit * room_speed);
@@ -382,7 +340,7 @@ draw_set_color(c_white);
 
     case ORDER_STATE.LEAVE:
 
-       
+       src_draw_npc();
 
     break;
 

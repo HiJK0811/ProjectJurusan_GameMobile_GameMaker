@@ -44,5 +44,5 @@ for(var i=0;i<array_length(menu_data);i++)
         menu_data[i]
     );
 }
-    src_shuffle_menu();
+   // src_shuffle_menu();
 }

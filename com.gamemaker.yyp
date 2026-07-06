@@ -67,7 +67,6 @@
     {"$GMFolder":"","%Name":"Lylia","folderPath":"folders/Jason_Main NPC Cutscene/Sprites/Characters/Lylia.yy","name":"Lylia","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"NPC_Lylia_Idle","folderPath":"folders/Jason_Main NPC Cutscene/Sprites/Characters/Lylia/NPC_Lylia_Idle.yy","name":"NPC_Lylia_Idle","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"NPC_Lylia_Walk","folderPath":"folders/Jason_Main NPC Cutscene/Sprites/Characters/Lylia/NPC_Lylia_Walk.yy","name":"NPC_Lylia_Walk","resourceType":"GMFolder","resourceVersion":"2.0",},
-    {"$GMFolder":"","%Name":"Player_Floating","folderPath":"folders/Jason_Main NPC Cutscene/Sprites/Characters/Player_Floating.yy","name":"Player_Floating","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Player","folderPath":"folders/Jason_Main NPC Cutscene/Sprites/Characters/Player.yy","name":"Player","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Player_Idle","folderPath":"folders/Jason_Main NPC Cutscene/Sprites/Characters/Player/Player_Idle.yy","name":"Player_Idle","resourceType":"GMFolder","resourceVersion":"2.0",},
     {"$GMFolder":"","%Name":"Player_Walk","folderPath":"folders/Jason_Main NPC Cutscene/Sprites/Characters/Player/Player_Walk.yy","name":"Player_Walk","resourceType":"GMFolder","resourceVersion":"2.0",},

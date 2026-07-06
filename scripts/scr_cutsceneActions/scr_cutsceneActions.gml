@@ -67,3 +67,15 @@ function cutscene_wait(_duration){
         cutscene_next();
     }
 }
+
+function cutscene_break_jukebox(_duration){
+    if(timer == 1){
+        // runs once, on the very first frame of this step
+        obj_jukebox.sprite_index = spr_Jukebox_broken;
+        obj_jukebox.image_index = 0;
+    }
+    
+    if(timer >= _duration){
+        cutscene_next();
+    }
+}

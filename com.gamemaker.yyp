@@ -277,6 +277,7 @@
     {"id":{"name":"spr_holograficboard","path":"sprites/spr_holograficboard/spr_holograficboard.yy",},},
     {"id":{"name":"spr_holograficmain","path":"sprites/spr_holograficmain/spr_holograficmain.yy",},},
     {"id":{"name":"spr_interactible","path":"sprites/spr_interactible/spr_interactible.yy",},},
+    {"id":{"name":"spr_Jukebox_broken","path":"sprites/spr_Jukebox_broken/spr_Jukebox_broken.yy",},},
     {"id":{"name":"spr_Jukebox","path":"sprites/spr_Jukebox/spr_Jukebox.yy",},},
     {"id":{"name":"spr_logicGates","path":"sprites/spr_logicGates/spr_logicGates.yy",},},
     {"id":{"name":"spr_logicLight","path":"sprites/spr_logicLight/spr_logicLight.yy",},},

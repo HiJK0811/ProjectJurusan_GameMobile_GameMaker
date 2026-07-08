@@ -12,7 +12,7 @@ function scr_gameText(_text_id){
 			scr_text("Senang bertemu denganmu!", "Lylia", 1);
 			break;
 			
-		// Lylia Intro
+		// Lylia Intro Cutscene
 		case "Lylia_intro":
 			scr_text("Halo, Selamat datang di Binusian Space Lounge", "Lylia", 1);
 			scr_text("Perkenalkan nama saya Lylia, saya adalah pengurus tempat ini!", "Lylia", 1);
@@ -80,7 +80,7 @@ function scr_gameText(_text_id){
 				break;
 			
 		
-		// Lylia Logic Gate
+		// Lylia Logic Gate Intro
 		case "Lylia_post_intro":
 			scr_text("Halo player!", "Lylia", 1);
 			scr_text("Apakah kamu ada masalah dalam memperbaiki jukeboxnya?", "Lylia", 1);
@@ -139,6 +139,16 @@ function scr_gameText(_text_id){
 			scr_text("Ambil waktu kamu Player!", "Lylia", 1);
 			break;
 			
+		// Lylia after completing graph
+		case "Lylia_post_graph":
+			scr_text("Halo player!", "Lylia", 1);
+			scr_text("Terima kasih telah memperbaiki sistem navigasi kami!", "Lylia", 1);
+			scr_text("Aku sudah tahu kamu bisa melakukannya!", "Lylia", 1);
+			scr_text("Untuk permasalahan selanjutnya, harap pergi ke Storage Room yang berada di atas Cafe!", "Lylia", 1);
+			scr_text("Semoga sukses dan ambil waktumu Player!", "Lylia", 1);
+			break;
+			
+			
 	// == ADHILA ==
 		case "Adhila_default":
 			scr_text("Hai player!", "Adhila", 1);
@@ -146,7 +156,8 @@ function scr_gameText(_text_id){
 			scr_text("Aku mahasiswa BINUS yang sekarang lagi magang di lounge ini!", "Adhila", 1);
 			scr_text("Salam kenal!", "Adhila", 1);
 			break;
-			
+		
+		// Adhila Intro Cutscene
 		case "Adhila_intro":
 			scr_text("Hai player!", "Adhila", 1);
 			scr_text("Aku dengar kamu sudah memperbaiki jukebox...", "Adhila", 1);
@@ -211,7 +222,8 @@ function scr_gameText(_text_id){
 				scr_text("Ok Player, untuk melaksanakan tugasnya bisa pergi ke ruang meeting yang berada di belakang pintu ini!", "Adhila", 1);
 				scr_text("Semoga sukses player!", "Adhila", 1);
 				break;
-				
+		
+		// Adhila after cutscene
 		case "Adhila_post_intro":
 			scr_text("Hai player!", "Adhila", 1);
 			scr_text("Kamu boleh masuk ke ruang meeting di belakang pintu untuk memulai tugasnya!", "Adhila", 1);
@@ -219,55 +231,148 @@ function scr_gameText(_text_id){
 			scr_text("Dan jika nanti kamu kesusahan mengerjakan, kamu bisa nanya ke staf yang sedang bekerja di sana!", "Adhila", 1);
 			scr_text("Ok Player, semoga sukses!", "Adhila", 1);
 			break;
+		
+		// Adhila after completing graph
+		case "Adhila_post_graph":
+			scr_text("Hai player!", "Adhila", 1);
+			scr_text("Terima kasih ya, sudah memperbaiki sistem navigasi kami!", "Adhila", 1);
+			scr_text("Dengan perbaikan kamu, aku percaya kalau proses navigasi antarplanet menjadi lebih bagus!", "Adhila", 1);
+			scr_text("Untuk permasalahan di lounge, masih ada beberapa lagi!", "Adhila", 1);
+			scr_text("Aku dengar kalau di Storage Room, terdapat permasalahan logistik... ", "Adhila", 1);
+			scr_text("di Control Room, ada permasalahan alur kerja karyawan...", "Adhila", 1);
+			scr_text("dan menu di Cafe belum tersortir...", "Adhila", 1);
+			scr_text("Aku yakin kamu bisa membantu mereka menyelesaikan permasalahan tersebut!", "Adhila", 1);
+			scr_text("Semoga sukses Player, dan sampai jumpa!", "Adhila", 1);
+			scr_text("~ Sepertinya masih ada beberapa masalah di lounge ini! ~");
+			scr_text("~ Saya merasa untuk membantu permasalahn di Storange Room terlebih dahulu! ~");
+			break;
 			
-		//case "npc 1":
-		//	scr_text("Hi I'm Happy Derp", "Happy Derp", -1);
-		//	scr_text("Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Maecenas porttitor congue massa. Fusce posuere, magna sed pulvinar ultricies, purus lectus malesuada libero, sit amet commodo magna eros quis urna. Nunc viverra imperdiet enim. Fusce est. Vivamus a tellus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Proin pharetra nonummy pede. Mauris et orci.", "Happy Derp", -1)
-		//	scr_text("Happy Derp is derpy and happy");
-		//	scr_text("Oh hey Happy Derp", "Player", 1);
-		//	scr_text("Nice to meet you", "Happy Derp", -1);
-		//		scr_option("Nice to meet you too!", "npc 1 - nice");
-		//		scr_option("Get lost", "npc 1 - mean");
-		//	break;
-		//	case "npc 1 - nice":
-		//		scr_text("Nice too meet you too Happy Derp", "Player", 1);
-		//		scr_text("YAAAYYY NEW FREN :D", "Happy Derp", -1);
-		//		scr_text("Man this guy is annoying")
-		//		scr_text("We're no strangers to love. You know the rules and so do I. A full commitment's what I'm thinking of. You wouldn't get this from any other guy. I just wanna tell you how I'm feeling. Gotta make you understand. Never gonna give you up. Never gonna let you down. Never gonna run around and desert you. Never gonna make you cry. Never gonna say goodbye. Never gonna tell a lie and hurt you.", "Happy Derp", -1);
-		//		scr_text("To Room 3");
-		//		// room_goto(Room3);
-		//		break;
-		//	case "npc 1 - mean":
-		//		scr_text("Get lost Happy Derp", "Player", 1);
-		//		scr_text("We're no strangers to love. You know the rules and so do I. A full commitment's what I'm thinking of. You wouldn't get this from any other guy. I just wanna tell you how I'm feeling. Gotta make you understand. Never gonna give you up. Never gonna let you down. Never gonna run around and desert you. Never gonna make you cry. Never gonna say goodbye. Never gonna tell a lie and hurt you.", "Player", 1);
-		//		scr_text("WAAAAHHHHH :((", "Sad Derp", 1);
-		//		scr_text("To Room 1");
-		//		// room_goto(Room1);
-		//		break;			
+	// == AMI ==
+		case "Ami_default":
+			scr_text("Hei Player!", "Lylia", 1);
+			scr_text("Salam kenal, aku Ami", "Lylia", 1);
+			scr_text("Pengurus bagian logistik lounge ini", "Lylia", 1);
+			break;
 			
-		//case "npc 2":
-		//	scr_text("Sup! I'm NPC 2");
-		//	scr_text("Lorem ipsum dolor sit amet.");
-		//	break;
-		//case "npc 3":
-		//	scr_text("Hey I'm Derpy Derp", "Derpy Derp");
-		//	scr_text("Did you ever hear the tragedy of Darth Plagueis The Wise?", "Derpy Derp");
-		//		scr_option("Yeah, I've heard of it", "npc 3 - know");
-		//		scr_option("No, I haven't", "npc 3 - don't know");
-		//	break;
-		//	case "npc 3 - know":
-		//		scr_text("Yeah, I've heard of it.", "Player", -1);
-		//		scr_text("It's a Sith legend. Darth Plagueis was a Dark Lord of the Sith, so powerful and so wise he could use the Force to influence the midichlorians to create life…", "Player", -1);
-		//		scr_text("Aww you stole my line man.", "Derpy Derp");
-		//		scr_text("To Room 3");
-		//		// room_goto(Room3);
-		//		break;
-		//	case "npc 3 - don't know":
-		//		scr_text("No, I haven't. What's that?", "Player", -1);
-		//		scr_text("I thought not. It's not a story the Jedi would tell you.", "Derpy Derp");
-		//		scr_text("It's a Sith legend. Darth Plagueis was a Dark Lord of the Sith, so powerful and so wise he could use the Force to influence the midichlorians to create life…", "Derpy Derp");
-		//		scr_text("To Room 1");
-		//		// room_goto(Room1);
-		//		break;				
+		// Ami and Lylia Cutscene
+		case "Ami_default":
+			scr_text("Halo Ami, apakah ada permasalahan di Storage Room?", "Lylia", 1);
+			scr_text("Iya Lia, tetap ada masalah itu lagi...", "Ami", 1);
+			scr_text("Proses logistik kita itu kurang efisien, Lia", "Ami", 1);
+			scr_text("Kita sering mengirim barang ke planet lain, tetapi prosesnya sedikit lama dan tidak efisien!", "Ami", 1);
+			scr_text("Dan ketika kita menerima barang, aku tidak mampu sortir semua barang tersebut dalam waktu!", "Ami", 1);
+			scr_text("Aku tidak tahu harus apa lagi, Lia...", "Ami", 1);
+			scr_text("AKu sudah bekerja sekeras mungkin dan saya sering capai memikirkan ini!", "Ami", 1);
+			scr_text("Wah, maaf Ami, saya tidak tahu kamu harus bekerja sekeras ini!", "Lylia", 1);
+			scr_text("Apakah yang saya bisa lakukan untuk membantumu?", "Lylia", 1);
+			scr_text("Aku butuh pekerja lagi, Lia, dan aku tidak tahu siapa yang bisa membantu!", "Ami", 1);
+			scr_text("Hmm, saya izin berkomentar, saya rekomen kamu untuk rekrut Player untuk membantumu!", "Lylia", 1);
+			scr_text("Player kah, orang yang memperbaiki jukebox bukan? kenapa kamu rekomen dia?", "Ami", 1);
+			scr_text("Iya, itu dia yang memperbaikinya, dia juga barusan memperbaiki sistem navigasi kami!", "Lylia", 1);
+			scr_text("Saya yakin Player akan bisa membantu permasalahanmu dengan baik!", "Lylia", 1);
+			scr_text("Menyelesaikan masalah-masalah tersebut tidak gampang dan memerlukan pemikiran dan logika yang bagus!", "Lylia", 1);
+			scr_text("Hmm...", "Ami", 1);
+			scr_text("Ok Lia, aku percaya kamu!", "Ami", 1);
+			scr_text("Terima kasih Lia untuk sugestinya!", "Ami", 1);
+			scr_text("Tidak apa-apa Ami!", "Lylia", 1);
+			scr_text("Lia itu Player bukan?", "Ami", 1);
+			scr_gameText("Ami_intro_cont");
+			break;
+			
+			case "Ami_intro_cont":
+				scr_text("Halo Player!, ini Ami, pengurus logistik lounge!", "Lylia", 1);
+				scr_text("Dia bekerja di Storage Room, ruangan di atas Cafe!", "Lylia", 1);
+				scr_text("Apakah kamu sudah mengenal Ami?", "Lylia", 1);
+				// Input Layer	
+					scr_text("?", "Player", -1);
+					scr_option("Iya, saya tadi kenalan dengan Ami", "ami_intro_1");
+					scr_option("Saya belum mengenal Ami!", "ami_intro_2")
+					break;
+					
+					case "ami_intro_1":
+						scr_text("Iya, tadi Player bertemu dengan saya!", "Ami", 1);
+						scr_text("Wow, bagus sekali kalian sudah kenalan!", "Lylia", 1);
+						scr_text("Kata Lylia, kamu adalah orang yang cocok untuk menyelesaikan permasalahan saya!", "Ami", 1);
+						scr_text("Iya betul, jadi Ami mempunyai masalah logistik yang perlu diselesaikan!", "Lylia", 1);
+						scr_text("Iya nanti ketemu aku di Storage Room untuk menjelaskan lebih lanjut!", "Ami", 1);
+						scr_text("Player, aku harus kembali kerja terlebih dahulu, sampai jumpa!", "Ami", 1);
+						scr_gameText("Ami_intro_last");
+						break;
+					
+						case "ami_intro_2":
+						scr_text("Ok Player, namaku Ami, salam kenal!", "Ami", 1);
+						scr_text("Kata Lylia, kamu adalah orang yang cocok untuk menyelesaikan permasalahan saya!", "Ami", 1);
+						scr_text("Iya betul, jadi Ami mempunyai masalah logistik yang perlu diselesaikan!", "Lylia", 1);
+						scr_text("Iya nanti ketemu aku di Storage Room untuk menjelaskan lebih lanjut!", "Ami", 1);
+						scr_text("Player, aku harus kembali kerja terlebih dahulu, sampai jumpa!", "Ami", 1);
+						scr_gameText("Ami_intro_last");
+						break;
+						
+			case "Ami_intro_last":
+				scr_text("Player, aku harap kamu bisa membantu Ami menyelesaikan masalah dia!", "Lylia", 1);
+				obj_cutscene.introCompleted = true;
+				break;
+			
+			// Ami Hanoi Intro
+			case "Ami_hanoi_intro":
+				scr_text("Hei Player! kita ketemu lagi!", "Ami", 1);
+				scr_text("Tanpa basa-basi, aku akan jelaskan apa yang kamu lakukan!", "Ami", 1);
+				scr_text("Jadi, kamu membantu saya memindahkan kontainer-kontainer yang tertumpuk ke conveyor belt untuk dikirim!", "Ami", 1);
+				scr_text("Sayangnya karena tempat ini terbatas dan containernya berat, kamu harus memindahkan kontainernya dengan cara tertentu!", "Ami", 1);
+				// Input Layer	
+					scr_text("?", "Player", -1);
+					scr_option("Cara tertentu?", "ami_hanoi_1");
+					scr_option("Apakah caranya mirip dengan Tower of Hanoi?", "ami_hanoi_2")
+					break;
+					
+					case "ami_hanoi_1":
+						scr_text("Maaf, aku kira kamu sudah tahu...", "Ami", 1);
+						scr_text("Kamu bisa menggunakan cara Tower of Hanoi", "Ami", 1);
+						scr_text("Kita menggunakan cara ini karena efisien dan clawnya tidak bisa memindahkan tumpukan container!", "Ami", 1);
+						scr_text("Untuk cara kerjanya, jadi kamu hanya bisa memindahkan containernya satu per satu dan tidak bisa menempatkan comntainer lebih besar di atas yang lebih kecil!", "Ami", 1);
+						scr_text("Untuk ini, kamu harus hati-hati untuk tempat penempatan containernya!", "Ami", 1);
+						scr_gameText("Ami_hanoi_last")
+						break;
+					
+						case "ami_hanoi_2":
+						scr_text("Benar Player, emang kau pintar Player!", "Ami", 1);
+						scr_text("Kalau begitu, apakah kamu sudah tahu cara kerja Tower of Hanoi?", "Ami", 1);
+						// Input Layer	
+							scr_text("?", "Player", -1);
+							scr_option("Saya sudah tahu caranya!", "ami_hanoi_3");
+							scr_option("Saya belum terlalu familiar!", "ami_hanoi_1")
+							break;
+							
+							case "ami_hanoi_3":
+								scr_text("Bagus sekali Player!", "Ami", 1);
+								scr_gameText("Ami_hanoi_last")
+								break;
+						
+			case "Ami_hanoi_last":
+				scr_text("Ok Player, karena kamu sudah tahu cara kerjanya!", "Ami", 1);
+				scr_text("Kamu bisa menggunakan control panelnya untuk mengoperasi clawnya...", "Ami", 1);
+				scr_text("dan memindahkan containernya!", "Ami", 1);
+				scr_text("Ingat, hanya satu container saja dan tidak bukan tumpukan!", "Ami", 1);
+				scr_text("Dan Player, karena proses ini menguras waktu...", "Ami", 1);
+				scr_text("Kamu bisa memilih 2 dari 3 tumpukan container untuk dpindahkan!", "Ami", 1);
+				scr_text("Atau kamu bisa menyelesaikan tiga-tiganya, aku tidak keberatan!", "Ami", 1);
+				scr_text("Semoga kamu bisa menyelesaikannya Player!", "Ami", 1);
+				break;
+			
+			// Ami after completing Hanoi minigame
+			case "Ami_post_hanoi":
+				scr_text("Hei player!", "Ami", 1);
+				scr_text("Selamat telah membantu aku memindahkan tumpukan kontainernya!", "Ami", 1);
+				scr_text("Aku berterima kasih banget kepadamu!", "Ami", 1);
+				scr_text("Ini sangat berarti bagi ku, jadi terima kasih lagi Player!", "Ami", 1);
+				scr_text("Karena kamu sudah menyelesaikan masalah ini, kamu bisa menyelesaikan masalah lain di lounge atau istirahat dulu!", "Ami", 1);
+				scr_text("Itu pilhanmu Player!", "Ami", 1);
+				scr_text("Ok Player, sampai jumpa kembali!", "Ami", 1)
+				scr_text("~ Sekarang terdapat 2 masalah lagi! ~");
+				scr_text("~ Saya harap cek Control Room terlebih dahulu! ~");
+				break;
+		
+					
+						
 	}
 }

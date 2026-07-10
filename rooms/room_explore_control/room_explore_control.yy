@@ -17,6 +17,7 @@
     {"name":"inst_77311DEF1","path":"rooms/room_explore_control/room_explore_control.yy",},
     {"name":"inst_446362AB2","path":"rooms/room_explore_control/room_explore_control.yy",},
     {"name":"inst_2B83248D","path":"rooms/room_explore_control/room_explore_control.yy",},
+    {"name":"inst_94B2692","path":"rooms/room_explore_control/room_explore_control.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -32,6 +33,7 @@
         {"$GMRInstance":"v4","%Name":"inst_77311DEF1","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_77311DEF1","objectId":{"name":"obj_Wall","path":"objects/obj_Wall/obj_Wall.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.961586,"scaleY":1.0,"x":432.18842,"y":344.43356,},
         {"$GMRInstance":"v4","%Name":"inst_446362AB2","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_446362AB2","objectId":{"name":"obj_pause","path":"objects/obj_pause/obj_pause.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":24.0,"y":13.0,},
         {"$GMRInstance":"v4","%Name":"inst_2B83248D","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2B83248D","objectId":{"name":"obj_Wall","path":"objects/obj_Wall/obj_Wall.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.961586,"scaleY":1.0,"x":432.73352,"y":280.2168,},
+        {"$GMRInstance":"v4","%Name":"inst_94B2692","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_94B2692","objectId":{"name":"obj_cutsceneTrigger","path":"objects/obj_cutsceneTrigger/obj_cutsceneTrigger.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":432.0,"y":272.0,},
       ],"layers":[],"name":"Instances_Functional","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"Tiles_Background_2","depth":100,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Tiles_Background_2","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":25,"SerialiseWidth":38,"TileCompressedData":[
           -6,87,-2,139,18,38,39,38,39,38,39,38,39,38,39,38,39,38,39,38,39,139,139,-18,87,-2,139,18,55,56,55,56,

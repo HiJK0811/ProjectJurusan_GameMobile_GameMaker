@@ -44,7 +44,8 @@ mask_index = states.idle.down;
 
 // Direction
 if (input_x != 0 || input_y != 0) {
-	moveDirection = point_direction(0, 0, input_x, input_y);
+	// Round the direction to eliminate macOS floating-point drift
+	moveDirection = round(point_direction(0, 0, input_x, input_y));
 }
 
 // Set Sprite

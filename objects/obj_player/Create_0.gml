@@ -11,7 +11,7 @@ states = {
 		down: spr_Player_Alt_Idle_Down
 	},
 	walking:{
-		right: spr_Player_Alt_Walk_RIght,
+		right: spr_Player_Alt_Walk_Right,
 		up: spr_Player_Alt_Walk_Up,
 		left: spr_Player_Alt_Walk_Left,
 		down: spr_Player_Alt_Walk_Down

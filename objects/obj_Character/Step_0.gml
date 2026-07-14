@@ -44,7 +44,7 @@ mask_index = states.idle.down;
 
 // Direction
 if (input_x != 0 || input_y != 0) {
-	// Round the direction to eliminate macOS floating-point drift
+	// Round the direction to eliminate floating-point drift
 	moveDirection = round(point_direction(0, 0, input_x, input_y));
 }
 

@@ -103,7 +103,8 @@ if (_select) {
             
     switch(index) {
         case 0: // Start
-            roomGoToFade(room_explore_mainRoom);
+            // roomGoToFade(room_explore_mainRoom);
+			roomGoToFade(room_explore_checkIn);
             break;
         case 1: // Tutorial
 			room_goto(room_tutorial)

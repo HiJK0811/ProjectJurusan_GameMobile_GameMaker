@@ -15,3 +15,10 @@ add 10 npc thanks to diatra
 randomize name,npc work
 name now have 35 that ready to be randomize
 making new script for npc= Src_draw_npc
+
+Wednesday 23:12 15/07/2026
+-Mini game v3.5
+npc now be categorized and randomize as gender
+-new layout but still beta V1.1
+-Minigame Room now became more realistic and NPC now look's like a Ideal npc customer
+-new improvement/Revision later after been approved By Jk first!

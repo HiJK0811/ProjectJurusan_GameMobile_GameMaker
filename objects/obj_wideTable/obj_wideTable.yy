@@ -1,13 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"obj_holograficboard",
+  "%Name":"obj_wideTable",
   "eventList":[],
   "managed":true,
-  "name":"obj_holograficboard",
+  "name":"obj_wideTable",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Daniel_Hanoi/Objects.yy",
+    "name":"Office",
+    "path":"folders/Jason_Main NPC Cutscene/Objects/Decorative Objects/Office.yy",
   },
   "parentObjectId":{
     "name":"obj_Wall",
@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_holograficboard",
-    "path":"sprites/spr_holograficboard/spr_holograficboard.yy",
+    "name":"spr_Table_Wide",
+    "path":"sprites/spr_Table_Wide/spr_Table_Wide.yy",
   },
   "spriteMaskId":null,
   "visible":true,

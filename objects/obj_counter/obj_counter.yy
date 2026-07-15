@@ -1,13 +1,13 @@
 {
   "$GMObject":"",
-  "%Name":"obj_holograficboard",
+  "%Name":"obj_counter",
   "eventList":[],
   "managed":true,
-  "name":"obj_holograficboard",
+  "name":"obj_counter",
   "overriddenProperties":[],
   "parent":{
-    "name":"Objects",
-    "path":"folders/Daniel_Hanoi/Objects.yy",
+    "name":"Decorations",
+    "path":"folders/Diatra_Version/Objects/Decorations.yy",
   },
   "parentObjectId":{
     "name":"obj_Wall",
@@ -31,8 +31,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_holograficboard",
-    "path":"sprites/spr_holograficboard/spr_holograficboard.yy",
+    "name":"spr_Counter",
+    "path":"sprites/spr_Counter/spr_Counter.yy",
   },
   "spriteMaskId":null,
   "visible":true,

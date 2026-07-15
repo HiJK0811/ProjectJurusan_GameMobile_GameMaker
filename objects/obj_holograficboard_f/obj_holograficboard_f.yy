@@ -1,17 +1,17 @@
 {
   "$GMObject":"",
-  "%Name":"obj_holograficboard",
+  "%Name":"obj_holograficboard_f",
   "eventList":[],
   "managed":true,
-  "name":"obj_holograficboard",
+  "name":"obj_holograficboard_f",
   "overriddenProperties":[],
   "parent":{
     "name":"Objects",
     "path":"folders/Daniel_Hanoi/Objects.yy",
   },
   "parentObjectId":{
-    "name":"obj_Wall",
-    "path":"objects/obj_Wall/obj_Wall.yy",
+    "name":"obj_Interactibles",
+    "path":"objects/obj_Interactibles/obj_Interactibles.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

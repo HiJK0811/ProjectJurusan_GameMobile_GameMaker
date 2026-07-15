@@ -9,7 +9,10 @@
     "name":"Office",
     "path":"folders/Jason_Main NPC Cutscene/Objects/Decorative Objects/Office.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_Wall",
+    "path":"objects/obj_Wall/obj_Wall.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

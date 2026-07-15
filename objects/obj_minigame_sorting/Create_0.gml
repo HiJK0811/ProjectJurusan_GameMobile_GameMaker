@@ -1,31 +1,47 @@
 randomize();
 src_menu_database();
 
+//==================================================
+// SAFE INIT
+//==================================================
 
-old_npc_name = "";
+customer_log = [];
+
+old_npc_gender = "";
+old_npc_variant = -1;
 old_npc_color = c_white;
 old_requirement = "";
 
-old_npc_name_index = -1;
-old_npc_sprite_index = -1;
-customer_log = [];
+
+
+current_walk1 = noone;
+current_idle = noone;
+current_portrait = noone;
+
 //====================
 // NPC SPRITE
 //====================
 
-npc_scale = 5;
+npc_scale = 17;
 
 npc_speed = 2.5;
 npc_walk_speed = 8.5;
 
-npc_start_x = 720;      // depan pintu
-npc_target_x = 150;     // depan kasir
-npc_start_y = 305;
-npc_target_y = 305;
+npc_start_x = 720;
+npc_target_x = 150;
 
-npc_y = 310;
+npc_start_y = 165;
+npc_target_y = 165;
+
+npc_x = npc_start_x;
+npc_y = npc_start_y;
+
 npc_walk_frame = 0;
 npc_walk_timer = 0;
+
+npc_gender = "";
+npc_variant = 0;
+
 
 //npc_facing = 1; // 1 = kanan
 
@@ -34,62 +50,64 @@ npc_walk_timer = 0;
 npc_frame = 0;
 npc_anim_speed = 0.18;*/
 
-npc_walk1 =
+male_walk =
 [
-    spr_npc1_walk,
-    spr_npc2_walk,
-    spr_npc3_walk,
-    spr_npc4_walk,
-    spr_npc5_walk,
-    spr_npc6_walk,
-    spr_npc7_walk,
-    spr_npc8_walk,
-    spr_npc9_walk,
-    spr_npc10_walk
+    spr_Male_npc1_walk,
+    spr_Male_npc2_walk,
+    spr_Male_npc3_walk,
+    spr_Male_npc4_walk,
+    spr_Male_npc5_walk
 ];
 
-/*npc_walk2 =
+male_idle =
 [
-    spr_npc1_walk_2,
-    spr_npc2_walk_2,
-    spr_npc3_walk_2,
-    spr_npc4_walk_2,
-    spr_npc5_walk_2,
-    spr_npc6_walk_2,
-    spr_npc7_walk_2,
-    spr_npc8_walk_2,
-    spr_npc9_walk_2,
-    spr_npc10_walk_2
-];*/
-
-npc_idle =
-[
-    spr_npc1_walk_stay,
-    spr_npc2_walk_stay,
-    spr_npc3_walk_stay,
-    spr_npc4_walk_stay,
-    spr_npc5_walk_stay,
-    spr_npc6_walk_stay,
-    spr_npc7_walk_stay,
-    spr_npc8_walk_stay,
-    spr_npc9_walk_stay,
-    spr_npc10_walk_stay
+    spr_Male_npc1_walk_stay,
+    spr_Male_npc2_walk_stay,
+    spr_Male_npc3_walk_stay,
+    spr_Male_npc4_walk_stay,
+    spr_Male_npc5_walk_stay
 ];
 
-npc_portrait =
+male_portrait =
 [
-    spr_npc1_portrait,
-    spr_npc2_portrait,
-    spr_npc3_portrait,
-    spr_npc4_portrait,
-    spr_npc5_portrait,
-    spr_npc6_portrait,
-    spr_npc7_portrait,
-    spr_npc8_portrait,
-    spr_npc9_portrait,
-    spr_npc10_portrait
+    spr_Male_npc1_portrait,
+    spr_Male_npc2_portrait,
+    spr_Male_npc3_portrait,
+    spr_Male_npc4_portrait,
+    spr_Male_npc5_portrait
 ];
+female_walk =
+[
+    spr_Female_npc1_walk,
+    spr_Female_npc2_walk,
+    spr_Female_npc3_walk,
+    spr_Female_npc4_walk,
+    spr_Female_npc5_walk
+];
+
+female_idle =
+[
+    spr_Female_npc1_walk_stay,
+    spr_Female_npc2_walk_stay,
+    spr_Female_npc3_walk_stay,
+    spr_Female_npc4_walk_stay,
+    spr_Female_npc5_walk_stay
+];
+
+female_portrait =
+[
+    spr_Female_npc1_portrait,
+    spr_Female_npc2_portrait,
+    spr_Female_npc3_portrait,
+    spr_Female_npc4_portrait,
+    spr_Female_npc5_portrait
+];
+
 portrait_scale = 5;
+current_walk1 = male_walk[0];
+current_idle = male_idle[0];
+current_stay = male_portrait[0];
+current_portrait = male_portrait[0];
 
 enum ORDER_STATE
 {
@@ -101,15 +119,18 @@ enum ORDER_STATE
     LEAVE,
     STAGE_COMPLETE
 }
-npc_names =
+male_names =
 [
-    "Rena","Nova","Milo","Dante","Luna",
-    "Aiden","Kai","Riku","Hana","Sora",
-    "Yuna","Aria","Liam","Niko","Ayla",
-    "Noah","Ren","Hiro","Aoi","Mika",
-    "Ethan","Ruby","Luca","Kira","Zane",
-    "Felix","Nina","Yuki","Leo","Elena",
-    "Rin","Asher","Celine","Rei","Maya"
+    "Aiden","Kai","Riku","Noah","Ren",
+    "Hiro","Ethan","Luca","Zane","Felix",
+    "Leo","Asher","Dante","Milo","Liam"
+];
+
+female_names =
+[
+    "Rena","Nova","Luna","Hana","Sora",
+    "Yuna","Aria","Ayla","Aoi","Mika",
+    "Ruby","Kira","Nina","Celine","Maya"
 ];
 
 npc_colors =
@@ -144,6 +165,8 @@ npc_colors =
     "Air Putih|5|Tawar|Minuman"
 ];
 */
+req_text = "";
+dialog_req="";
 src_generate_customer();
 src_shuffle_menu();
 // BARU
@@ -192,8 +215,7 @@ choose(
     "MAKANAN_TERMAHAL"
 );*/
 
-req_text = "";
-dialog_req="";
+
 
 
 // =====================================================
@@ -299,7 +321,8 @@ menu_start_y = 190;
 
 menu_width = 350;
 menu_slot_h = 50;
-
+menu_header_y = menu_start_y - 45;
+menu_line_y = menu_start_y - 15;
 // =====================================================
 // BUTTONS
 // =====================================================
@@ -375,8 +398,7 @@ hover_submit = false;
 
 can_submit = false;
 scroll_offset = 0;
-npc_exit_x = -120;
+npc_exit_x = -320;
 visible_rows = 8;
 has_player_sorted = false;
-old_npc_name_index = -1;
-old_npc_sprite_index = -1;
+show_menu = false;

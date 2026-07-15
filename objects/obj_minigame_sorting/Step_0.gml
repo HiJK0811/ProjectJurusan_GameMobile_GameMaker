@@ -55,9 +55,10 @@ if(npc_walk_timer >= npc_walk_speed)
     if(npc_arrived)
     {
         if(mouse_check_button_pressed(mb_left))
-        {
-            state = ORDER_STATE.MINIGAME;
-        }
+{
+    show_menu = true;
+    state = ORDER_STATE.MINIGAME;
+}
     }
 
 break;
@@ -412,6 +413,11 @@ else
                     if(success)
 {
     correct_count++;
+	if (!is_array(customer_log))
+{
+    customer_log = [];
+}
+
 
     array_push(
         customer_log,

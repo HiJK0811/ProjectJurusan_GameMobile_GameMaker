@@ -1,36 +1,94 @@
 /// @function src_generate_customer()
 function src_generate_customer(){
-	npc_index =
-irandom(array_length(npc_walk1)-1);
-	// ================= NPC =================
-npc_x = npc_start_x;
-npc_y = npc_start_y;
+//==================================================
+// RANDOM NPC
+//==================================================
+show_menu = false;
+// Gender
+repeat(20)
+{
+    var g = choose("Male","Female");
 
-npc_arrived = false;
+    if(g != old_npc_gender)
+    {
+        npc_gender = g;
+        break;
+    }
+}
 
-npc_frame = 0;
-npc_name =
-npc_names[
-    irandom(array_length(npc_names)-1)
+old_npc_gender = npc_gender;
+
+
+// Variant Sprite
+repeat(20)
+{
+    var v;
+
+    if(npc_gender == "Male")
+        v = irandom(array_length(male_walk)-1);
+    else
+        v = irandom(array_length(female_walk)-1);
+
+    if(v != old_npc_variant)
+    {
+        npc_variant = v;
+        break;
+    }
+}
+
+old_npc_variant = npc_variant;
+
+
+// Nama
+if(npc_gender == "Male")
+{
+    npc_name =
+male_names[
+    irandom(array_length(male_names)-1)
 ];
 
-/*npc_color =
-    npc_colors[
-        irandom(array_length(npc_colors)-1)
-    ];
-*/
+   
+
+    current_walk1    = male_walk[npc_variant];
+    current_idle     = male_idle[npc_variant];
+	current_stay     = male_portrait[npc_variant];
+    current_portrait = male_portrait[npc_variant];
+}
+else
+{
+    npc_name =
+female_names[
+    irandom(array_length(female_names)-1)
+];
+
+    
+
+    current_walk1    = female_walk[npc_variant];
+    current_idle     = female_idle[npc_variant];
+	current_stay = female_portrait[npc_variant];
+    current_portrait = female_portrait[npc_variant];
+}
+// Warna nama
 repeat(20)
 {
     npc_color =
-        npc_colors[
-            irandom(array_length(npc_colors)-1)
-        ];
+    npc_colors[
+        irandom(array_length(npc_colors)-1)
+    ];
 
     if(npc_color != old_npc_color)
         break;
 }
 
 old_npc_color = npc_color;
+
+
+// Posisi NPC
+npc_x = npc_start_x;
+npc_y = npc_start_y;
+npc_arrived = false;
+npc_walk_frame = 0;
+npc_walk_timer = 0;
 // ================= REQUIREMENT =================
 
 repeat(20)
@@ -177,6 +235,9 @@ time_limit = 30;
 time_left = time_limit * room_speed;
 
 time_up = false;
+old_requirement = requirement;
+has_player_sorted = false;
+can_search = false;
 
 // ================= RESET NPC =================
 
@@ -205,36 +266,15 @@ repeat(20)
         break;
     }
 }*/
-repeat(20)
-{
-    var new_name =
-    irandom(array_length(npc_names)-1);
-
-    if(new_name != old_npc_name_index)
-    {
-        old_npc_name_index = new_name;
-        break;
-    }
-}
-repeat(20)
-{
-    var new_sprite =
-    irandom(array_length(npc_walk1)-1);
-
-    if(new_sprite != old_npc_sprite_index)
-    {
-        old_npc_sprite_index = new_sprite;
-        break;
-    }
-}
 
 
-npc_name = npc_names[old_npc_name_index];
+
+/*npc_name = npc_names[old_npc_name_index];
 old_npc_name = npc_name;
 old_npc_color = npc_color;
 old_requirement = requirement;
 has_player_sorted = false;
-can_search = false;
+can_search = false;*/
 /*// ================= RANDOM MENU =================
 
 for(var i=0;i<50;i++)
@@ -266,8 +306,4 @@ npc_idle[npc_index];
 current_portrait =
 npc_portrait[npc_index];*/
 
-current_walk1    = npc_walk1[old_npc_sprite_index];
-//current_walk2    = npc_walk2[old_npc_sprite_index];
-current_idle     = npc_idle[old_npc_sprite_index];
-current_portrait = npc_portrait[old_npc_sprite_index];
 }

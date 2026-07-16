@@ -8,6 +8,6 @@ post_cutscene_check = "lylia_intro_scene"; // cutscene name
 post_cutscene_text_id = "Lylia_post_intro";
 
 // Minigame
-post_logic_text_id = "Lylia_post_logic";
+post_logic_text_id = "Lylia_post_logic_cont";
 
 wander_range = 11.75 * 11.75

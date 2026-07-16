@@ -5,7 +5,29 @@
 /// @param text_id
 function scr_gameText(_text_id){
 	switch(_text_id){
+	
+	// == CHECK IN & SECURITY ROOM CUTSCENES ==
+		case "Adhoc - intro":
+			scr_text("Selamat datang!");
+			scr_text("Bolehkan saya cek identitas Anda?");
+			// Character creation process
+			scr_text("...");
+			scr_text("Baiklah, sepertinya Anda adalah pekerja baru!");
+			scr_text("Harap pergi ke ruangan selanjutnya untuk pemeriksaan lanjutan!");
+			scr_text("Terima kasih!");
+			break;
 		
+		case "Adhoc - calling":
+			scr_text("Berikutnya!");
+			scr_text("Halo! Anda mesti orang yang diutus untuk kerja di sini!");
+			scr_text("Sebelum ke lounge! silakan melalui proses pemeriksaan dahulu, terima kasih!");
+			break;	
+			
+		case "Adhoc - dialog":
+			scr_text("Proses pemeriksaan sudah selesai!");
+			scr_text("Anda layak masuk ke lounge!");
+			break;
+	
 	// == LYLIA ==
 		case "Lylia_default":
 			scr_text("Halo Player!", "Lylia", 1);
@@ -221,13 +243,25 @@ function scr_gameText(_text_id){
 			
 				case "arcade_1":
 					scr_text("Ok Player, selamat bermain!", "Lylia", 1);
+					// scr_gameText("Lylia_game_outro");
 					break;
 					
 				case "arcade_2":
 					scr_text("Iya, saya juga senang sekali punya suasana dengan kamu", "Lylia", 1);
+					// scr_gameText("Lylia_game_outro");
 					break;
 			
+		// Lylia Game Outro / Goodbye or is it?
+		case "Lylia_game_outro":
+			scr_text("Player...", "Lylia", 1);
+			scr_text("Pekerjaan kamu di sini sudah selesai...", "Lylia", 1);
+			scr_text("Jika kamu ingin pergi ke tempat lain, saya tidak akan menghalangimu!", "Lylia", 1);
+			scr_text("Kamu bisa ke tempat boarding yang berada di sebelah waiting room...", "Lylia", 1);
+			scr_text("Tetapi, jika kamu ingin tetap di sini, saya berterima kasih sekali!", "Lylia", 1);
+			scr_text("Tanpamu, tempat ini akan menjadi lebih buruk dan tidak dapat diurus!", "Lylia", 1);
+			scr_text("Pilihannya di tanganmu, Player!", "Lylia", 1);
 			
+		
 	// == ADHILA ==
 		case "Adhila_default":
 			scr_text("Hai player!", "Adhila", 1);

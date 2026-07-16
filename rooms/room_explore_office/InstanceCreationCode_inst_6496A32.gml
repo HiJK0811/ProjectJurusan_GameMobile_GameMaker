@@ -5,9 +5,11 @@ text_id = "Adhila_default"
 
 // Cutscene
 post_cutscene_check = "adhila_intro_scene"; // cutscene name
-post_cutscene_text_id = "Adhila_post_intro";
+post_cutscene_text_id = "Adhila_post_intro"; 
 
 // Minigame
-post_logic_text_id = "Adhila_post_logic";
+// post_logic_text_id = "Adhila_post_intro";
+// post_graph_text_id = "";
+
 
 wander_range = 15 * 15

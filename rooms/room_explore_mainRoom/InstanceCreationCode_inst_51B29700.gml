@@ -6,7 +6,7 @@ trigger_scene_info = [
 	[cutscene_rotate_character, obj_NPC_Lylia, 0],
 	[cutscene_rotate_character, obj_Player, 180],
 	[cutscene_show_dialogue, "Lylia_intro"],
-	[cutscene_move_character, obj_NPC_Lylia, 548, 200],
+	[cutscene_move_character, obj_NPC_Lylia, 663, 263],
 	[cutscene_move_camera, obj_Player]
 ]
 

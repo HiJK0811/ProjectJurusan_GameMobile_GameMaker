@@ -12,3 +12,6 @@ cutscene_id = "first_cutscene";
 //	instance_destroy(); // Destroy immediately before the player even sees it
 //	exit;
 //}
+
+// NEW: Prerequisite System (to check cutscene prerequisite)
+required_global = ""; // Leave blank if there is no requirement

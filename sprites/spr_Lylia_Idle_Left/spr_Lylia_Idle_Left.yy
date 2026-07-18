@@ -5,21 +5,21 @@
   "bbox_bottom":31,
   "bbox_left":11,
   "bbox_right":20,
-  "bbox_top":0,
+  "bbox_top":28,
   "collisionKind":1,
   "collisionTolerance":0,
   "DynamicTexturePage":false,
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"5536d1d2-6e7a-4659-8703-20554a0e4ab5","name":"5536d1d2-6e7a-4659-8703-20554a0e4ab5","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"ec627884-b6b1-4a92-9bd9-4dd848b300f1","name":"ec627884-b6b1-4a92-9bd9-4dd848b300f1","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":32,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"0269b6e8-2a75-4a21-ad89-d53b45c7dd65","blendMode":0,"displayName":"default","isLocked":false,"name":"0269b6e8-2a75-4a21-ad89-d53b45c7dd65","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"cda769b0-f2ea-45b8-a540-037ae6a66abb","blendMode":0,"displayName":"default","isLocked":false,"name":"cda769b0-f2ea-45b8-a540-037ae6a66abb","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_Lylia_Idle_Left",
   "nineSlice":null,
@@ -69,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"5536d1d2-6e7a-4659-8703-20554a0e4ab5","path":"sprites/spr_Lylia_Idle_Left/spr_Lylia_Idle_Left.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"331eccfe-cec5-44cb-bb59-2c18597c6a84","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"ec627884-b6b1-4a92-9bd9-4dd848b300f1","path":"sprites/spr_Lylia_Idle_Left/spr_Lylia_Idle_Left.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"0107671e-47b4-4d6e-bbcc-2ab9a548425b","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

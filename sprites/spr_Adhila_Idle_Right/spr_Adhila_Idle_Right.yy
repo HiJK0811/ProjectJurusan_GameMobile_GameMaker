@@ -4,7 +4,7 @@
   "bboxMode":0,
   "bbox_bottom":31,
   "bbox_left":11,
-  "bbox_right":20,
+  "bbox_right":19,
   "bbox_top":1,
   "collisionKind":1,
   "collisionTolerance":0,
@@ -12,14 +12,14 @@
   "edgeFiltering":false,
   "For3D":false,
   "frames":[
-    {"$GMSpriteFrame":"v1","%Name":"6c42c5f3-6d29-416b-bbe3-0bf645d06e2b","name":"6c42c5f3-6d29-416b-bbe3-0bf645d06e2b","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
+    {"$GMSpriteFrame":"v1","%Name":"4936e0cc-111d-4fac-a3f5-62bada23cf7a","name":"4936e0cc-111d-4fac-a3f5-62bada23cf7a","resourceType":"GMSpriteFrame","resourceVersion":"2.0",},
   ],
   "gridX":0,
   "gridY":0,
   "height":32,
   "HTile":false,
   "layers":[
-    {"$GMImageLayer":"","%Name":"74b76ac0-9131-4482-8399-b21c46c7496c","blendMode":0,"displayName":"default","isLocked":false,"name":"74b76ac0-9131-4482-8399-b21c46c7496c","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
+    {"$GMImageLayer":"","%Name":"5d8c1f30-eec1-4c28-9eb3-6a04254db2ac","blendMode":0,"displayName":"default","isLocked":false,"name":"5d8c1f30-eec1-4c28-9eb3-6a04254db2ac","opacity":100.0,"resourceType":"GMImageLayer","resourceVersion":"2.0","visible":true,},
   ],
   "name":"spr_Adhila_Idle_Right",
   "nineSlice":null,
@@ -69,8 +69,8 @@
     "tracks":[
       {"$GMSpriteFramesTrack":"","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"$KeyframeStore<SpriteFrameKeyframe>":"","Keyframes":[
             {"$Keyframe<SpriteFrameKeyframe>":"","Channels":{
-                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"6c42c5f3-6d29-416b-bbe3-0bf645d06e2b","path":"sprites/spr_Adhila_Idle_Right/spr_Adhila_Idle_Right.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
-              },"Disabled":false,"id":"a1677602-ec12-4c76-ae6c-d71f29b5737f","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
+                "0":{"$SpriteFrameKeyframe":"","Id":{"name":"4936e0cc-111d-4fac-a3f5-62bada23cf7a","path":"sprites/spr_Adhila_Idle_Right/spr_Adhila_Idle_Right.yy",},"resourceType":"SpriteFrameKeyframe","resourceVersion":"2.0",},
+              },"Disabled":false,"id":"f25bbe1d-5907-4d28-9d33-d393cdca6f1a","IsCreationKey":false,"Key":0.0,"Length":1.0,"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"2.0","Stretch":false,},
           ],"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"2.0",},"modifiers":[],"name":"frames","resourceType":"GMSpriteFramesTrack","resourceVersion":"2.0","spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange":null,

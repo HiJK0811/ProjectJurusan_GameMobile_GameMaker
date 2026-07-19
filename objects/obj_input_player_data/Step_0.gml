@@ -3,25 +3,12 @@ var mx = device_mouse_x_to_gui(0);
 var my = device_mouse_y_to_gui(0);
 var click = mouse_check_button_pressed(mb_left);
 
-// ================= LAYOUT =================
-var start_x = 200;
-var input_x = 340;
-
-var box_w = 260;
-var box_h = 24;
-var gap = 34;
-
-// posisi Y
-var pos_y = [];
-for(var i=0;i<6;i++){
-    pos_y[i] = 460 + i * gap;
-}
-
 // ================= SHORTCUT =================
 var form = global.form;
 var ui   = global.ui_state;
+var fp   = global.field_pos;
 
-// ================= FIELD =================
+// ================= FIELD TEXT =================
 var fields = ["name","age","email","phone"];
 
 // ================= CLICK =================
@@ -29,24 +16,54 @@ if(click){
 
     var found = false;
 
-    // === INPUT FIELD ===
-    for(var i=0;i<4;i++){
-        if(point_in_rectangle(mx,my,
-            input_x, pos_y[i],
-            input_x + box_w, pos_y[i] + box_h)){
-            
-            global.focused_input = fields[i];
-            found = true;
+    // === INPUT FIELD TEXT (name/age/email/phone) ===
+    if(point_in_rectangle(mx,my, fp.name.x, fp.name.y, fp.name.x+fp.name.w, fp.name.y+fp.name.h)){
+        global.focused_input = "name";
+        found = true;
+    }
+    if(point_in_rectangle(mx,my, fp.age.x, fp.age.y, fp.age.x+fp.age.w, fp.age.y+fp.age.h)){
+        global.focused_input = "age";
+        found = true;
+    }
+    if(point_in_rectangle(mx,my, fp.email.x, fp.email.y, fp.email.x+fp.email.w, fp.email.y+fp.email.h)){
+        global.focused_input = "email";
+        found = true;
+    }
+    if(point_in_rectangle(mx,my, fp.phone.x, fp.phone.y, fp.phone.x+fp.phone.w, fp.phone.y+fp.phone.h)){
+        global.focused_input = "phone";
+        found = true;
+    }
+
+    // === TOGGLE GENDER DROPDOWN ===
+    if(point_in_rectangle(mx,my, fp.gender.x, fp.gender.y, fp.gender.x+fp.gender.w, fp.gender.y+fp.gender.h)){
+        
+        ui.gender_open = !ui.gender_open;
+        ui.edu_open = false;
+        ui.major_open = false;
+        global.focused_input = noone;
+        found = true;
+    }
+
+    // === PILIH GENDER ===
+    if(ui.gender_open){
+        for(var i=0;i<array_length(global.genders);i++){
+            var gy1 = fp.gender.y + fp.gender.h + i*fp.gender.h;
+            var gy2 = gy1 + fp.gender.h;
+
+            if(point_in_rectangle(mx,my, fp.gender.x, gy1, fp.gender.x+fp.gender.w, gy2)){
+                form.gender = global.genders[i];
+                ui.gender_open = false;
+                found = true;
+            }
         }
     }
 
-    // === DROPDOWN EDU ===
-    if(point_in_rectangle(mx,my,
-        input_x, pos_y[4],
-        input_x + box_w, pos_y[4] + box_h)){
+    // === TOGGLE DROPDOWN EDU ===
+    if(point_in_rectangle(mx,my, fp.edu.x, fp.edu.y, fp.edu.x+fp.edu.w, fp.edu.y+fp.edu.h)){
         
         ui.edu_open = !ui.edu_open;
         ui.major_open = false;
+        ui.gender_open = false;
         global.focused_input = noone;
         found = true;
     }
@@ -55,8 +72,8 @@ if(click){
     if(ui.edu_open){
         
         if(point_in_rectangle(mx,my,
-            input_x, pos_y[4] + box_h,
-            input_x + box_w, pos_y[4] + box_h * 2)){
+            fp.edu.x, fp.edu.y + fp.edu.h,
+            fp.edu.x + fp.edu.w, fp.edu.y + fp.edu.h * 2)){
             
             form.edu = "SMA";
             form.major = "";
@@ -67,8 +84,8 @@ if(click){
         }
 
         if(point_in_rectangle(mx,my,
-            input_x, pos_y[4] + box_h * 2,
-            input_x + box_w, pos_y[4] + box_h * 3)){
+            fp.edu.x, fp.edu.y + fp.edu.h * 2,
+            fp.edu.x + fp.edu.w, fp.edu.y + fp.edu.h * 3)){
             
             form.edu = "SMK";
             form.major = "";
@@ -79,14 +96,12 @@ if(click){
         }
     }
 
-    // === TOGGLE MAJOR ===
+    // === TOGGLE MAJOR (SEKARANG PAKAI fp.major LANGSUNG) ===
     if(form.edu != ""){
         
-        var major_base = pos_y[5];
-
         if(point_in_rectangle(mx,my,
-            input_x, major_base,
-            input_x + box_w, major_base + box_h)){
+            fp.major.x, fp.major.y,
+            fp.major.x + fp.major.w, fp.major.y + fp.major.h)){
             
             ui.major_open = !ui.major_open;
             found = true;
@@ -98,17 +113,16 @@ if(click){
         
         var list = (form.edu=="SMA") ? global.majors_SMA : global.majors_SMK;
 
-        var major_base = pos_y[5];
-        var list_y = major_base + box_h + 8;
-        var list_h = box_h * global.config.max_visible;
+        var list_y = fp.major.y + fp.major.h + 6;
+        var list_h = fp.major.h * global.config.max_visible;
 
         for(var i=0;i<array_length(list);i++){
             
-            var yy = list_y + i * box_h + ui.scroll;
+            var yy = list_y + i * fp.major.h + ui.scroll;
 
             if(point_in_rectangle(mx,my,
-                input_x, yy,
-                input_x + box_w, yy + box_h)){
+                fp.major.x, yy,
+                fp.major.x + fp.major.w, yy + fp.major.h)){
                 
                 if(yy >= list_y && yy <= list_y + list_h){
                     form.major = list[i];
@@ -127,20 +141,27 @@ if(click){
         show_debug_message("Age: " + form.age);
         show_debug_message("Email: " + form.email);
         show_debug_message("Phone: " + form.phone);
+        show_debug_message("Gender: " + form.gender);
         show_debug_message("Education: " + form.edu);
         show_debug_message("Major: " + form.major);
 
+        // 🔥 SIMPAN NAME & GENDER KE GLOBAL TERPISAH (buat minigame)
+        global.player_name   = form.name;
+        global.player_gender = form.gender;
+
         // 🔥 MASUKIN KE DATABASE ARRAY
-        array_push(global.users, form);
+       // 🔥 MASUKIN KE DATABASE ARRAY (samakan dengan sidebar debug)
+array_push(global.user_data, form);
 
         // reset form biar bisa input lagi
         global.form = {
-            name  : "",
-            age   : "",
-            email : "",
-            phone : "",
-            edu   : "",
-            major : ""
+            name   : "",
+            age    : "",
+            email  : "",
+            phone  : "",
+            gender : "",
+            edu    : "",
+            major  : ""
         };
 
         found = true;
@@ -149,12 +170,28 @@ if(click){
     // === CLICK LUAR ===
     if(!found){
         global.focused_input = noone;
-        ui.major_open = false;
-        ui.edu_open = false;
+        ui.major_open  = false;
+        ui.edu_open    = false;
+        ui.gender_open = false;
     }
+
+    // === EXPLORE / MIGUEL BUTTON ===
+var btn_x = 700;
+var btn_y = 340;
+var btn_w = 200;
+var btn_h = 160;
+
+if(point_in_rectangle(mx, my, btn_x, btn_y, btn_x + btn_w, btn_y + btn_h)){
+    audio_play_sound(snd_click, 1, false);
+    room_goto(room_explore_mainRoom);
+    found = true;
+}
 }
 
-// ================= INPUT =================
+  
+
+
+// ================= INPUT TEXT =================
 var str = keyboard_string;
 
 if(str != ""){
@@ -188,7 +225,6 @@ if(str != ""){
     }
 }
 
-// reset anti spam
 keyboard_string = "";
 
 // ================= BACKSPACE =================
@@ -214,23 +250,22 @@ if(keyboard_check_pressed(vk_tab)){
     global.focused_input = fields[idx];
 }
 
-// ================= SCROLL =================
+// ================= SCROLL MAJOR (SEKARANG PAKAI fp.major LANGSUNG) =================
 if(form.edu != "" && ui.major_open){
     
     var list = (form.edu=="SMA") ? global.majors_SMA : global.majors_SMK;
 
-    var major_base = pos_y[5];
-    var list_y = major_base + box_h + 8;
-    var list_h = box_h * global.config.max_visible;
+    var list_y = fp.major.y + fp.major.h + 6;
+    var list_h = fp.major.h * global.config.max_visible;
 
     if(point_in_rectangle(mx,my,
-        input_x, list_y,
-        input_x + box_w, list_y + list_h)){
+        fp.major.x, list_y,
+        fp.major.x + fp.major.w, list_y + list_h)){
         
         var scroll = mouse_wheel_up() - mouse_wheel_down();
         ui.scroll += scroll * global.config.scroll_speed;
     }
 
-    var max_scroll = max(0, array_length(list)*box_h - list_h);
+    var max_scroll = max(0, array_length(list)*fp.major.h - list_h);
     ui.scroll = clamp(ui.scroll, -max_scroll, 0);
 }

@@ -2,6 +2,39 @@ function src_generate_menu()
 {
     menu_data = [];
 
+    // ===============================
+    // 1 Minuman
+    // ===============================
+    array_push(
+        menu_data,
+        global.pool_minuman[
+            irandom(array_length(global.pool_minuman)-1)
+        ]
+    );
+
+    // ===============================
+    // 1 Makanan
+    // ===============================
+    array_push(
+        menu_data,
+        global.pool_makanan[
+            irandom(array_length(global.pool_makanan)-1)
+        ]
+    );
+
+    // ===============================
+    // 1 Cemilan
+    // ===============================
+    array_push(
+        menu_data,
+        global.pool_cemilan[
+            irandom(array_length(global.pool_cemilan)-1)
+        ]
+    );
+
+    // ===============================
+    // Isi sisa sampai 5 menu
+    // ===============================
     while(array_length(menu_data) < 5)
     {
         var item = "";
@@ -30,19 +63,20 @@ function src_generate_menu()
             break;
         }
 
-        if(!array_contains(menu_data,item))
+        if(!array_contains(menu_data, item))
         {
-            array_push(menu_data,item);
+            array_push(menu_data, item);
         }
     }
-original_menu_data = [];
 
-for(var i=0;i<array_length(menu_data);i++)
-{
-    array_push(
-        original_menu_data,
-        menu_data[i]
-    );
-}
-   // src_shuffle_menu();
+    // Simpan urutan asli
+    original_menu_data = [];
+
+    for(var i = 0; i < array_length(menu_data); i++)
+    {
+        array_push(
+            original_menu_data,
+            menu_data[i]
+        );
+    }
 }

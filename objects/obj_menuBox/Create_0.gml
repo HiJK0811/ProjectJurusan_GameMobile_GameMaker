@@ -2,6 +2,14 @@
 // How to Make a Menu System (with Submenus) in GameMaker Studio 2!
 // https://www.youtube.com/watch?v=xLasKr0ekHY
 //tambahan dari rey :)
+if(!audio_is_playing(snd_miguel))
+{
+    audio_play_sound(
+        snd_miguel,
+        0,
+        true
+    );
+}
 paused = false;
 if(keyboard_check_pressed(vk_escape)){
     paused = !paused;

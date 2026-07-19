@@ -1,9 +1,9 @@
 {
   "$GMScript":"v1",
-  "%Name":"export_to_csv",
+  "%Name":"src_draw_text_outline_ext",
   "isCompatibility":false,
   "isDnD":false,
-  "name":"export_to_csv",
+  "name":"src_draw_text_outline_ext",
   "parent":{
     "name":"Scripts",
     "path":"folders/Scripts.yy",

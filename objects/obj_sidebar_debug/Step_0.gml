@@ -149,19 +149,13 @@ if(click && click_cooldown <= 0 && sidebar_x > -sidebar_w + 10){
                 break;
 
 
-                // ================= EXPORT CSV =================
-                case 3:
+                // ================= EXPORT JSON =================
+               // ================= EXPORT CSV -> ganti jadi Export Json dialog =================
+case 3:
+    scr_export_json_dialog();
+break;
 
-                    if(array_length(global.user_data) == 0){
-                        show_debug_message("[WARNING] NO DATA");
-                        break;
-                    }
 
-                    var filename = "data_export.csv";
-
-                    scr_export_csv(filename);
-
-                break;
 
 
                 // ================= CLEAR =================
@@ -214,6 +208,16 @@ break;
 				case 7:
 				minigame=room_goto(room_minigame_sorting);
 				break
+				// ================= OPEN EXPORT FOLDER =================
+// ================= COPY EXPORT PATH KE CLIPBOARD =================
+case 8:
+    clipboard_set_text(global.export_path);
+    show_debug_message("[DEBUG] Path disalin ke clipboard: " + global.export_path);
+break;
+case 9:
+audio_play_sound(snd_confirm, 1, false);
+    room_goto(room_input_data)
+break;
             }
         }
     }

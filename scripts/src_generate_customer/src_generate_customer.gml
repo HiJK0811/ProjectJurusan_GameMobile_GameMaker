@@ -1,5 +1,6 @@
 /// @function src_generate_customer()
 function src_generate_customer(){
+	
 //==================================================
 // RANDOM NPC
 //==================================================

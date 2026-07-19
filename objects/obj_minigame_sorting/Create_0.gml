@@ -1,18 +1,35 @@
+display_set_gui_size(camera_get_view_width(view_camera[0]),
+                     camera_get_view_height(view_camera[0]));
 randomize();
+src_dialog_data();
 src_menu_database();
 
+if(!audio_is_playing(snd_bgm_cafe))
+{
+    audio_play_sound(
+        snd_bgm_cafe,
+        0,
+        true
+    );
+}
 //==================================================
 // SAFE INIT
 //==================================================
-
+npc_arrive_sound_played = false;
+opening_dialog_started = false;
+outro_dialog_started = false;
 customer_log = [];
-
+show_npc = false;
+npc_arrived = false;
+customer_generated = false;
+combo_dialog_shown = false;
+combo_dialog_started=false;
 old_npc_gender = "";
 old_npc_variant = -1;
 old_npc_color = c_white;
 old_requirement = "";
-
-
+correct_streak = 0;
+combo_done = false;
 
 current_walk1 = noone;
 current_idle = noone;
@@ -103,7 +120,7 @@ female_portrait =
     spr_Female_npc5_portrait
 ];
 
-portrait_scale = 5;
+portrait_scale = 5.7;
 current_walk1 = male_walk[0];
 current_idle = male_idle[0];
 current_stay = male_portrait[0];
@@ -111,12 +128,16 @@ current_portrait = male_portrait[0];
 
 enum ORDER_STATE
 {
+	OPENING,
     ARRIVAL,
     REQUEST_DIALOG,
     MINIGAME,
+	COMBO,
     RESULT,
     REACTION,
     LEAVE,
+	STAGE_RESULT,
+	OUTRO,
     STAGE_COMPLETE
 }
 male_names =
@@ -167,8 +188,7 @@ npc_colors =
 */
 req_text = "";
 dialog_req="";
-src_generate_customer();
-src_shuffle_menu();
+
 // BARU
 
 
@@ -222,7 +242,9 @@ choose(
 // GAME STATE
 // =====================================================
 
-state = ORDER_STATE.ARRIVAL;
+state = ORDER_STATE.OPENING;
+src_generate_customer();
+src_shuffle_menu();
 
 current_customer = 0;
 total_customer = 5;

@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"src_dialog_data",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"src_dialog_data",
+  "parent":{
+    "name":"Src_minigameSorting_Dialog",
+    "path":"folders/Scripts/Src_minigameSorting_Dialog.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

@@ -1,9 +1,14 @@
 
 // ================= DRAW EVENT =================
+
 switch(state)
 {
     case ORDER_STATE.ARRIVAL:
-	src_draw_npc();
+	
+	if(show_npc)
+{
+    src_draw_npc();
+}
 
 
         draw_set_color(c_white);
@@ -17,7 +22,10 @@ switch(state)
     break;
 
     case ORDER_STATE.MINIGAME:
-	src_draw_npc();
+	if(show_npc)
+{
+    src_draw_npc();
+}
 
         
 
@@ -122,7 +130,7 @@ draw_set_color(c_white);
 
     break;
 
-    case ORDER_STATE.STAGE_COMPLETE:
+   /* case ORDER_STATE.STAGE_RESULT:
 	draw_set_color(c_white);
 	draw_set_alpha(0.8);
 draw_set_color(c_black);
@@ -217,5 +225,5 @@ for(var i=0;i<array_length(customer_log);i++)
     );
 }
 
-    break;
+    break;*/
 }

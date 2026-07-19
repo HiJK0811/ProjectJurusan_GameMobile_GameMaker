@@ -412,7 +412,7 @@ else
                 src_get_correct_answer();
 
             result_message =
-                "WIN RATE BERHASIL";
+                "WIN RATE?";
         }
         else
         {
@@ -422,7 +422,7 @@ else
                 ];
 
             result_message =
-                "WIN RATE GAGAL";
+                "WIN RATE!";
         }
     }
 }

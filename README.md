@@ -22,3 +22,9 @@ npc now be categorized and randomize as gender
 -new layout but still beta V1.1
 -Minigame Room now became more realistic and NPC now look's like a Ideal npc customer
 -new improvement/Revision later after been approved By Jk first!
+
+Monday 00:24 20/07/2026
+-Minigame Sorting finish 100%
+-Input now working Using JSON as file type
+-Sidebar export ready
+-Making script for checking input table Json that has been export to see whether have anomaly or not if have it will do normalization

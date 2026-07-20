@@ -48,16 +48,16 @@ if (input_x != 0 || input_y != 0) {
 	moveDirection = round(point_direction(0, 0, input_x, input_y));
 }
 
-// Set Sprite
-if (x_spd == 0 && y_spd == 0) {
-	set_state(states.idle);
-	moving = false;
-} else {
-	set_state(states.walking);
-	moving = true;
-}
+//// Set Sprite
+//if (x_spd == 0 && y_spd == 0) {
+//	set_state(states.idle);
+//	moving = false;
+//} else {
+//	set_state(states.walking);
+//	moving = true;
+//}
 
-sprite_index = get_sprite(moveDirection);
+//sprite_index = get_sprite(moveDirection);
 
 // Collision 2
 if place_meeting(x + x_spd, y, [obj_Wall, obj_Character, obj_Interactibles]) == true{
@@ -66,6 +66,24 @@ if place_meeting(x + x_spd, y, [obj_Wall, obj_Character, obj_Interactibles]) == 
 if place_meeting(x, y + y_spd, [obj_Wall, obj_Character, obj_Interactibles]) == true{
 	y_spd = 0;
 }
+
+// Set Sprite
+if (x_spd == 0 && y_spd == 0) {
+	set_state(states.idle);
+	moving = false;
+	
+	// OPTIONAL BONUS: If the NPC hits a wall, cancel their path 
+	// so they don't stare at the wall until the timer runs out!
+	//if (path_active) {
+	//	path_end();
+	//	path_active = false;
+	//}
+} else {
+	set_state(states.walking);
+	moving = true;
+}
+
+sprite_index = get_sprite(moveDirection);
 
 // Move Character
 x += x_spd;

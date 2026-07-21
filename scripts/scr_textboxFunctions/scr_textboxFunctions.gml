@@ -11,6 +11,8 @@ function scr_set_defaults_for_text(){
 	speaker_sprite[page_number] = noone;
 	speaker_side[page_number] = 1;
 	
+	speaker_name[page_number] = "";
+	
 }
 
 /// @param text
@@ -24,37 +26,32 @@ function scr_text(_text){
 	if(argument_count > 1){
 		switch(argument[1]){
 			case "Player":
+				speaker_name[page_number] = "Player";
 				speaker_sprite[page_number] = spr_portrait_player;
 				dialogBox_sprite[page_number] = spr_textBox_Purple;
 				break;
 			
+			// NPC
 			case "Adhila":
+				speaker_name[page_number] = "Adhila";
 				speaker_sprite[page_number] = spr_Adhila_Portrait;
 				dialogBox_sprite[page_number] = spr_textBox_Purple;
 				break;
 				
 			case "Lylia":
+				speaker_name[page_number] = "Lylia"; 
 				speaker_sprite[page_number] = spr_Lylia_Portrait;
 				dialogBox_sprite[page_number] = spr_textBox_Purple;
 				break;
-				
-				
 			
-			case "Happy Derp":
-				speaker_sprite[page_number] = spr_portrait_happyDerp;
-				dialogBox_sprite[page_number] = spr_textBox_Blue;
+			// Portraitless Characters
+			case "Security Officer":
+				speaker_name[page_number] = "Security Officer"; 
+				speaker_sprite[page_number] = noone;
 				break;
 				
-			//case "Sad Derp":
-			//	speaker_sprite[page_number] = spr_portrait_sadDerp;
-			//	dialogBox_sprite[page_number] = spr_textBox_Blue;
-			//	break;
-			//case "Derpy Derp":
-			//	speaker_sprite[page_number] = spr_portrait_derpyDerp;
-			//	dialogBox_sprite[page_number] = spr_textBox_Purple;
-			//	break;
-				
 			default:
+				speaker_name[page_number] = ""; // NEW: Fallback name
 				speaker_sprite[page_number] = noone;
 				break;
 		}

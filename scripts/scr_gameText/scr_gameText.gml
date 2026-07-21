@@ -8,24 +8,24 @@ function scr_gameText(_text_id){
 	
 	// == CHECK IN & SECURITY ROOM CUTSCENES ==
 		case "Adhoc - intro":
-			scr_text("Selamat datang!");
-			scr_text("Bolehkan saya cek identitas Anda?");
+			scr_text("Selamat datang!", "Security Officer");
+			scr_text("Bolehkan saya cek identitas Anda?", "Security Officer");
 			// Character creation process
-			scr_text("...");
-			scr_text("Baiklah, sepertinya Anda adalah pekerja baru!");
-			scr_text("Harap pergi ke ruangan selanjutnya untuk pemeriksaan lanjutan!");
-			scr_text("Terima kasih!");
+			scr_text("...", "Security Officer");
+			scr_text("Baiklah, sepertinya Anda adalah pekerja baru!", "Security Officer");
+			scr_text("Harap pergi ke ruangan selanjutnya untuk pemeriksaan lanjutan!", "Security Officer");
+			scr_text("Terima kasih!", "Security Officer");
 			break;
 		
 		case "Adhoc - calling":
-			scr_text("Berikutnya!");
-			scr_text("Halo! Anda mesti orang yang diutus untuk kerja di sini!");
-			scr_text("Sebelum ke lounge! silakan melalui proses pemeriksaan dahulu, terima kasih!");
+			scr_text("Berikutnya!", "Security Officer");
+			scr_text("Halo! Anda mesti orang yang diutus untuk kerja di sini!", "Security Officer");
+			scr_text("Sebelum ke lounge! silakan melalui proses pemeriksaan dahulu, terima kasih!", "Security Officer");
 			break;	
 			
 		case "Adhoc - dialog":
-			scr_text("Proses pemeriksaan sudah selesai!");
-			scr_text("Anda layak masuk ke lounge!");
+			scr_text("Proses pemeriksaan sudah selesai!", "Security Officer");
+			scr_text("Anda layak masuk ke lounge!", "Security Officer");
 			break;
 	
 	// == LYLIA ==

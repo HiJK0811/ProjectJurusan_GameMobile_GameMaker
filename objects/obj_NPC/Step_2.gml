@@ -1,3 +1,9 @@
+// BLOCK INTERACTIONS DURING CUTSCENES
+if (instance_exists(obj_cutscene)) {
+	can_interact = false;
+	exit; 
+}
+
 if (instance_exists(obj_Player) && distance_to_object(obj_Player) < min_distance_to_player){
 	can_interact = true;
 	x_spd = 0;

@@ -12,8 +12,8 @@
     "path":"folders/Jason_Main NPC Cutscene/Objects/Characters.yy",
   },
   "parentObjectId":{
-    "name":"obj_Wall",
-    "path":"objects/obj_Wall/obj_Wall.yy",
+    "name":"obj_NPC_Static",
+    "path":"objects/obj_NPC_Static/obj_NPC_Static.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,

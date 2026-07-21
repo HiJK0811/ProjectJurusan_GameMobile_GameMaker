@@ -59,8 +59,12 @@ function scr_gameText(_text_id){
 			scr_text("Senang bertemu denganmu", "Adhila", 1);
 			break;
 		case "Lylia":
-			scr_text("hey, can you help me fix this jukebox? i'd appreciate it", "Happy Derp", -1);
-			break;
+		    if (global.circuit_minigame_completed) {
+		        scr_text("Wah, terima kasih ya udah benerin jukebox-nya!", "Happy Derp", -1);
+		    } else {
+		        scr_text("hey, can you help me fix this jukebox? i'd appreciate it", "Happy Derp", -1);
+		    }
+		    break;
 		case "Adhoc - calling":
 				scr_text("Next in line please", "Adhila", 1);
 				break;	
@@ -76,6 +80,10 @@ function scr_gameText(_text_id){
 				scr_text("hey, the music box stopped playing","Happy Derp",1);
 				scr_text("yeah, it seems like it, we've been trying to fix it, but we haven't really got the time", "Lylia", 1);
 				scr_text("Really? that's a shame","Happy Derp",1);
+				break;	
+				
+		case "Lylia - fixed":
+				scr_text("thankyou so much for fixing it","Lylia",1);
 				break;	
 	}
 }

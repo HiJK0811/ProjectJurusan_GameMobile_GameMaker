@@ -283,32 +283,37 @@ level_8 = {
 // ==========================================
 // LEVEL 10: The Masterboard
 // ==========================================
+// ==========================================
+// LEVEL 10: The Masterboard (Supersized & Wide)
+// ==========================================
 level_9 = {
     components: [
-        // Switches (Spaced only 50px apart on the Y axis)
+        // Switches (Expanded to 200px vertical gaps)
         { id: "sw1",   type: obj_switch,    x: 0, y: 0 },
-        { id: "sw2",   type: obj_switch,    x: 0, y: 50 },
-        { id: "sw3",   type: obj_switch,    x: 0, y: 100 },
-        { id: "sw4",   type: obj_switch,    x: 0, y: 150 },
-        { id: "sw5",   type: obj_switch,    x: 0, y: 200 },
-        { id: "sw6",   type: obj_switch,    x: 0, y: 250 },
+        { id: "sw2",   type: obj_switch,    x: 0, y: 200 },
+        { id: "sw3",   type: obj_switch,    x: 0, y: 400 },
+        { id: "sw4",   type: obj_switch,    x: 0, y: 600 },
+        { id: "sw5",   type: obj_switch,    x: 0, y: 800 },
+        { id: "sw6",   type: obj_switch,    x: 0, y: 1000 },
 
-        // Layer 1 (Inverters)
-        { id: "not1",  type: obj_logicGate, x: 80, y: 100, gate_type: logicGateType.INVERTER },
-        { id: "not2",  type: obj_logicGate, x: 80, y: 200, gate_type: logicGateType.INVERTER },
-        { id: "not3",  type: obj_logicGate, x: 80, y: 250, gate_type: logicGateType.INVERTER },
+        // Layer 1 (Inverters) - Aligned with their source switches
+        { id: "not1",  type: obj_logicGate, x: 300, y: 400, gate_type: logicGateType.INVERTER },
+        { id: "not2",  type: obj_logicGate, x: 300, y: 800, gate_type: logicGateType.INVERTER },
+        { id: "not3",  type: obj_logicGate, x: 300, y: 1000, gate_type: logicGateType.INVERTER },
 
-        // Layer 2 (Primary Logic)
-        { id: "and1",  type: obj_logicGate, x: 160, y: 25, gate_type: logicGateType.AND },
-        { id: "nor1",  type: obj_logicGate, x: 160, y: 125, gate_type: logicGateType.NOR },
-        { id: "nand1", type: obj_logicGate, x: 160, y: 225, gate_type: logicGateType.NAND },
+        // Layer 2 (Primary Logic) - Centered exactly between their inputs
+        { id: "and1",  type: obj_logicGate, x: 600, y: 100, gate_type: logicGateType.AND },
+        { id: "nor1",  type: obj_logicGate, x: 600, y: 500, gate_type: logicGateType.NOR },
+        { id: "nand1", type: obj_logicGate, x: 600, y: 900, gate_type: logicGateType.NAND },
 
-        // Layer 3 (Funneling down)
-        { id: "and2",  type: obj_logicGate, x: 240, y: 75, gate_type: logicGateType.AND },
+        // Layer 3 (Funneling down) - Centered between AND1 and NOR1
+        { id: "and2",  type: obj_logicGate, x: 900, y: 300, gate_type: logicGateType.AND },
 
-        // Final Output
-        { id: "and3",  type: obj_logicGate, x: 320, y: 150, gate_type: logicGateType.AND },
-        { id: "bulb1", type: obj_lightBulb, x: 400, y: 150 }
+        // Final Output - Centered between AND2 and NAND1
+        { id: "and3",  type: obj_logicGate, x: 1200, y: 600, gate_type: logicGateType.AND },
+        
+        // Final Bulb
+        { id: "bulb1", type: obj_lightBulb, x: 1500, y: 600 }
     ],
     connections: [
         // Top Path -> AND1

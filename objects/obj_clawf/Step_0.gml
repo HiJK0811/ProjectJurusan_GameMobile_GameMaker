@@ -78,16 +78,21 @@ if (!game_selesai) {
         }
     }
 }
+
 if (game_selesai) {
     // Animasi Fade-in Panel
     pesan_alpha = min(pesan_alpha + 0.02, 1);
-    // Cek Input untuk Pindah
-    var _pencet_spasi = keyboard_check_pressed(vk_alt);
-    var _pencet_layar = mouse_check_button_pressed(mb_left);
+    
+    // HANYA terima input jika animasi fade-in sudah selesai (alpha = 1)
+    if (pesan_alpha >= 1) {
+        var _pencet_spasi = keyboard_check_pressed(vk_space);
+        var _pencet_enter = keyboard_check_pressed(vk_enter);
+        var _pencet_layar = mouse_check_button_pressed(mb_left);
 
-    if (_pencet_spasi || _pencet_layar) {	
-        status_pindah = true; // Panggil Alarm 1 untuk gerakkan box & conveyor
-		alarm[2] = 1;
+        if (_pencet_spasi || _pencet_layar || _pencet_enter) {	
+            status_pindah = true; 
+            alarm[2] = 1;
+        }
     }
 }
 

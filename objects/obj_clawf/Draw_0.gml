@@ -47,7 +47,7 @@ if (game_selesai && pesan_alpha >= 1) {
     draw_set_alpha(_blink);
     
     // Sesuaikan kata-katanya agar pemain tahu mereka akan pindah ruangan
-    draw_text(_mid_x, _mid_y + 80, "[ Press Space or Tap to Continue ]");
+    draw_text(_mid_x, _mid_y + 80, "[ Press Space or Enter or Tap to Continue ]");
     
     draw_set_alpha(1);
 }

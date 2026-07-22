@@ -42,7 +42,6 @@
 //}
 
 // 1. Check for the Win Condition
-// 1. Check for the Win Condition
 if (!level_completed) {
     var _all_bulbs_on = true;
     
@@ -70,7 +69,15 @@ if (!level_completed) {
 }
 
 // 2. Handle Button Clicks AFTER Winning
-if (level_completed && mouse_check_button_pressed(mb_left)) {
+// Fade Transition
+if (level_completed) {
+    if (completion_alpha < 1) {
+        completion_alpha += 0.05; // The fade speed (0.05 takes about half a second)
+    }
+}
+
+// We now check if completion_alpha >= 1 so buttons only work when fully visible
+if (level_completed && completion_alpha >= 1 && mouse_check_button_pressed(mb_left)) {
     var _gui_w = display_get_gui_width();
     var _gui_h = display_get_gui_height();
     var _cx = _gui_w / 2;
@@ -79,7 +86,6 @@ if (level_completed && mouse_check_button_pressed(mb_left)) {
     var _mx = device_mouse_x_to_gui(0);
     var _my = device_mouse_y_to_gui(0);
     
-    // Exact same boundaries as the Draw GUI
     var _btn_left_x1 = _cx - 170;   var _btn_y1 = _cy + 40;
     var _btn_left_x2 = _cx - 10;    var _btn_y2 = _cy + 100;
     
@@ -117,10 +123,18 @@ if (level_completed && mouse_check_button_pressed(mb_left)) {
             with (obj_lightBulb) instance_destroy();
             
             io_clear();
+
+            // Reset Global States
+            if (instance_exists(obj_gameStates)) {
+                obj_gameStates.game_state = GameState.EXPLORE;
+            }
+            global.transitioning = false;
             
-            // Sends the player back to your main exploration room!
-            room_goto(room_explore_mainRoom);
-			obj_gameStates.game_state = GameState.EXPLORE;
+            // Go to the main room 
+            room_goto(room_explore_mainRoom); 
+            
+            // Destroy the builder
+            instance_destroy();
         }
     }
 }

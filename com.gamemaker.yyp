@@ -254,6 +254,8 @@
     {"id":{"name":"snd_play","path":"sounds/snd_play/snd_play.yy",},},
     {"id":{"name":"snd_pop_up","path":"sounds/snd_pop_up/snd_pop_up.yy",},},
     {"id":{"name":"snd_StarWars_Force","path":"sounds/snd_StarWars_Force/snd_StarWars_Force.yy",},},
+    {"id":{"name":"snd_switchOff","path":"sounds/snd_switchOff/snd_switchOff.yy",},},
+    {"id":{"name":"snd_switchOn","path":"sounds/snd_switchOn/snd_switchOn.yy",},},
     {"id":{"name":"snd_unpause","path":"sounds/snd_unpause/snd_unpause.yy",},},
     {"id":{"name":"snd_walk_2","path":"sounds/snd_walk_2/snd_walk_2.yy",},},
     {"id":{"name":"snd_walk_3","path":"sounds/snd_walk_3/snd_walk_3.yy",},},

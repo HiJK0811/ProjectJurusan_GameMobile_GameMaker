@@ -81,6 +81,14 @@
 //    draw_set_valign(fa_top);
 //}
 
+// --- DRAW MOVE COUNTER ---
+draw_set_color(c_black);
+draw_set_halign(fa_left);
+draw_set_valign(fa_top);
+
+// The '1.5, 1.5' scales the text to be 50% larger. Change to '2, 2' if you want it huge!
+draw_text_transformed(20, 20, "Moves: " + string(moves_made), 2, 2, 0);
+
 if (level_completed) {
     // --- APPLY FADE IN ---
     draw_set_alpha(completion_alpha);

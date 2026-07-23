@@ -6,7 +6,7 @@ posisi_y_lantai = obj_alasbox.y;
 posisi_x_conveyor = 640; // Target akhir box dikirim
 indeks_alas = 1;
 x = posisi_x_alas[indeks_alas];
-y = 83;
+y = 60;
 
 box_terbawa = noone;
 
@@ -16,6 +16,9 @@ status_pindah = false;
 
 //overlapbox
 jarak_overlap = 10;
+
+// Movement Counter
+moves_made = 0;
 
 
 // Array 2D untuk tumpukan (Alas 0, 1, dan 2)

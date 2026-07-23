@@ -53,10 +53,17 @@ if (menu_aktif) {
 
     for (var i = 0; i < array_length(pilihan); i++) {
         var _txt_y = _start_y + (i * _spacing);
+        var _base_txt = pilihan[i]; // Ambil nama asli (Easy, Medium, Hard)
+        
+        // Jika level ini sudah tamat, tambahkan label [DONE]
+        if (global.hanoi_beaten[i] == true) {
+            _base_txt += " [DONE]";
+        }
         
         if (index_pilih == i) {
-            var _txt = "> " + pilihan[i] + " <";
+            var _txt = "> " + _base_txt + " <";
             draw_set_color(c_yellow);
+            
             // Efek Glow Teks
             for (var t = 1; t <= 2; t++) {
                 draw_set_alpha(0.4 / t);
@@ -64,9 +71,15 @@ if (menu_aktif) {
             }
             draw_set_alpha(1);
             draw_text(_menu_x, _txt_y, _txt);
+            
         } else {
-            draw_set_color(c_white); // Aqua lebih Sci-Fi dibanding Blue biasa
-            draw_text(_menu_x, _txt_y, pilihan[i]);
+            // Jika sudah tamat tapi tidak dipilih, warnanya hijau. Jika belum, putih/aqua.
+            if (global.hanoi_beaten[i] == true) {
+                draw_set_color(c_lime); 
+            } else {
+                draw_set_color(c_white); 
+            }
+            draw_text(_menu_x, _txt_y, _base_txt);
         }
     }
 }

@@ -151,6 +151,7 @@
 //build_level(level);
 //initialize_circuit();
 
+moves_made = 0; // Move counter
 completion_alpha = 0; // Controls the fade-in transition
 
 // --- FAILSAFE: If testing this room directly ---

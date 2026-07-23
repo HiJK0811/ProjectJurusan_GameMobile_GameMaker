@@ -23,7 +23,10 @@ with (obj_box_parent) {
 var daftar_objek = [obj_boxW1, obj_boxW2, obj_boxW3, obj_boxW4, obj_boxW5];
 
 // DAFTAR SKALA MILIK DANIEL (Ini sudah paling akurat)
-var skala_manual = [0.05, 0.07, 0.10, 0.14, 0.19]; 
+// var skala_manual = [0.05, 0.07, 0.10, 0.14, 0.19];.
+// var skala_manual = [0.08, 0.11, 0.14, 0.17, 0.21];
+var skala_manual = [0.08, 0.10, 0.13, 0.17, 0.22];
+
 
 for (var i = jumlah_box_target; i >= 1; i--) {
     var _obj_pilihan = daftar_objek[i-1];

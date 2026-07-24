@@ -43,6 +43,12 @@ function scr_text(_text){
 				speaker_sprite[page_number] = spr_Lylia_Portrait;
 				dialogBox_sprite[page_number] = spr_textBox_Purple;
 				break;
+				
+			case "Ami":
+				speaker_name[page_number] = "Ami"; 
+				// speaker_sprite[page_number] = spr_Lylia_Portrait;
+				dialogBox_sprite[page_number] = spr_textBox_Purple;
+				break;
 			
 			// Portraitless Characters
 			case "Security Officer":

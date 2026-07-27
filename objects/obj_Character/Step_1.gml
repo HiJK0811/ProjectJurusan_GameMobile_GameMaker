@@ -1,9 +1,3 @@
-/*
-if(o_game.game_state != GameState.EXPLORE){
-	exit;
-}
-*/
-
 // Reset input
 input_x = 0;
 input_y = 0;

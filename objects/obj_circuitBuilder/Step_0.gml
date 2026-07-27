@@ -1,46 +1,3 @@
-//// Only check if the level isn't already completed
-//if (!level_completed) {
-//    var _all_bulbs_on = true;
-    
-//    // Check every bulb in the room
-//    with (obj_lightBulb) {
-//        if (currentState != logicState.ON) {
-//            _all_bulbs_on = false;
-//            break; // Stop checking if we find even one OFF bulb
-//        }
-//    }
-    
-//    // If they are all ON, trigger the win state!
-//    if (_all_bulbs_on && instance_number(obj_lightBulb) > 0) {
-//        level_completed = true;
-        
-//        // Unlock the next level
-//        if (global.current_level == global.highest_unlocked && global.highest_unlocked < global.total_levels) {
-//            global.highest_unlocked += 1;
-//        }
-        
-//        // Check if it's the final level
-//        if (global.current_level == global.total_levels) {
-//            game_beaten = true;
-//        }
-//    }
-//}
-
-//// Handle input to return to menu or next level after winning
-//if (level_completed && mouse_check_button_pressed(mb_left)) {
-    
-//    // 1. Destroy all the circuit pieces on the screen
-//    with (obj_switch) { instance_destroy(); }
-//    with (obj_logicGate) { instance_destroy(); }
-//    with (obj_lightBulb) { instance_destroy(); }
-    
-//    // 2. Bring the menu back onto the screen
-//    instance_create_layer(0, 0, "Instances", obj_menu_logic);
-    
-//    // 3. Destroy the builder itself
-//    instance_destroy();
-//}
-
 // 1. Check for the Win Condition
 if (!level_completed) {
     var _all_bulbs_on = true;
@@ -59,12 +16,23 @@ if (!level_completed) {
         if (global.current_level == global.highest_unlocked && global.highest_unlocked < global.total_levels) {
             global.highest_unlocked += 1;
         }
-        
+		
         // Check if this was the final level (Level 10 is index 9)
         if (global.current_level == global.total_levels - 1) {
             game_beaten = true;
 			global.logic_gate_completed = true;
         }
+		
+		// --- NEW: SAVE BEST MOVES PER LEVEL ---
+		// Subtract 1 because arrays start at [0], so Level 1 saves to slot [0], Level 10 to slot [9]
+		var _lvl_index = global.current_level; 
+
+		// We added "moves_made > 0" to prevent the 0-score bug!
+		if (_lvl_index >= 0 && _lvl_index < 10 && moves_made > 0) {
+			if (global.best_moves_logic[_lvl_index] == -1 || moves_made < global.best_moves_logic[_lvl_index]) {
+				global.best_moves_logic[_lvl_index] = moves_made;
+			}
+		}
     }
 }
 
@@ -73,7 +41,7 @@ if (!level_completed) {
 if (level_completed) {
     if (completion_alpha < 1) {
         completion_alpha += 0.05; // The fade speed (0.05 takes about half a second)
-    }
+	}
 }
 
 // We now check if completion_alpha >= 1 so buttons only work when fully visible

@@ -72,7 +72,16 @@ if (!game_selesai) {
 			if (!game_selesai) {
 				if (indeks_alas == 2 && array_length(tumpukan[2]) == jumlah_box_target) {
 					game_selesai = true;
-					// alarm[1] = 30;
+					
+					// --- NEW: SAVE BEST MOVES ---
+                    // Convert target boxes (3, 4, 5) into array index (0, 1, 2)
+                    var _diff = jumlah_box_target - 3; 
+                    
+                    // Check if there is no score yet (-1) OR if the current moves are lower than the best
+                    if (global.best_moves_hanoi[_diff] == -1 || moves_made < global.best_moves_hanoi[_diff]) {
+                        global.best_moves_hanoi[_diff] = moves_made;
+                    }
+					
 					show_debug_message("MENANG! Menunggu input untuk pindah...");
 					
 					// --- MARK LEVEL AS BEATEN ---

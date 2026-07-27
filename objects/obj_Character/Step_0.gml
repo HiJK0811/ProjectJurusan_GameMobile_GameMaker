@@ -1,9 +1,3 @@
-/*
-if(o_game.game_state != GameState.EXPLORE){
-	exit;
-}
-*/
-
 // Stop movement if paused
 if (instance_exists(obj_pause) && obj_pause.paused) {
 	input_x = 0;
@@ -47,17 +41,6 @@ if (input_x != 0 || input_y != 0) {
 	// Round the direction to eliminate floating-point drift
 	moveDirection = round(point_direction(0, 0, input_x, input_y));
 }
-
-//// Set Sprite
-//if (x_spd == 0 && y_spd == 0) {
-//	set_state(states.idle);
-//	moving = false;
-//} else {
-//	set_state(states.walking);
-//	moving = true;
-//}
-
-//sprite_index = get_sprite(moveDirection);
 
 // Collision 2
 if place_meeting(x + x_spd, y, [obj_Wall, obj_Character, obj_Interactibles]) == true{

@@ -64,28 +64,3 @@ for (var j = 0; j < array_length(tumpukan[0]); j++) {
 // Set kuku di atas alas pertama
 indeks_alas = 1;
 x = posisi_x_alas[1];
-
-//var _tinggi_tumpukan_saat_ini = 0;
-//var _y_alas_pusat = 281; 
-//var _tinggi_alas = sprite_get_height(obj_alasbox.sprite_index);
-//var _lantai_permukaan = _y_alas_pusat - (_tinggi_alas / 2); // Ini permukaan atas alas
-
-//for (var j = 0; j < array_length(tumpukan[0]); j++) {
-    //var _b = tumpukan[0][j];
-    
-    // 1. Hitung tinggi visual box ini (Tinggi Sprite Asli * image_yscale)
-    //var _tinggi_visual_b = sprite_get_height(_b.sprite_index) * _b.image_yscale;
-    
-    // 2. Set Posisi X ke Tengah Alas (Simetris)
-    //_b.x = posisi_x_alas[0];
-    
-    // 3. Set Posisi Y 
-    // Mulai dari Lantai Permukaan, kurangi tinggi box di bawahnya, 
-    // lalu kurangi setengah tinggi box ini (karena Origin di tengah)
-    //_b.y = _lantai_permukaan - _tinggi_tumpukan_saat_ini - (_tinggi_visual_b -75);
-    
-    // 4. Update tinggi tumpukan untuk box selanjutnya
-    //_tinggi_tumpukan_saat_ini += _tinggi_visual_b;
-    
-    //_b.depth = -50 - j;
-//}

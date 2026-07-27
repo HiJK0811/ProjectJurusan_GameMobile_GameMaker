@@ -7,4 +7,4 @@ pilihan = ["Easy", "Medium", "Hard"];
 index_pilih = 0;
 menu_aktif = true;
 
-depth = -5000; // Force the menu to a specific depth
+depth = -5000; 

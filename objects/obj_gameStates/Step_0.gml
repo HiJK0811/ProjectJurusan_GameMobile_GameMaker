@@ -13,10 +13,6 @@ if (game_state == GameState.EXPLORE){
 		show_debug_message("Go To Lounge");
 		room_goto(room_explore_mainRoom);
 	}
-	else if (keyboard_check_pressed(ord("K"))) {
-		show_debug_message("Go To Office");	
-		room_goto(room_explore_office);
-	}
 }
 
 if (game_state == GameState.MINIGAME){
@@ -24,8 +20,12 @@ if (game_state == GameState.MINIGAME){
 		show_debug_message("Go To Logic Gates");
 		room_goto(room_minigame_logicGates);
 	}
-	else if (keyboard_check_pressed(ord("B"))) {
-		show_debug_message("Go To Graph");	
-		room_goto(room_minigame_graph);
+	//else if (keyboard_check_pressed(ord("B"))) {
+	//	show_debug_message("Go To Graph");	
+	//	room_goto(room_minigame_graph);
+	//}
+	else if (keyboard_check_pressed(ord("H"))) {
+		show_debug_message("Go To Hanoi");	
+		room_goto(room_minigame_hanoi);
 	}
 }

@@ -1,7 +1,7 @@
 min_distance_to_player = 4;
 
 // Default
-text_id = "Ami_default"
+text_id = "Mike_default"
 
 // Cutscene
 // post_cutscene_check = "adhila_intro_scene"; // cutscene name

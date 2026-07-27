@@ -46,7 +46,25 @@ function scr_text(_text){
 				
 			case "Ami":
 				speaker_name[page_number] = "Ami"; 
-				// speaker_sprite[page_number] = spr_Lylia_Portrait;
+				// speaker_sprite[page_number] = spr_Mike_Portrait;
+				dialogBox_sprite[page_number] = spr_textBox_Purple;
+				break;
+				
+			case "Mike":
+				speaker_name[page_number] = "Mike"; 
+				speaker_sprite[page_number] = spr_Mike_Portrait;
+				dialogBox_sprite[page_number] = spr_textBox_Purple;
+				break;
+				
+			case "Morty":
+				speaker_name[page_number] = "Marty"; 
+				// speaker_sprite[page_number] = spr_Mike_Portrait;
+				dialogBox_sprite[page_number] = spr_textBox_Purple;
+				break;
+				
+			case "Roy":
+				speaker_name[page_number] = "Roy"; 
+				// speaker_sprite[page_number] = spr_Mike_Portrait;
 				dialogBox_sprite[page_number] = spr_textBox_Purple;
 				break;
 			

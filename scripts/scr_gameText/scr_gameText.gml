@@ -379,12 +379,20 @@ function scr_gameText(_text_id){
 			scr_text("~ Sepertinya masih ada beberapa masalah di lounge ini! ~");
 			scr_text("~ Saya merasa untuk membantu permasalahan di Storage Room terlebih dahulu! ~");
 			break;
-			
+	
+	
+	// == MIKE ==
+		case "Mike_default":
+			scr_text("Halo Player!", "Mike", 1);
+			scr_text("Salam kenal, aku Mike", "Mike", 1);
+			scr_text("Aku karyawan tetap lounge yang bekerja di warehouse!", "Mike", 1);
+			break;
+	
 	// == AMI ==
 		case "Ami_default":
-			scr_text("Hei Player!", "Lylia", 1);
-			scr_text("Salam kenal, aku Ami", "Lylia", 1);
-			scr_text("Pengurus bagian logistik lounge ini", "Lylia", 1);
+			scr_text("Hei Player!", "Ami", 1);
+			scr_text("Salam kenal, aku Ami", "Ami", 1);
+			scr_text("Pengurus bagian logistik lounge ini", "Ami", 1);
 			break;
 			
 		// Ami and Lylia Cutscene
@@ -506,6 +514,13 @@ function scr_gameText(_text_id){
 			break;
 		
 	
+	// == Morty ==
+		case "Morty_default":
+			scr_text("Halo!", "Morty", 1);
+			scr_text("Namaku Marty, salam kenal Player!", "Morty", 1);
+			scr_text("Aku bekerja di Control Room dengan Pak Gregory!", "Morty", 1);
+			break;
+			
 	// == ROY ==
 		case "Roy_default":
 			scr_text("Halo Player!", "Roy", 1);

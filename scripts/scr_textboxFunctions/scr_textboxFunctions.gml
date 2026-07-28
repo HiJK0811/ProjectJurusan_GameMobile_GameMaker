@@ -46,7 +46,7 @@ function scr_text(_text){
 				
 			case "Ami":
 				speaker_name[page_number] = "Ami"; 
-				// speaker_sprite[page_number] = spr_Mike_Portrait;
+				speaker_sprite[page_number] = spr_Ami_Portrait;
 				dialogBox_sprite[page_number] = spr_textBox_Purple;
 				break;
 				

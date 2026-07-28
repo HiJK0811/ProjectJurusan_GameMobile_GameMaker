@@ -392,7 +392,7 @@ function scr_gameText(_text_id){
 		case "Ami_default":
 			scr_text("Hei Player!", "Ami", 1);
 			scr_text("Salam kenal, aku Ami", "Ami", 1);
-			scr_text("Pengurus bagian logistik lounge ini", "Ami", 1);
+			scr_text("Aku pengurus bagian logistik lounge ini!", "Ami", 1);
 			break;
 			
 		// Ami and Lylia Cutscene
@@ -456,10 +456,11 @@ function scr_gameText(_text_id){
 			
 		// Ami Hanoi Intro
 		case "Ami_hanoi_intro":
-			scr_text("Hei Player! kita ketemu lagi!", "Ami", 1);
+			scr_text("Hei Player!", "Ami", 1);
+			scr_text("kita ketemu lagi!", "Ami", 1);
 			scr_text("Tanpa basa-basi, aku akan jelaskan apa yang kamu lakukan!", "Ami", 1);
 			scr_text("Jadi, kamu membantu saya memindahkan kontainer-kontainer yang tertumpuk ke conveyor belt untuk dikirim!", "Ami", 1);
-			scr_text("Sayangnya karena tempat ini terbatas dan containernya berat, kamu harus memindahkan kontainernya dengan cara tertentu!", "Ami", 1);
+			scr_text("Sayangnya karena tempat ini terbatas dan kontainernya berat, kamu harus memindahkan kontainernya dengan cara tertentu!", "Ami", 1);
 			// Input Layer	
 				scr_text("?", "Player", -1);
 				scr_option("Cara tertentu?", "ami_hanoi_1");
@@ -469,19 +470,22 @@ function scr_gameText(_text_id){
 				case "ami_hanoi_1":
 					scr_text("Maaf, aku kira kamu sudah tahu...", "Ami", 1);
 					scr_text("Kamu bisa menggunakan cara Tower of Hanoi", "Ami", 1);
-					scr_text("Kita menggunakan cara ini karena efisien dan clawnya tidak bisa memindahkan tumpukan container!", "Ami", 1);
-					scr_text("Untuk cara kerjanya, jadi kamu hanya bisa memindahkan containernya satu per satu dan tidak bisa menempatkan comntainer lebih besar di atas yang lebih kecil!", "Ami", 1);
+					scr_text("Kita menggunakan cara ini karena efisien dan clawnya tidak bisa memindahkan tumpukan kontainer!", "Ami", 1);
+					scr_text("Untuk cara kerjanya, jadi kamu hanya bisa memindahkan kontainernya satu per satu dan tidak bisa menempatkan kontainer yang lebih besar di atas yang lebih kecil!", "Ami", 1);
 					scr_text("Untuk ini, kamu harus hati-hati untuk tempat penempatan containernya!", "Ami", 1);
+					scr_text("Karena hanya ada 3 tempat aja!", "Ami", 1);
+					scr_text("Player, tidak apa-apa kalau kamu membuat kesalahan!", "Ami", 1);
+					scr_text("Kadang saya melakukan kesalahan juga!", "Ami", 1);
 					scr_gameText("Ami_hanoi_last")
 					break;
 					
 				case "ami_hanoi_2":
-					scr_text("Benar Player, emang kau pintar Player!", "Ami", 1);
+					scr_text("Benar Player, Player!", "Ami", 1);
 					scr_text("Kalau begitu, apakah kamu sudah tahu cara kerja Tower of Hanoi?", "Ami", 1);
 					// Input Layer	
 						scr_text("?", "Player", -1);
-						scr_option("Saya sudah tahu caranya!", "ami_hanoi_3");
-						scr_option("Saya belum terlalu familiar!", "ami_hanoi_1")
+						scr_option("Iya, saya sudah tahu caranya!", "ami_hanoi_3");
+						scr_option("Saya belum terlalu tahu!", "ami_hanoi_1")
 						break;
 							
 					case "ami_hanoi_3":
@@ -491,14 +495,22 @@ function scr_gameText(_text_id){
 						
 			case "Ami_hanoi_last":
 				scr_text("Ok Player, karena kamu sudah tahu cara kerjanya!", "Ami", 1);
-				scr_text("Kamu bisa menggunakan control panelnya untuk mengoperasi clawnya...", "Ami", 1);
-				scr_text("dan memindahkan containernya!", "Ami", 1);
-				scr_text("Ingat, hanya satu container saja dan tidak bukan tumpukan!", "Ami", 1);
+				scr_text("Kamu bisa menggunakan control panel di sebelah saya untuk mengoperasikan clawnya untuk memindahkan kontainernya!", "Ami", 1);
+				scr_text("Ingat, hanya satu kontainer setiap kali mindah dan bukan tumpukan!", "Ami", 1);
 				scr_text("Dan Player, karena proses ini menguras waktu...", "Ami", 1);
-				scr_text("Kamu bisa memilih 2 dari 3 tumpukan container untuk dpindahkan!", "Ami", 1);
-				scr_text("Atau kamu bisa menyelesaikan tiga-tiganya, aku tidak keberatan!", "Ami", 1);
+				scr_text("Kamu bisa memilih 2 dari 3 tumpukan kontainer untuk dipindahkan!", "Ami", 1);
+				scr_text("Atau kamu bisa menyelesaikan tiga-tiganya, jika kamu tidak keberatan!", "Ami", 1);
 				scr_text("Semoga kamu bisa menyelesaikannya Player!", "Ami", 1);
 				break;
+		
+		// Ami before completing Hanoi Minigame
+		case "Ami_pre_hanoi":
+			scr_text("Hei Player!", "Ami", 1);
+			scr_text("Semoga kamu bisa membantu saya memindahkan kontainernya!", "Ami", 1);
+			scr_text("Kamu bisa membantu memindahkan 2 dari 3 tumpukan kontainernya!", "Ami", 1);
+			scr_text("Atau kamu bisa menyelesaikan ketiga-tiganya...", "Ami", 1);
+			scr_text("Saya bakal senang sekali!", "Ami", 1);
+			break;
 			
 		// Ami after completing Hanoi minigame
 		case "Ami_post_hanoi":

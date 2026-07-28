@@ -1,11 +1,11 @@
 min_distance_to_player = 4;
 
 // Default
-text_id = "Mike_default"
+text_id = "Ami_default"
 
 // Cutscene
-// post_cutscene_check = "adhila_intro_scene"; // cutscene name
-// post_cutscene_text_id = "Adhila_post_intro"; 
+post_cutscene_check = "ami_hanoi_intro_scene"; // cutscene name
+post_cutscene_text_id = "Ami_pre_hanoi"; 
 
 // Minigame
 // post_logic_text_id = "Adhila_post_intro";

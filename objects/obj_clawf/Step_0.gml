@@ -88,6 +88,21 @@ if (!game_selesai) {
 					if (jumlah_box_target == 3) global.hanoi_beaten[0] = true;
 					else if (jumlah_box_target == 4) global.hanoi_beaten[1] = true;
 					else if (jumlah_box_target == 5) global.hanoi_beaten[2] = true;
+					
+					// Cutscene check
+		            var _total_wins = 0;
+            
+		            // Loop through the Easy, Medium, and Hard array to count the 'true' values
+		            for (var i = 0; i < 3; i++) {
+		                if (global.hanoi_beaten[i] == true) {
+		                    _total_wins += 1;
+		                }
+		            }
+            
+		            // If the player has beaten at least 2 difficulties (or all 3), trigger the flag!
+		            if (_total_wins >= 2) {
+		                global.hanoi_completed = true;
+		            }
 				 }
 			} else {
                 // Efek gagal (Opsional: kuku bergetar sedikit)

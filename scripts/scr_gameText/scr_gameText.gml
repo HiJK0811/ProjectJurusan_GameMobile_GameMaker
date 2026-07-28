@@ -508,8 +508,8 @@ function scr_gameText(_text_id){
 			scr_text("Hei Player!", "Ami", 1);
 			scr_text("Semoga kamu bisa membantu saya memindahkan kontainernya!", "Ami", 1);
 			scr_text("Kamu bisa membantu memindahkan 2 dari 3 tumpukan kontainernya!", "Ami", 1);
-			scr_text("Atau kamu bisa menyelesaikan ketiga-tiganya...", "Ami", 1);
-			scr_text("Saya bakal senang sekali!", "Ami", 1);
+			scr_text("Atau kamu bisa menyelesaikan ketiga-tiganya jika kamu tidak keberatan!", "Ami", 1);
+			scr_text("Saya bakal senang sekali jika kamu melakukannya!", "Ami", 1);
 			break;
 			
 		// Ami after completing Hanoi minigame
@@ -517,12 +517,12 @@ function scr_gameText(_text_id){
 			scr_text("Hei player!", "Ami", 1);
 			scr_text("Selamat telah membantu aku memindahkan tumpukan kontainernya!", "Ami", 1);
 			scr_text("Aku berterima kasih banget kepadamu!", "Ami", 1);
-			scr_text("Ini sangat berarti bagi ku, jadi terima kasih lagi Player!", "Ami", 1);
+			scr_text("Ini sangat berarti bagiku, jadi terima kasih lagi Player!", "Ami", 1);
 			scr_text("Karena kamu sudah menyelesaikan masalah ini, kamu bisa menyelesaikan masalah lain di lounge atau istirahat dulu!", "Ami", 1);
 			scr_text("Itu pilhanmu Player!", "Ami", 1);
 			scr_text("Ok Player, sampai jumpa kembali!", "Ami", 1)
-			scr_text("~ Sekarang terdapat 2 masalah lagi! ~");
-			scr_text("~ Saya harap cek Control Room terlebih dahulu! ~");
+			// scr_text("~ Sekarang terdapat 2 masalah lagi! ~");
+			// scr_text("~ Saya harap cek Control Room terlebih dahulu! ~");
 			break;
 		
 	

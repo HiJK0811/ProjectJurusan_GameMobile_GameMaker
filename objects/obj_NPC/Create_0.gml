@@ -18,10 +18,21 @@ can_interact = false;
 
 text_id = ""
 
-// Cutscene
+// == Cutscene ==
+// Cutscene 1
 post_cutscene_check = ""; // The ID of the cutscene this NPC is waiting for
 post_cutscene_text_id = ""; // The text to show after that cutscene is done
 
-// Minigame
+// Cutscene 2
+post_cutscene_check_2 = "";
+post_cutscene_text_id_2 = "";
+
+// Cutscene 3
+post_cutscene_check_3 = "";
+post_cutscene_text_id_3 = "";
+
+// add more if necessary
+
+// == Minigame ==
 post_logic_text_id = ""; // NEW: Variable for dialogue after the minigame
 post_hanoi_text_id = ""; // NEW: Variable for dialogue after Tower of Hanoi

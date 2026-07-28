@@ -19,11 +19,17 @@ if (instance_exists(obj_Player) && distance_to_object(obj_Player) < min_distance
 		else if (global.logic_gate_completed == true && post_logic_text_id != "") {
 			create_textbox(post_logic_text_id); 
 		}  
-		// PRIORITY 3: Cutscene (Mid Game)
+
+		// PRIORITY 3: The Second Cutscene // add the priority above for check cutscene 3, etc
+		else if (post_cutscene_check_2 != "" && variable_struct_exists(global.played_cutscenes, post_cutscene_check_2) && post_cutscene_text_id_2 != "") {
+			create_textbox(post_cutscene_text_id_2);
+		}
+
+		// PRIORITY 4: The First Cutscene 
 		else if (post_cutscene_check != "" && variable_struct_exists(global.played_cutscenes, post_cutscene_check) && post_cutscene_text_id != "") {
 			create_textbox(post_cutscene_text_id);
 		}
-		// PRIORITY 4: Default (Early Game)
+		// PRIORITY 5: Default (Early Game)
 		else {
 			create_textbox(text_id); 
 		}

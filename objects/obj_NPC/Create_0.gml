@@ -24,3 +24,4 @@ post_cutscene_text_id = ""; // The text to show after that cutscene is done
 
 // Minigame
 post_logic_text_id = ""; // NEW: Variable for dialogue after the minigame
+post_hanoi_text_id = ""; // NEW: Variable for dialogue after Tower of Hanoi

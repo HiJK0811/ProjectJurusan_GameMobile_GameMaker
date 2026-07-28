@@ -1,15 +1,14 @@
-//permanent = false; // debug: true
-//trigger_scene_info = [
-//	[cutscene_move_camera, 883, 328],
-//	[cutscene_move_character, obj_NPC_Ami, 880, 380],
-//	[cutscene_move_character, obj_NPC_Lylia, 912, 372],
-//	[cutscene_rotate_character, obj_NPC_Lylia, 0],
-//	[cutscene_show_dialogue, "Ami_intro"],
-//	[cutscene_move_character, obj_Player, 548, 200],
-//	[cutscene_show_dialogue, "Ami_intro_cont"],
-//	[cutscene_move_character, obj_NPC_Ami, 880, 380],
-//	[cutscene_show_dialogue, "Ami_intro_last"],
-//	[cutscene_move_camera, obj_Player]
-//]
+permanent = false; // debug: true
+trigger_scene_info = [
+	[cutscene_move_camera, 521, 261],
+	[cutscene_move_character, obj_NPC_Lylia, 495, 264],
+	[cutscene_move_character, obj_Player, 475, 264],
+	[cutscene_rotate_character, obj_NPC_Lylia, 0],
+	[cutscene_show_dialogue, "Lylia_sorting_intro"],
+	[cutscene_move_camera, obj_Player]
+]
 
-//cutscene_id = "ami_intro_scene";
+cutscene_id = "Lylia_sorting_intro_scene";
+
+// Hanoi Minigame Beaten (2/3 or all)
+required_global = "hanoi_completed"

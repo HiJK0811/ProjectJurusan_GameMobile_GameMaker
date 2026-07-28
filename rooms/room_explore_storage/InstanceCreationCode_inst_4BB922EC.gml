@@ -1,6 +1,6 @@
 permanent = false; // debug: true
 trigger_scene_info = [
-	[cutscene_move_camera, 340, 231],
+	[cutscene_move_camera, 302, 261], 
 	[cutscene_move_character, obj_Player, 302, 276],
 	[cutscene_rotate_character, obj_Player, 90],
 	[cutscene_show_dialogue, "Ami_hanoi_intro"],
@@ -12,3 +12,6 @@ trigger_scene_info = [
 ]
 
 cutscene_id = "ami_hanoi_intro_scene";
+
+// // Graph minigame completed requirement
+// required_global = "graph_completed"

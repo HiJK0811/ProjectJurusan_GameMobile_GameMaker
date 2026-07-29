@@ -42,8 +42,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"Non-moving NPC",
-    "path":"folders/Jason_Main NPC Cutscene/Sprites/Characters/Non-moving NPC.yy",
+    "name":"Security Room",
+    "path":"folders/Jason_Main NPC Cutscene/Sprites/Characters/Non-moving NPC/Security Room.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

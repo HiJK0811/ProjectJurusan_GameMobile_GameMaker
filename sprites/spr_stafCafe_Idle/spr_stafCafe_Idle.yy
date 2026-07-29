@@ -41,8 +41,8 @@
   "nineSlice":null,
   "origin":7,
   "parent":{
-    "name":"Non-moving NPC",
-    "path":"folders/Jason_Main NPC Cutscene/Sprites/Characters/Non-moving NPC.yy",
+    "name":"Cafe",
+    "path":"folders/Jason_Main NPC Cutscene/Sprites/Characters/Non-moving NPC/Cafe.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

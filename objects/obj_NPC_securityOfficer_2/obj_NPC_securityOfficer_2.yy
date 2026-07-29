@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_security_Officer_2_Idle",
-    "path":"sprites/spr_security_Officer_2_Idle/spr_security_Officer_2_Idle.yy",
+    "name":"spr_SriKaya_Idle",
+    "path":"sprites/spr_SriKaya_Idle/spr_SriKaya_Idle.yy",
   },
   "spriteMaskId":null,
   "visible":true,

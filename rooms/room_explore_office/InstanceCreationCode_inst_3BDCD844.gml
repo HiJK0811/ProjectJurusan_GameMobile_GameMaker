@@ -6,7 +6,7 @@ trigger_scene_info = [
 	[cutscene_rotate_character, obj_NPC_Adhila, 270],
 	[cutscene_rotate_character, obj_Player, 90],
 	[cutscene_show_dialogue, "Adhila_intro"],
-	[cutscene_move_character, obj_NPC_Adhila, 388, 167],
+	[cutscene_move_character, obj_NPC_Adhila, 270, 300],
 	[cutscene_move_camera, obj_Player]
 ]
 

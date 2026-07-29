@@ -1,20 +1,19 @@
 {
   "$GMObject":"",
-  "%Name":"obj_NPC_Static",
+  "%Name":"obj_NPC_Yuna",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
-    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":2,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_NPC_Static",
+  "name":"obj_NPC_Yuna",
   "overriddenProperties":[],
   "parent":{
-    "name":"Functional",
-    "path":"folders/Diatra_Version/Objects/Functional.yy",
+    "name":"Arcade",
+    "path":"folders/Jason_Main NPC Cutscene/Objects/Characters/Non Moving NPC/Arcade.yy",
   },
   "parentObjectId":{
-    "name":"obj_NPC",
-    "path":"objects/obj_NPC/obj_NPC.yy",
+    "name":"obj_NPC_Static",
+    "path":"objects/obj_NPC_Static/obj_NPC_Static.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -33,7 +32,10 @@
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
   "solid":false,
-  "spriteId":null,
+  "spriteId":{
+    "name":"spr_Yuna_Idle",
+    "path":"sprites/spr_Yuna_Idle/spr_Yuna_Idle.yy",
+  },
   "spriteMaskId":null,
   "visible":true,
 }

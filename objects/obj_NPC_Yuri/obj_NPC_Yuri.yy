@@ -1,19 +1,19 @@
 {
   "$GMObject":"",
-  "%Name":"obj_NPC_securityOfficer_2",
+  "%Name":"obj_NPC_Yuri",
   "eventList":[
     {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
   ],
   "managed":true,
-  "name":"obj_NPC_securityOfficer_2",
+  "name":"obj_NPC_Yuri",
   "overriddenProperties":[],
   "parent":{
-    "name":"Non Moving NPC",
-    "path":"folders/Jason_Main NPC Cutscene/Objects/Characters/Non Moving NPC.yy",
+    "name":"Arcade",
+    "path":"folders/Jason_Main NPC Cutscene/Objects/Characters/Non Moving NPC/Arcade.yy",
   },
   "parentObjectId":{
-    "name":"obj_Wall",
-    "path":"objects/obj_Wall/obj_Wall.yy",
+    "name":"obj_NPC_Static",
+    "path":"objects/obj_NPC_Static/obj_NPC_Static.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -33,8 +33,8 @@
   "resourceVersion":"2.0",
   "solid":false,
   "spriteId":{
-    "name":"spr_SriKaya_Idle",
-    "path":"sprites/spr_SriKaya_Idle/spr_SriKaya_Idle.yy",
+    "name":"spr_Yuri_Idle",
+    "path":"sprites/spr_Yuri_Idle/spr_Yuri_Idle.yy",
   },
   "spriteMaskId":null,
   "visible":true,

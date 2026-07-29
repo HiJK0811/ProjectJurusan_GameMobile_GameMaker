@@ -1,13 +1,15 @@
 {
   "$GMObject":"",
   "%Name":"obj_NPC_stafCafe_Idle",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"obj_NPC_stafCafe_Idle",
   "overriddenProperties":[],
   "parent":{
-    "name":"Non Moving NPC",
-    "path":"folders/Jason_Main NPC Cutscene/Objects/Characters/Non Moving NPC.yy",
+    "name":"Cafe",
+    "path":"folders/Jason_Main NPC Cutscene/Objects/Characters/Non Moving NPC/Cafe.yy",
   },
   "parentObjectId":{
     "name":"obj_NPC_Static",

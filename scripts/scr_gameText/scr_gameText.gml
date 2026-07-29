@@ -20,10 +20,14 @@ function scr_gameText(_text_id){
 		
 		case "Adhoc - calling":
 			scr_text("Berikutnya!", "Security Officer");
+			scr_text("...", "Security Officer");
+			break;
+			
+		case "Adhoc - calling_2":
 			scr_text("Halo! Anda mesti orang yang diutus untuk kerja di sini!", "Security Officer");
 			scr_text("Sebelum ke lounge! silakan melalui proses pemeriksaan dahulu!", "Security Officer");
 			scr_text("Terima kasih!", "Security Officer");
-			break;	
+			break;
 			
 		case "Adhoc - dialog":
 			scr_text("Proses pemeriksaan sudah selesai!", "Security Officer");

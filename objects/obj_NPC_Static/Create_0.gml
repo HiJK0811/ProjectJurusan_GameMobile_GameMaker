@@ -9,3 +9,4 @@ base_sprite = sprite_index;
 idle_anim_sprite = sprite_index; 
 text_id = "";
 
+default_direction = 270; // 270 = down, 90 = up

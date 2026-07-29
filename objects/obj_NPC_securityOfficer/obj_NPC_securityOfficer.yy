@@ -8,8 +8,8 @@
   "name":"obj_NPC_securityOfficer",
   "overriddenProperties":[],
   "parent":{
-    "name":"Non Moving NPC",
-    "path":"folders/Jason_Main NPC Cutscene/Objects/Characters/Non Moving NPC.yy",
+    "name":"Security Room",
+    "path":"folders/Jason_Main NPC Cutscene/Objects/Characters/Non Moving NPC/Security Room.yy",
   },
   "parentObjectId":{
     "name":"obj_NPC_Static",

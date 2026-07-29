@@ -19,20 +19,20 @@ function scr_gameText(_text_id){
 			break;
 		
 		case "Adhoc - calling":
-			scr_text("Berikutnya!", "Security Officer");
-			scr_text("...", "Security Officer");
+			scr_text("Berikutnya!", "Mike");
+			scr_text("...", "Mike");
 			break;
 			
 		case "Adhoc - calling_2":
-			scr_text("Halo! Anda mesti orang yang diutus untuk kerja di sini!", "Security Officer");
-			scr_text("Sebelum ke lounge! silakan melalui proses pemeriksaan dahulu!", "Security Officer");
-			scr_text("Terima kasih!", "Security Officer");
+			scr_text("Halo! Anda mesti orang yang diutus untuk kerja di sini!", "Mike");
+			scr_text("Sebelum ke lounge! silakan melalui proses pemeriksaan dahulu!", "Mike");
+			scr_text("Terima kasih!", "Mike");
 			break;
 			
 		case "Adhoc - dialog":
-			scr_text("Proses pemeriksaan sudah selesai!", "Security Officer");
-			scr_text("Anda layak masuk ke lounge!", "Security Officer");
-			scr_text("Terima kasih!", "Security Officer");
+			scr_text("Proses pemeriksaan sudah selesai!", "Sri Kaya");
+			scr_text("Anda layak masuk ke lounge!", "Sri Kaya");
+			scr_text("Terima kasih!", "Sri Kaya");
 			break;
 	
 	
@@ -124,7 +124,8 @@ function scr_gameText(_text_id){
 			scr_option("Saya butuh bantuan!", "jb_1");
 			scr_option("Tidak ada, terima kasih", "jb_2")
 			break;
-			
+				
+				// Logic Gate Explanation
 				case "jb_1":
 					scr_text("Ah, sepertinya kamu kurang paham mengenai Gerbang logika!", "Lylia", 1);
 					scr_text("Saya akan jelaskan dengan mudah!", "Lylia", 1);
@@ -181,31 +182,31 @@ function scr_gameText(_text_id){
 		// Lylia after player completed graph
 		case "Lylia_post_graph":
 			scr_text("Halo player!", "Lylia", 1);
-			scr_text("Terima kasih telah memperbaiki sistem navigasi!", "Lylia", 1);
+			scr_text("Terima kasih telah memperbaiki sistem navigasinya!", "Lylia", 1);
 			scr_text("Aku punya perasaan bahwa kamu bisa melakukannya!", "Lylia", 1);
 			scr_text("Untuk permasalahan selanjutnya, harap pergi ke Storage Room yang berada di atas Cafe!", "Lylia", 1);
 			scr_text("Semoga sukses dan luangkan waktumu Player!", "Lylia", 1);
 			break;
 			
 		// Lylia after player completed Hanoi
-		case "Lylia_post_hanoi":
-			scr_text("Halo player!", "Lylia", 1);
-			scr_text("Terima kasih telah membantu Ami dalam memindahkan kontainernya!", "Lylia", 1);
-			scr_text("Ami sangat merindukan bantuan kamu, Player", "Lylia", 1);
-			scr_text("Dan sebagai temannya, saya sangat bangga dengan kamu!", "Lylia", 1);
-			scr_text(":D", "Lylia", 1);
+		// case "Lylia_post_hanoi":
+			// scr_text("Halo player!", "Lylia", 1);
+			// scr_text("Terima kasih telah membantu Ami dalam memindahkan kontainernya!", "Lylia", 1);
+			// scr_text("Ami sangat merindukan bantuan kamu, Player", "Lylia", 1);
+			// scr_text("Dan sebagai temannya, saya sangat bangga dengan kamu!", "Lylia", 1);
+			// scr_text(":D", "Lylia", 1);
 			// scr_text("Untuk permasalahan selanjutnya, kamu bisa pergi ke Control Room yang berada dekat dengan Storage Room!", "Lylia", 1);
 			// scr_text("Semoga sukses dan luangkan waktumu Player!", "Lylia", 1);
 			// scr_gameText("Lylia_post_flowchart");
-			break;
+			// break;
 			
 		// Lylia after player completed flowchart
-		case "Lylia_post_flowchart":
+		// case "Lylia_post_flowchart":
 			// scr_text("Halo player!", "Lylia", 1);
 			// scr_text("Terima kasih telah membantu Roy dalam memperbaiki flowchartnya!", "Lylia", 1);
 			// scr_text("Flowchart tersebut kami gunakan untuk menentukan SOP dan alur kerja karyawan kami!", "Lylia", 1);
 			// scr_text("Dengan bantuan kamu, alur dan SOP akan jalan lebih baik dari sebelumnya!", "Lylia", 1);
-			break;
+			// break;
 		
 		// Lylia Sorting Intro
 		case "Lylia_sorting_intro":
@@ -237,6 +238,7 @@ function scr_gameText(_text_id){
 				case "sort_1":
 					scr_text("Ok Player, itulah yang saya ingin dengar!", "Lylia", 1);
 					scr_text("Kalau begitu, marilah kita mulai!", "Lylia", 1);
+					scr_text("~ Saya akan bantu Lylia menyortir menu cafe ~");
 					// Implement Continue Minigame
 					break;
 					
@@ -247,17 +249,17 @@ function scr_gameText(_text_id){
 					break;
 		
 		// Lylia after completing sorting
-		case "Lylia_outro":
+		case "Lylia_sorting_outro":
 			scr_text("Kamu keliling, kamu bantu, dan kamu mempunyai jiwa yang baik...", "Lylia", 1);
 			scr_text("Kadang kontribusi tidak harus besar. Yang besar sering lahir dari yang teguh dan konsisten.", "Lylia", 1);
 			scr_text("...", "Player", -1);
 			scr_text("Oh, Halo Player!", "Lylia", 1);
-			scr_text("Maaf tadi saya memikirkan tentang puisi untukmu!", "Lylia", 1);
+			scr_text("Maaf tadi saya memikirkan tentang suatu puisi untukmu!", "Lylia", 1);
 			scr_text("...", "Lylia", 1);
 			scr_text("Player, Terima kasih atas semua bantuan dan kontribusi kamu di lounge!", "Lylia", 1);
 			scr_text("Semua bantuan dan kontribusi kamu di lounge sangat berharga bagi saya, semua mahasiswa, dan staf di sini!", "Lylia", 1);
-			scr_text("Sebagai apresiasi atas kerja kamu, saya memberikan kunci untuk mesin arcade!", "Lylia", 1);
-			scr_text("Kamu bisa memainkan ulang minigame yang kamu sudah main pada ruang Arcade!, ruang di bawah Control Room!", "Lylia", 1);
+			scr_text("Sebagai apresiasi atas kerja kamu, saya memberikan kunci untuk ruang arcade, , ruang di sebelah Cafe yang paling bawah!", "Lylia", 1);
+			scr_text("Kamu bisa memainkan ulang minigame yang kamu sudah mainkan!", "Lylia", 1);
 			// Input Player
 			scr_text("?", "Player", -1);
 			scr_option("Baik, aku coba main kembali!", "arcade_1");
@@ -523,78 +525,161 @@ function scr_gameText(_text_id){
 			break;
 		
 	
-	// == Morty ==
-		case "Morty_default":
-			scr_text("Halo!", "Morty", 1);
-			scr_text("Namaku Marty, salam kenal Player!", "Morty", 1);
-			scr_text("Aku bekerja di Control Room dengan Pak Gregory!", "Morty", 1);
-			break;
+	//// == Morty ==
+	//	case "Morty_default":
+	//		scr_text("Halo!", "Morty", 1);
+	//		scr_text("Namaku Marty, salam kenal Player!", "Morty", 1);
+	//		scr_text("Aku bekerja di Control Room dengan Pak Gregory!", "Morty", 1);
+	//		break;
 			
-	// == ROY ==
-		case "Roy_default":
-			scr_text("Halo Player!", "Roy", 1);
-			scr_text("Perkenalkan, nama saya Roy!", "Roy", 1);
-			scr_text("Saya adalah karyawan Control Room!", "Roy", 1);
-			scr_text("Salam kenal dan senang bertemu denganmu!", "Roy", 1);
-			break;
+	//// == ROY ==
+	//	case "Roy_default":
+	//		scr_text("Halo Player!", "Roy", 1);
+	//		scr_text("Perkenalkan, nama saya Roy!", "Roy", 1);
+	//		scr_text("Saya adalah karyawan Control Room!", "Roy", 1);
+	//		scr_text("Salam kenal dan senang bertemu denganmu!", "Roy", 1);
+	//		break;
 			
-		// Roy Intro (after Hanoi)
-		case "Roy_intro":
-			scr_text("Halo Player, Saya Roy!", "Roy", 1);
-			scr_text("Saya dengar Anda telah membantu Ami dalam memindahkan barang di Storage Room!", "Roy", 1);
-			scr_text("Itu hebat sekali Player!", "Roy", 1);
-			scr_text("Dengan itu, saya ingin memberi tahu sesuatu!", "Roy", 1);
-			scr_text("Saya ingin Anda untuk membantu permasalahan di Control Room!", "Roy", 1);
-			scr_text("Permasalahan ini mengenai SOP dan alur kerja lounge secara keseluruhan!", "Roy", 1);
-			scr_text("Untuk detail permasalahannya, nanti saya jelaskan di sana!", "Roy", 1);
-			scr_text("Player, apakah Anda sudah siap?", "Roy", 1);
-			// Input Layer	
-				scr_text("?", "Player", -1);
-				scr_option("Saya sudah siap!", "roy_intro_1");
-				scr_option("Saya harus istirahat terlebih dahulu!", "roy_intro_2")
-				break;
+	//	// Roy Intro (after Hanoi)
+	//	case "Roy_intro":
+	//		scr_text("Halo Player, Saya Roy!", "Roy", 1);
+	//		scr_text("Saya dengar Anda telah membantu Ami dalam memindahkan barang di Storage Room!", "Roy", 1);
+	//		scr_text("Itu hebat sekali Player!", "Roy", 1);
+	//		scr_text("Dengan itu, saya ingin memberi tahu sesuatu!", "Roy", 1);
+	//		scr_text("Saya ingin Anda untuk membantu permasalahan di Control Room!", "Roy", 1);
+	//		scr_text("Permasalahan ini mengenai SOP dan alur kerja lounge secara keseluruhan!", "Roy", 1);
+	//		scr_text("Untuk detail permasalahannya, nanti saya jelaskan di sana!", "Roy", 1);
+	//		scr_text("Player, apakah Anda sudah siap?", "Roy", 1);
+	//		// Input Layer	
+	//			scr_text("?", "Player", -1);
+	//			scr_option("Saya sudah siap!", "roy_intro_1");
+	//			scr_option("Saya harus istirahat terlebih dahulu!", "roy_intro_2")
+	//			break;
 		
-				case "roy_intro_1":
-					scr_text("Baiklah Player", "Roy", 1);
-					scr_text("Saat Anda sudah siap, harap masuk ke Control Room!", "Roy", 1);
-					scr_text("Jika Anda butuh istirahat terlebih dahulu, tidak apa-apa!", "Roy", 1);
-					scr_text("Saya akan menunggu Anda di sana!", "Roy", 1);
-					break;
+	//			case "roy_intro_1":
+	//				scr_text("Baiklah Player", "Roy", 1);
+	//				scr_text("Saat Anda sudah siap, harap masuk ke Control Room!", "Roy", 1);
+	//				scr_text("Jika Anda butuh istirahat terlebih dahulu, tidak apa-apa!", "Roy", 1);
+	//				scr_text("Saya akan menunggu Anda di sana!", "Roy", 1);
+	//				break;
 							
-				case "roy_intro_2":
-					scr_text("Baiklah, tidak apa-apa Player", "Roy", 1);
-					scr_text("Nanti jika Anda sudah siap, nanti bisa ke Control Room!", "Roy", 1);
-					scr_text("Saya akan menunggu Anda di sana!", "Roy", 1);
-					scr_gameText("Ami_hanoi_last");
-					break;
+	//			case "roy_intro_2":
+	//				scr_text("Baiklah, tidak apa-apa Player", "Roy", 1);
+	//				scr_text("Nanti jika Anda sudah siap, nanti bisa ke Control Room!", "Roy", 1);
+	//				scr_text("Saya akan menunggu Anda di sana!", "Roy", 1);
+	//				scr_gameText("Ami_hanoi_last");
+	//				break;
 		
-		// Roy Flowchart Minigame
-		case "Roy_flowchart":
-			scr_text("Selamat datang Player!", "Roy", 1);
-			scr_text("Sebelum itu, saya jelaskan dulu apa yang Anda akan lakukan!", "Roy", 1);
-			scr_text("Jadi, Anda akan membantu saya memperbaiki alur flowchart di control panel...", "Roy", 1);
-			scr_text("Flowchartnya harus sesuai dengan permintaan sistem dan akan dicek juga", "Roy", 1);
-			scr_text("Semoga Anda bisa memperbaiki alur flowchartnya agar alur kerja dan SOP lounge ini tidak berantakan!", "Roy", 1);
-			scr_text("Semoga berhasil, Player!", "Roy", 1);
+	//	// Roy Flowchart Minigame
+	//	case "Roy_flowchart":
+	//		scr_text("Selamat datang Player!", "Roy", 1);
+	//		scr_text("Sebelum itu, saya jelaskan dulu apa yang Anda akan lakukan!", "Roy", 1);
+	//		scr_text("Jadi, Anda akan membantu saya memperbaiki alur flowchart di control panel...", "Roy", 1);
+	//		scr_text("Flowchartnya harus sesuai dengan permintaan sistem dan akan dicek juga", "Roy", 1);
+	//		scr_text("Semoga Anda bisa memperbaiki alur flowchartnya agar alur kerja dan SOP lounge ini tidak berantakan!", "Roy", 1);
+	//		scr_text("Semoga berhasil, Player!", "Roy", 1);
+	//		break;
+			
+	//	// Roy after completing flowchart
+	//	case "Roy_post_flowchart":
+	//		scr_text("Halo Player!", "Roy", 1);
+	//		scr_text("Terima kasih telah membantu saya dalam memperbaiki alur flowchart!", "Roy", 1);
+	//		scr_text("Kontribusi Anda sangat berharga bagi kami!", "Roy", 1);
+	//		scr_text("Sekarang, hanya tersisa satu permasalahan lagi Player!", "Roy", 1);
+	//		scr_text("Untuk permasalahan tersebut, harap ketemu Kak Lylia lagi di Cafe!", "Roy", 1);
+	//		scr_text("Sekali lagi, terima kasih atas bantuan Anda dan sampai jumpa!", "Roy", 1);
+	//		scr_text("Semoga Anda tetap sukses!", "Roy", 1);
+	//		break;
+	
+	
+	//// == MIKE ==
+	//	case "Mike_default":
+	//		scr_text("Halo Player!", "Mike", 1);
+	//		scr_text("Salam kenal, aku Mike", "Mike", 1);
+	//		scr_text("Aku karyawan tetap lounge yang bekerja di warehouse!", "Mike", 1);
+	//		break;
+	
+	
+	// == STATIC NPC ==
+		// Andrun
+		case "Andrun_default":
+			scr_text("Saya sering ke tempat ini karena saya bisa melihat luar angkasa sambil bekerja di cafe!", "Andrun", 1);
+			scr_text("Lihatlah, seberapa megah luar angkasa!", "Andrun", 1);
+			scr_text("Sebagai salesman, saya kurang tahu bagaimana angkasa ini bisa tercipta sebagus ini!", "Andrun", 1);
+			break;	
+		
+		// Aisyah & Ali
+		case "Aisyah_default":
+			scr_text("Alhamdulillah, makanan dan minuman di cafe ini sangat enak!", "Aisyah", 1);
+			scr_text("Iya, saya setuju...", "Ali", 1);
+			scr_text("Rasa kopi arabnya sama enaknya dengan yang ada di Timur Tengah!", "Ali", 1);
+			scr_text("Iya, dan kroisannya sangat renyah", "Aisyah", 1);
+			scr_text("Kapan-kapan kita ke sini lagi, Ali!", "Aisyah", 1);
+			scr_text("Iya, saat kita kembali ke lounge ini!", "Ali", 1);
 			break;
 			
-		// Roy after completing flowchart
-		case "Roy_post_flowchart":
-			scr_text("Halo Player!", "Roy", 1);
-			scr_text("Terima kasih telah membantu saya dalam memperbaiki alur flowchart!", "Roy", 1);
-			scr_text("Kontribusi Anda sangat berharga bagi kami!", "Roy", 1);
-			scr_text("Sekarang, hanya tersisa satu permasalahan lagi Player!", "Roy", 1);
-			scr_text("Untuk permasalahan tersebut, harap ketemu Kak Lylia lagi di Cafe!", "Roy", 1);
-			scr_text("Sekali lagi, terima kasih atas bantuan Anda dan sampai jumpa!", "Roy", 1);
-			scr_text("Semoga Anda tetap sukses!", "Roy", 1);
+		case "Ali_default":
+			scr_text("Saya tidak pernah berpikir bahwa ternyata ada lounge di luar angkasa", "Ali", 1);
+			scr_text("Iya, setahu saya, lounge ini adalah sebuah inisiatif dari rektor Binus untuk memperluas jangkauan kampusnya!", "Aisyah", 1);
+			scr_text("Ternayta, beliau tidak hanya memikirkan untuk memperluas jangkauan di bumi saja, tetapi juga sampai ke luar angkasa!", "Ali", 1);
+			scr_text("Iya, kita beruntung sekali bisa berada di lounge ini!", "Aisyah", 1);
+			scr_text("Iya, dan kita harus juga bersyukur bisa melihat ciptaan Tuhan secara langsung!", "Ali", 1);
 			break;
-	
-	
-	// == MIKE ==
-		case "Mike_default":
-			scr_text("Halo Player!", "Mike", 1);
-			scr_text("Salam kenal, aku Mike", "Mike", 1);
-			scr_text("Aku karyawan tetap lounge yang bekerja di warehouse!", "Mike", 1);
+			
+		// Reynomn
+		case "Reynomn_default":
+			scr_text("Huh, saya masih ada kerjaan yang belum selesai!", "Reynomn", 1);
+			scr_text("Saya harus cetak laporan ini untuk Supervisor saya!", "Reynomn", 1);
+			scr_text("Kalau boleh jujur, saya sedikit malas untuk mengerjakan tugas ini...", "Reynomn", 1);
+			scr_text("Tetapi, bagaimana lagi?", "Reynomn", 1);
+			scr_text("Saya tidak ada pilihan lagi selain menyelesaikan tugas yang diberikan!", "Reynomn", 1)
+			break;
+		
+		
+		// Graph Minigame Dialogue
+		case "Supervisor_default":
+			scr_text("Player, untuk memulai tugasnya...", "Supervisor", 1);
+			scr_text("Silakan menyalakan panel tengah ini!", "Supervisor", 1);
+			scr_text("Semoga Anda sukses dalam tugas Anda!", "Supervisor", 1);
+			break;
+			
+		case "Gregory_default":
+			scr_text("Halo Player!", "Gregory", 1);
+			scr_text("Silakan menyalakan panel di sebelah saya untuk memulai tugas Anda!", "Gregory", 1);
+			scr_text("Semoga Anda berhasil dalam menyelesaikan tugasnya!", "Gregory", 1);
+			scr_text("Ingatlah untuk selalu disiplin dan teliti saat mengerjakan sesuatu!", "Gregory", 1);
+			break;
+			
+		
+		// Arcade
+		case "Yuna_default":
+			scr_text("Halo, kamu mesti Player bukan?", "Yuna", 1);
+			scr_text("Baik, salam kenal Player!", "Yuna", 1);
+			scr_text("Saya Yuna, bersama dengan kakak saya, kami adalah pemilik arcade!", "Yuna", 1);
+			scr_text("Arcadenya berada di dekat cafe, di ruangan paling bawah!", "Yuna", 1);
+			scr_text("Di sana, kamu bisa memainkan game-game seru yang saya jamin bikin kamu betah!", "Yuna", 1);
+			scr_text("Ok, kalau kamu sudah siap, kamu bisa masuk ke ruang Arcade!", "Yuna", 1);
+			scr_text("Dan satu hal lagi, berikan salam ke kakak saya, Yuri; dan Bernard, teknisi arcadenya!", "Yuna", 1);
+			break;
+			
+		case "Yuri_default":
+			scr_text("Halo Player!", "Yuri", 1);
+			scr_text("Yuna sudah memberi tahu kamu tentang tempat ini ya?", "Yuri", 1);
+			scr_text("Ok, jadi selamat datang di arcade!", "Yuri", 1);
+			scr_text("Arcade ini merupakan tempat bagi orang untuk memainkan game-game seru!", "Yuri", 1);
+			scr_text("Nah, berdasarkan permasalahan yang kamu sudah selesaikan...", "Yuri", 1);
+			scr_text("Saya dan Bernard berpikir untuk membuat game-game penyelesaian permasalahan tersebut!", "Yuri", 1);
+			scr_text("Kami berpikir dengan membuat game-game ini, kamu bisa mengasah kemampuan kamu lagi...", "Yuri", 1);
+			scr_text("Sehingga kamu mampu menyelesaikan permasalahan dengan lebih cepat dan efisien!", "Yuri", 1);
+			scr_text("Ok Player, selamat bermain dan semoga kamu suka gamenya!", "Yuri", 1);
+			break;
+			
+		case "Bernard_default":
+			scr_text("Halo!", "Bernard", 1);
+			scr_text("Saya Bernard, seorang teknisi arcade ini!", "Bernard", 1);
+			scr_text("Yuri dan Yuna memanggil saya karena saya lulusan teknik elektro dan saya suka main game!", "Bernard", 1);
+			scr_text("Kebetulan atau tidak? saya kurang tahu!", "Bernard", 1);
+			scr_text("Jadi, selamat bermain game-game yang kami buat untukmu, Player!", "Bernard", 1);
 			break;
 			
 	}

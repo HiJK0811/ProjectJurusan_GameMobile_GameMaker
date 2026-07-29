@@ -50,30 +50,100 @@ function scr_text(_text){
 				dialogBox_sprite[page_number] = spr_textBox_Purple;
 				break;
 				
-			case "Mike":
-				speaker_name[page_number] = "Mike"; 
-				speaker_sprite[page_number] = spr_Mike_Portrait;
-				dialogBox_sprite[page_number] = spr_textBox_Purple;
-				break;
+			//case "Mike":
+			//	speaker_name[page_number] = "Mike"; 
+			//	speaker_sprite[page_number] = spr_Mike_Portrait;
+			//	dialogBox_sprite[page_number] = spr_textBox_Purple;
+			//	break;
 				
 			case "Morty":
 				speaker_name[page_number] = "Marty"; 
 				// speaker_sprite[page_number] = spr_Mike_Portrait;
 				dialogBox_sprite[page_number] = spr_textBox_Purple;
 				break;
-				
-			case "Roy":
-				speaker_name[page_number] = "Roy"; 
-				// speaker_sprite[page_number] = spr_Mike_Portrait;
-				dialogBox_sprite[page_number] = spr_textBox_Purple;
-				break;
 			
 			// Portraitless Characters
+			// Security Room
 			case "Security Officer":
 				speaker_name[page_number] = "Security Officer"; 
 				speaker_sprite[page_number] = noone;
 				break;
 				
+			case "Mike":
+				speaker_name[page_number] = "Male Security Guard"; 
+				speaker_sprite[page_number] = noone;
+				break;
+				
+			case "Sri Kaya":
+				speaker_name[page_number] = "Female Security Guard"; 
+				speaker_sprite[page_number] = noone;
+				break;
+			
+			// Cafe NPC
+			case "Aisyah":
+				speaker_name[page_number] = "Aisyah"; 
+				speaker_sprite[page_number] = noone;
+				break;
+				
+			case "Ali":
+				speaker_name[page_number] = "Ali"; 
+				speaker_sprite[page_number] = noone;
+				break;
+				
+			case "Andrun":
+				speaker_name[page_number] = "Andrun"; 
+				speaker_sprite[page_number] = noone;
+				break;
+				
+			case "Rise":
+				speaker_name[page_number] = "Rise"; 
+				speaker_sprite[page_number] = noone;
+				break;
+				
+			case "Staf Cafe":
+				speaker_name[page_number] = "Staf Cafe"; 
+				speaker_sprite[page_number] = noone;
+				break;
+			
+			// Control Room
+			case "Gregory":
+				speaker_name[page_number] = "Gregory"; 
+				speaker_sprite[page_number] = noone;
+				break;
+				
+			case "Roy":
+				speaker_name[page_number] = "Gregory"; 
+				speaker_sprite[page_number] = noone;
+				break;
+				
+			// Meeting Room
+			case "Supervisor":
+				speaker_name[page_number] = "Supervisor Gotoh"; 
+				speaker_sprite[page_number] = noone;
+				break;
+				
+			case "Reynomn":
+				speaker_name[page_number] = "Reynomn"; 
+				speaker_sprite[page_number] = noone;
+				break;
+				
+			// Arcade
+			case "Yuna":
+				speaker_name[page_number] = "Yuna"; 
+				speaker_sprite[page_number] = noone;
+				break;
+				
+			case "Yuri":
+				speaker_name[page_number] = "Yuri"; 
+				speaker_sprite[page_number] = noone;
+				break;
+				
+			case "Bernard":
+				speaker_name[page_number] = "Bernard"; 
+				speaker_sprite[page_number] = noone;
+				break;
+			
+			
 			default:
 				speaker_name[page_number] = ""; // NEW: Fallback name
 				speaker_sprite[page_number] = noone;

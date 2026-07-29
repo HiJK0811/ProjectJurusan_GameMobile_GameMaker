@@ -22,7 +22,7 @@ text[0] = ""
 text_length[0] = string_length(text[0])
 
 draw_character = 0
-text_speed = 1
+text_speed = 0.6
 
 // Episode 3
 // [number of characters in page, page number], x and y position
@@ -46,3 +46,8 @@ scr_set_defaults_for_text();
 last_free_space = 0;
 
 // Episode 4
+
+// Clear the inputs so the interaction keypress doesn't bleed into the text box!
+keyboard_clear(vk_space);
+keyboard_clear(vk_enter);
+// mouse_clear(mb_left);

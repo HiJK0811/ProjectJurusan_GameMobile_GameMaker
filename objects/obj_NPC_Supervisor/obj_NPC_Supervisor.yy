@@ -8,8 +8,8 @@
   "name":"obj_NPC_Supervisor",
   "overriddenProperties":[],
   "parent":{
-    "name":"Meeting Room",
-    "path":"folders/Jason_Main NPC Cutscene/Objects/Characters/Non Moving NPC/Meeting Room.yy",
+    "name":"group1",
+    "path":"folders/Jason_Main NPC Cutscene/Objects/Characters/Non Moving NPC/group1.yy",
   },
   "parentObjectId":{
     "name":"obj_NPC_Static",

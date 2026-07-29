@@ -7,7 +7,7 @@ idle_anim_sprite = spr_Andrun_Idle; // The idle sprite for default
 default_direction = 90;
 
 // Set the dialogue ID
-// text_id = "SecurityOfficer_default";
+// text_id = "Andrun_default";
 
 // Fill the states struct so the collision system doesn't crash
 // Prevent collision mask crashes in the grandparent (obj_character)

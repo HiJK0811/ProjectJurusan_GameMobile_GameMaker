@@ -82,4 +82,8 @@ if (menu_aktif) {
             draw_text(_menu_x, _txt_y, _base_txt);
         }
     }
+	
+	// --- FIX COLOR & ALPHA BLEED ---
+    draw_set_color(c_white);
+    draw_set_alpha(1);
 }

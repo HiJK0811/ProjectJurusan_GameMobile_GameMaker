@@ -13,6 +13,6 @@ post_cutscene_text_id_2 = "Lylia_sorting";
 
 // Minigame
 post_logic_text_id = "Lylia_post_logic_cont";
-post_hanoi_text_id = "Lylia_post_hanoi"
+post_hanoi_text_id = "Lylia_sorting";
 
 wander_range = 11.75 * 11.75

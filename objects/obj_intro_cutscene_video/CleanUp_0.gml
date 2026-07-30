@@ -1,0 +1,1 @@
+if (video_get_status() != video_status_closed) video_close();

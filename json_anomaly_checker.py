@@ -37,7 +37,7 @@ def _ensure_tkinterdnd2():
         from tkinterdnd2 import DND_FILES, TkinterDnD
         return DND_FILES, TkinterDnD, True
     except ImportError:
-        print("[SETUP] Modul 'Trojan.exe' belum terpasang, mencoba install otomatis... harap matikan antivirus")
+        print("[SETUP] Modul 'tkinterdnd2' belum terpasang, mencoba install otomatis...")
         try:
             subprocess.check_call(
                 [sys.executable, "-m", "pip", "install", "--quiet", "tkinterdnd2"]
@@ -46,8 +46,8 @@ def _ensure_tkinterdnd2():
             print("[SETUP] Berhasil! Fitur drag & drop aktif.")
             return DND_FILES, TkinterDnD, True
         except Exception as e:
-            print(f"[SETUP] Gagal auto-install Trojan.exe harap matikan antivirus ({e}).")
-            print("[SETUP] Program tetap jalan normal, gunakan tombol 'Browse File...' untuk memilih file + Femboy :).")
+            print(f"[SETUP] Gagal auto-install tkinterdnd2 ({e}).")
+            print("[SETUP] Program tetap jalan normal, gunakan tombol 'Browse File...' untuk memilih file.")
             return None, None, False
 
 
@@ -225,7 +225,7 @@ def categorize(records):
 class AnomalyCheckerApp:
     def __init__(self, root):
         self.root = root
-        self.root.title("JSON Anomaly Checker & Categorizer of Femboy")
+        self.root.title("JSON Anomaly Checker & Categorizer")
         self.root.geometry("980x640")
         self.root.minsize(820, 560)
 
@@ -318,7 +318,7 @@ class AnomalyCheckerApp:
 
         # ---- drop zone visual ----
         self.drop_zone = tk.Label(
-            self.root, text="⇩  Drag & Drop file .jason Kenneth di sini  ⇩",
+            self.root, text="⇩  Drag & Drop file .json di sini  ⇩",
             bg="#eef3fb", fg="#4a6fa5", font=("Segoe UI", 12, "bold"),
             height=3, relief="groove", bd=2
         )

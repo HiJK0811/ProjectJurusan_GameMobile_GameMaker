@@ -462,6 +462,7 @@
     {"id":{"name":"spr_stafCafe_Walk_Left","path":"sprites/spr_stafCafe_Walk_Left/spr_stafCafe_Walk_Left.yy",},},
     {"id":{"name":"spr_stafCafe_Walk_Right","path":"sprites/spr_stafCafe_Walk_Right/spr_stafCafe_Walk_Right.yy",},},
     {"id":{"name":"spr_stafCafe_Walk_Up","path":"sprites/spr_stafCafe_Walk_Up/spr_stafCafe_Walk_Up.yy",},},
+    {"id":{"name":"spr_stafCafe","path":"sprites/spr_stafCafe/spr_stafCafe.yy",},},
     {"id":{"name":"spr_Stool","path":"sprites/spr_Stool/spr_Stool.yy",},},
     {"id":{"name":"spr_Supervisor_Idle","path":"sprites/spr_Supervisor_Idle/spr_Supervisor_Idle.yy",},},
     {"id":{"name":"spr_Supervisor","path":"sprites/spr_Supervisor/spr_Supervisor.yy",},},

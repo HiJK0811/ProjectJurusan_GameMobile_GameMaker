@@ -100,7 +100,7 @@ function scr_text(_text){
 				speaker_sprite[page_number] = noone;
 				break;
 				
-			case "Staf Cafe":
+			case "sCafe":
 				speaker_name[page_number] = "Staf Cafe"; 
 				speaker_sprite[page_number] = noone;
 				break;

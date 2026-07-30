@@ -2,7 +2,7 @@
 event_inherited();
 
 // Set the two distinct sprites
-base_sprite = spr_stafCafe_Idle; // The 4-frame sprite for interactions
+base_sprite = spr_stafCafe; // The 4-frame sprite for interactions
 idle_anim_sprite = spr_stafCafe_Idle; // The idle sprite for default
 default_direction = 270;
 

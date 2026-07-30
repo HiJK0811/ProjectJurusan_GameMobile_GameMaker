@@ -612,7 +612,7 @@ function scr_gameText(_text_id){
 		case "Aisyah_default":
 			scr_text("Alhamdulillah, makanan dan minuman di cafe ini sangat enak!", "Aisyah", 1);
 			scr_text("Iya, saya setuju...", "Ali", 1);
-			scr_text("Rasa kopi arabnya sama enaknya dengan yang ada di Timur Tengah!", "Ali", 1);
+			scr_text("Rasa kopi dan martabaknya enak sekali!", "Ali", 1);
 			scr_text("Iya, dan kroisannya sangat renyah", "Aisyah", 1);
 			scr_text("Kapan-kapan kita ke sini lagi, Ali!", "Aisyah", 1);
 			scr_text("Iya, saat kita kembali ke lounge ini!", "Ali", 1);
@@ -625,6 +625,143 @@ function scr_gameText(_text_id){
 			scr_text("Iya, kita beruntung sekali bisa berada di lounge ini!", "Aisyah", 1);
 			scr_text("Iya, dan kita harus juga bersyukur bisa melihat ciptaan Tuhan secara langsung!", "Ali", 1);
 			break;
+		
+		// Rise (Info)
+		case "Rise_default":
+			scr_text("Halo Player!", "Rise", 1);
+			scr_text("Apakah ada yang saya bisa bantu?", "Rise", 1);
+			// Input Layer	
+				scr_text("?", "Player", -1);
+				scr_option("Apa permasalahan yang sekarang dihadapi?", "rise_1");
+				scr_option("Beri tahu saya sejarah tempat ini!", "rise_2");
+				scr_option("Tidak ada, terima kasih!", "rise_3");
+				break;
+				
+				case "rise_1":
+					scr_text("Jadi, ada empat permasalahan utama yang kita sedang hadapi!", "Rise", 1);
+					scr_text("Pertama, jukebox di cafe mengalami kerusakan dan perlu diperbaiki!", "Rise", 1);
+					scr_text("Kedua, sistem navigasi kita kurang optimal dan perlu diperbaiki di meeting room, ruangan di atas office!", "Rise", 1);
+					scr_text("Ketiga, Ami, pengurus logistik lounge, membutuhkan bantuan dalam memindahkan kontainer di storage room, ruangan di atas cafe!", "Rise", 1);
+					scr_text("Dan terakhir, menu cafe belum tersortir dengan baik!", "Rise", 1);
+					scr_text("Baiklah Player, semoga Anda bisa membantu menyelesaikan permasalahan tersebut!", "Rise", 1);
+					scr_text("Jika Anda membutuhkan bantuan lain, Anda bisa bicara ke saya!", "Rise", 1);
+					break;
+					
+				case "rise_2":
+					scr_text("Baiklah, saya akan jelaskan sejarah tempat ini!", "Rise", 1);
+					scr_text("Tempat ini merupakan hasil dari sebuah ide atau visi rektor Binus dahulu kala!", "Rise", 1);
+					scr_text("Awalnya, Binus hanya merupakan universitas yang berada di Jakarta, Indonesia!", "Rise", 1);
+					scr_text("Namun, seiring waktu...", "Rise", 1);
+					scr_text("Binus berkembang dan melakukan ekspansi ke kota-kota lain di Indonesia, hingga sampai ke luar negeri!", "Rise", 1);
+					scr_text("Meskipun perkembangan ini sudah pesat, tetapi hal ini bukan tujuan akhir dari Binus!", "Rise", 1);
+					scr_text("Saat itu, rektor Binus mempunyai ide untuk mengembangkan universitas beliau ke luar angkasa!", "Rise", 1);
+					scr_text("Awalnya, orang-orang tidak percaya bahwa hal itu akan terjadi...", "Rise", 1);
+					scr_text("Tetapi, beliau tetap percaya dengan ide tersebut!", "Rise", 1);
+					scr_text("Dengan kerja keras dan usaha, Beliau mampu membuat prototipe lounge pertama...", "Rise", 1);
+					scr_text("Namun, prototipe itu gagal evaluasi dan beliau harus bekerja keras lagi!", "Rise", 1);
+					scr_text("Prototipenya dikembangkan terus dan beliau belajar dari kesalahannya!", "Rise", 1);
+					scr_text("Akhirnya, pada suatu hari, beliau sukses dalam mengembangkan protipe yang berhasil dievaluasi, setelah beberapa kegagalan!", "Rise", 1);
+					scr_text("Prototipe tersebut dikembangkan dan dikerjakan turun temurun hingga akhirnya lounge yang sekarang ini bisa diluncurkan ke luar angkasa!", "Rise", 1);
+					scr_text("Meskipun beliau tidak lagi bisa melihat lounge ini...", "Rise", 1);
+					scr_text("Tetapi saya yakin beliau akan sangat bangga dengan ciptaannya!", "Rise", 1);
+					scr_text("Dan itulah sejarah dari lounge ini hingga sekarang!", "Rise", 1);
+							
+				case "rise_3":
+					scr_text("Baiklah Player!", "Rise", 1);
+					scr_text("Jika Anda membutuhkan bantuan lain, Anda bisa bicara ke saya lagi!", "Rise", 1);
+					break;
+		
+		// Staf Cafe (Order minuman atau makanan)
+		case "stafCafe_default":
+			scr_text("Halo Player!", "sCafe", 1);
+			scr_text("Apa yang ingin Anda pesan?", "sCafe", 1);
+			// Input Layer	
+				scr_text("?", "Player", -1);
+				scr_option("Saya ingin pesan makanan!", "cafe_1");
+				scr_option("Saya ingin pesan minuman!", "cafe_2");
+				scr_option("Maaf, saya tidak jadi pesan!", "cafe_3");
+				break;
+				
+				case "cafe_1":
+					scr_text("Baik, makanan apa yang ingin anda pesan?", "sCafe", 1);
+					// Input Layer	
+					scr_text("?", "Player", -1);
+					scr_option("Kroisan coklat", "cafe_1a");
+					scr_option("Telur orak-arik", "cafe_1b");
+					scr_option("Martabak", "cafe_1c");
+					break;
+					
+						case "cafe_1a":
+						scr_text("Hmm, Makanan pilihan orang Prancis, atau mereka sebutnya 'pain au chocolat'!", "sCafe", 1);
+						scr_text("Baik Player, ini kroisan coklatnya!", "sCafe", 1);
+						scr_text("~ Saya mendapatkan kroisan coklat! ~");
+						scr_gameText("order_cont");
+						break;
+					
+						case "cafe_1b":
+						scr_text("Hmm, salah satu dari beberapa jenis hidangan telur yang ada!", "sCafe", 1);
+						scr_text("Baik Player, ini telur orak-ariknya!", "sCafe", 1);
+						scr_text("~ Saya mendapatkan telur orak-arik! ~");
+						scr_gameText("order_cont");
+						break;
+					
+						case "cafe_1c":
+						scr_text("Hmm, makanan yang disukai banyak orang Asia!", "sCafe", 1);
+						scr_text("Baik Player, ini martabaknya", "sCafe", 1);
+						scr_text("~ Saya mendapatkan martabak! ~");
+						scr_gameText("order_cont");
+						break;
+					
+				case "cafe_2":
+					scr_text("Baik, minuman apa yang ingin anda pesan?", "sCafe", 1);
+					// Input Layer	
+					scr_text("?", "Player", -1);
+					scr_option("Cappucino", "cafe_2a");
+					scr_option("Teh hijau", "cafe_2b");
+					scr_option("Susu kocok", "cafe_2c");
+					break;
+					
+						case "cafe_2a":
+						scr_text("Hmm, sebuah kopi dengan aroma yang kuat dan harum sekali!", "sCafe", 1);
+						scr_text("Baik Player, ini cappucinonya!", "sCafe", 1);
+						scr_text("~ Saya mendapatkan cappucino! ~");
+						scr_gameText("order_cont");
+						break;
+					
+						case "cafe_2b":
+						scr_text("Hmm, pilihan yang bijak untuk kesehatan Anda!", "sCafe", 1);
+						scr_text("Baik Player, ini telur teh hijaunya!", "sCafe", 1);
+						scr_text("~ Saya mendapatkan teh hijau! ~");
+						scr_gameText("order_cont");
+						break;
+					
+						case "cafe_2c":
+						scr_text("Hmm, minuman yang mengabungkan aspek susu, es krim, dan sirop menjadi satu!", "sCafe", 1);
+						scr_text("Baik Player, ini susu kocoknya", "sCafe", 1);
+						scr_text("~ Saya mendapatkan susu kocok! ~");
+						scr_gameText("order_cont");
+						break;
+					
+					
+				case "cafe_3":
+					scr_text("Baik Player!", "sCafe", 1);
+					scr_text("Anda bisa kembali lagi untuk memesan!", "sCafe", 1);
+					break;
+					
+				case "cafe_4":
+					scr_text("Baik Player!", "sCafe", 1);
+					scr_text("Selamat menikmati!", "sCafe", 1);
+					break;
+		
+			case "order_cont":
+				scr_text("Baik Player, apakah Anda mau tambah?", "sCafe", 1);
+				// Input Layer	
+					scr_text("?", "Player", -1);
+					scr_option("Iya, saya ingin pesan makanan!", "cafe_1");
+					scr_option("Iya, saya ingin pesan minuman!", "cafe_2");
+					scr_option("Tidak ada lagi, terima kasih!", "cafe_4");
+					break;
+			
 			
 		// Reynomn
 		case "Reynomn_default":

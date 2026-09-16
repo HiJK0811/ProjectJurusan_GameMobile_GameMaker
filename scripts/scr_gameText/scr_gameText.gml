@@ -53,7 +53,7 @@ function scr_gameText(_text_id){
 				scr_text("It's a Sith legend. Darth Plagueis was a Dark Lord of the Sith, so powerful and so wise he could use the Force to influence the midichlorians to create life…", "Derpy Derp");
 				scr_text("To Room 1");
 				// room_goto(Room1);
-				break;				
+				break;		
 		case "Adhila":
 			scr_text("Hello player! Aku Adhila", "Adhila", 1);
 			scr_text("Senang bertemu denganmu", "Adhila", 1);
@@ -62,18 +62,63 @@ function scr_gameText(_text_id){
 		    if (global.circuit_minigame_completed) {
 		        scr_text("Wah, terima kasih ya udah benerin jukebox-nya!", "Happy Derp", -1);
 		    } else {
-		        scr_text("hey, can you help me fix this jukebox? i'd appreciate it", "Happy Derp", -1);
+		        scr_text("Kalau kamu memang mau coba Challenge Circuit, kita mulai dari yang paling ‘Lounge’", "Happy Derp", -1);
 		    }
 		    break;
+			
+					//Prolog
 		case "Adhoc - calling":
-				scr_text("Next in line please", "Adhila", 1);
+				scr_text("Orang berikutnya", "Adhila", 1);
 				break;	
 		case "Adhoc - dialog":
-				scr_text("Hello, where are you flying today", "Adhila", 1);
-				scr_text("... hey, i know you", "Adhila", 1);
-				scr_text("you're the new worker, right?", "Adhila", 1);
-				scr_text("what was your name again?", "Adhila", 1);
-				scr_text("alright then, you're all good, thank you", "Adhila", 1);
+				scr_text("hei,kamu sepertinya bukan orang yang sering mampir ke sini. apakah kamu orang luar?", "Adhila", 1);
+				scr_text("iya,saya orang baru di stasiun ini! Ini pertama kalinya saya mendapat waktu istirahat dalam beberapa pekan ini.", "Player", 1);
+				scr_text("wah,kamu ternyata astronaut pemula itu ya? Aku dengar perjalan ke planet sangat melelahkan dan kamu sudah menyelesaikan expedisi seorang diri.", "Adhila", 1);
+				scr_text("wah…..beritanya sudah sampai ke sini ya ternyata,saya terasa tersanjung.", "Player", 1);
+				scr_text("dikarenakan kamu orang baru,bolehkan aku meminta passport mu sebagai validasi", "Adhila", 1);
+				scr_text("Siapa nama kamu?", "Adhila", 1);
+					scr_option("SMA", "Adhoc - SMA");
+					scr_option("SMK", "Adhoc - SMK");
+				break;
+				
+				case "Adhoc - SMA":
+				scr_text("Kamu ternyata adalah siswa yang ingin melanjutkan ke universitas ya? Bagaimana? Kamu gugup untuk melanjutkan ke fakultas mana?", "Adhila", 1);
+					scr_option("Iya","SMA - yes");
+					scr_option("Tidak, saya sudah menemukan jurusan saya","SMA - no" )
+				break;
+				
+				case "SMA - yes":
+				scr_text("owh….takut itu wajar sih buat anak muda karena melanjutkan akademik kejunjung tinggi bukanlah langkah yang besar,melainkan langkah yang berani biasanya jarang yang mau mengambil langkah itu.", "Adhila", 1);
+				step = "Adhoc - continue";
+				timer = 0; // reset biar timer==1 di case baru kepicu dari awal lagi
+				break;
+				
+				case "SMA - no":
+				scr_text("Kamu sudah ada? Bagus bagus kamu berarti sudah siap masuk kedunia perkampusan,semoga pilihan mu bisa menjadi alat di masa depan sana", "Adhila", 1);
+				step = "Adhoc -  continue";
+				timer = 0; // reset biar timer==1 di case baru kepicu dari awal lagi
+				break;
+				
+					case "Adhoc - SMK":
+				scr_text("Kamu, mengapa melangkah ke dunia kampus (user)? Apakah kamu ingin mengejar gelar demi kesempatan yang lebih luas? Dan kamu gugup tidak?", "Adhila", 1);
+					scr_option("Takut itu wajar","SMK - takut");
+					scr_option("Tidak, saya sudah menemukan jurusan saya","SMK - no takut" )
+				break;
+				
+				case "SMK - takut":
+				scr_text("kebetulan saya memang ingin mencari peluang yang lebih luas lagi,dan jika bilang takut wajar karena saya mengambil langkah akademik demi mencari kesempatan yang lebih baik dalam dunia kerja","Player",1);
+				step = "Adhoc -  continue";
+				timer = 0; // reset biar timer==1 di case baru kepicu dari awal lagi
+				break;
+				
+				case "SMK - no takut":
+				scr_text("Tidak takut,dan memang ini adalah pilihan optional yang saya ambil demi mencari peluang yang lebih luas,serta jika bisa dibilang ini adalah sebuah peruntungan nasib dengan jurusan yang saya cari", "Player", 1);
+				step = "Adhoc -  continue";
+				timer = 0; // reset biar timer==1 di case baru kepicu dari awal lagi
+				break;
+				
+				case "Adhoc - continue":
+				scr_text("baiklah verifikasi selesai, silahkan masuk (user)", "Adhila", 1);
 				break;
 				
 		case "Lylia - problem":

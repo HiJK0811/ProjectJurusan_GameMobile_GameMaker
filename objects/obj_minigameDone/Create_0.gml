@@ -1,0 +1,1 @@
+global.circuit_minigame_completed = false;

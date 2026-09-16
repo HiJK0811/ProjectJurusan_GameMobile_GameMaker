@@ -166,6 +166,7 @@
     {"id":{"name":"obj_menuBox","path":"objects/obj_menuBox/obj_menuBox.yy",},},
     {"id":{"name":"obj_metalDetector","path":"objects/obj_metalDetector/obj_metalDetector.yy",},},
     {"id":{"name":"obj_microwaveTable","path":"objects/obj_microwaveTable/obj_microwaveTable.yy",},},
+    {"id":{"name":"obj_minigameDone","path":"objects/obj_minigameDone/obj_minigameDone.yy",},},
     {"id":{"name":"obj_monitorerror","path":"objects/obj_monitorerror/obj_monitorerror.yy",},},
     {"id":{"name":"obj_monitorstatus","path":"objects/obj_monitorstatus/obj_monitorstatus.yy",},},
     {"id":{"name":"obj_musicManager","path":"objects/obj_musicManager/obj_musicManager.yy",},},

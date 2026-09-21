@@ -25,8 +25,8 @@
   "nineSlice":null,
   "origin":0,
   "parent":{
-    "name":"Decoration",
-    "path":"folders/Sprites/Decoration.yy",
+    "name":"Minigame_Graph",
+    "path":"folders/Sprites/Minigame_Graph.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -1,6 +1,6 @@
 draw_self();
 if (!game_selesai) {
-    // --- 1. GERAK KIRI - KANAN ---
+    // logika gerak claw kiri kanan
     var _target_x = posisi_x_alas[indeks_alas];
     
     if (keyboard_check_pressed(vk_left))  indeks_alas = max(0, indeks_alas - 1);
@@ -9,17 +9,17 @@ if (!game_selesai) {
     // Pergerakan halus
     x = lerp(x, _target_x, 0.2);
 
-    // --- 2. INTERAKSI AMBIL / LETAK (SPASI) ---
+    // logika ambil letak 
     if (keyboard_check_pressed(vk_space)) {
         var _stack_skrg = tumpukan[indeks_alas];
 
         if (box_terbawa == noone) {
-            // LOGIKA AMBIL
+            // logika ambil box
             if (array_length(_stack_skrg) > 0) {
                 box_terbawa = array_pop(_stack_skrg);
             }
         } else {
-            // LOGIKA MELETAKKAN
+            // logika meletakan box
             var _boleh_letak = false;
             
             if (array_length(_stack_skrg) == 0) {
@@ -38,11 +38,11 @@ if (!game_selesai) {
 			    // 1. Masukkan box ke array
 			    array_push(_stack_target, _box);
     
-			    // 2. RESET & RE-STACK (Hitung ulang posisi semua box di alas ini)
+			    // 2. RESET & RE-STACK 
 			var _total_h = 0;
-			var _persentase_overlap = 0.20; // Berarti box akan masuk 15% ke bawah. Sesuaikan angka ini (0.1 - 0.2)
+			var _persentase_overlap = 0.20;
 
-			var _total_h_akumulasi = 0;  // 18% masuk ke box bawah. Sesuaikan antara 0.15 - 0.20
+			var _total_h_akumulasi = 0;  
 
 			for (var i = 0; i < array_length(tumpukan[indeks_alas]); i++) {
 			    var _b = tumpukan[indeks_alas][i];
@@ -52,11 +52,10 @@ if (!game_selesai) {
 			    _b.x = posisi_x_alas[indeks_alas];
     
 			    // 2. Tentukan Posisi Y
-			    // Box pertama (i=0) akan tepat di lantai_permukaan karena _total_h_akumulasi masih 0.
 			    _b.y = lantai_permukaan - _total_h_akumulasi - (_h_box_visual / 2) + 15;
     
-			    // 3. Update Akumulasi Tinggi untuk Box di Atasnya
-			    // Kita hanya menambahkan "tinggi efektif" box ini ke total tumpukan
+			    
+			    // menambahkan tinggi efektif box ini ke total tumpukan
 			    _total_h_akumulasi += (_h_box_visual * (1 - _persentase_overlap));
     
 			    // 4. Atur Kedalaman (Depth)
@@ -91,9 +90,9 @@ if (game_selesai) {
     }
 }
 
-// --- 3. MENEMPELKAN BOX KE KUKU ---
+// --- 3. logika penempelan box di claw ---
 if (box_terbawa != noone) {
-    // KUNCI: Cek dulu apakah box-nya benar-benar masih ada di room
+    // Cek box-nya benar-benar masih ada di room
     if (instance_exists(box_terbawa)) {
         box_terbawa.x = x; 
         box_terbawa.y = y + 48; 

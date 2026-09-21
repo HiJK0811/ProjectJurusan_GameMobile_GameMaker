@@ -6,8 +6,8 @@
   "name":"obj_monitorerror",
   "overriddenProperties":[],
   "parent":{
-    "name":"Decorative Objects",
-    "path":"folders/Objects/Decorative Objects.yy",
+    "name":"Minigame_Graph",
+    "path":"folders/Objects/Minigame_Graph.yy",
   },
   "parentObjectId":null,
   "persistent":false,

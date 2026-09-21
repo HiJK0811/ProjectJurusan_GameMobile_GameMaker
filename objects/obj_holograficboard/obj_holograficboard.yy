@@ -1,15 +1,20 @@
 {
   "$GMObject":"",
   "%Name":"obj_holograficboard",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":8,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"obj_holograficboard",
   "overriddenProperties":[],
   "parent":{
-    "name":"Decorative Objects",
-    "path":"folders/Objects/Decorative Objects.yy",
+    "name":"Minigame_Graph",
+    "path":"folders/Objects/Minigame_Graph.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"o_functional_interactibles",
+    "path":"objects/o_functional_interactibles/o_functional_interactibles.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,
@@ -21,7 +26,12 @@
   "physicsRestitution":0.1,
   "physicsSensor":false,
   "physicsShape":1,
-  "physicsShapePoints":[],
+  "physicsShapePoints":[
+    {"x":0.0,"y":20.0,},
+    {"x":41.0,"y":20.0,},
+    {"x":41.0,"y":42.0,},
+    {"x":0.0,"y":42.0,},
+  ],
   "physicsStartAwake":true,
   "properties":[],
   "resourceType":"GMObject",

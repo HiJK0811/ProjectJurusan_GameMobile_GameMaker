@@ -44,8 +44,8 @@
   },
   "origin":0,
   "parent":{
-    "name":"Sprites",
-    "path":"folders/Jason_Main NPC Cutscene/Sprites.yy",
+    "name":"Text Boxes",
+    "path":"folders/Jason_Main NPC Cutscene/Sprites/Functional/Text Boxes.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

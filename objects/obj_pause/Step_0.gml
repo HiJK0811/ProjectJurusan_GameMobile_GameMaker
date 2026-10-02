@@ -1,6 +1,15 @@
 if (keyboard_check_pressed(vk_escape)) {
 	paused = !paused;
 	update_pause();
+	
+	if (paused && !audio_is_playing(snd_pause)) {
+		audio_play_sound(snd_pause, 0, false);
+	}
+	
+	if (!paused && !audio_is_playing(snd_unpause)) {
+		audio_play_sound(snd_unpause, 0, false);
+	}
+
 }
 
 // Only navigate if the game is actually paused

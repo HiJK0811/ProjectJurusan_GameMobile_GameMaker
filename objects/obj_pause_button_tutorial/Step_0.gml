@@ -26,6 +26,10 @@ if (keyboard_check_pressed(vk_escape) || keyboard_check_pressed(vk_backspace) ||
 if (_select) {
     // Optional: Add your button click sound here!
     // audio_play_sound(snd_click_button, 1, false);
+	
+	if (!audio_is_playing(snd_close_button)) {
+		audio_play_sound(snd_close_button, 0, false);
+	}
     
     layer_set_visible("TutorialLayer_Main", false);
     room_goto(room_a_mainMenu); 

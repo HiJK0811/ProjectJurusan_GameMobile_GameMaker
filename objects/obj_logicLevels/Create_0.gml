@@ -1,86 +1,3 @@
-//// Level 1
-//level_0 = {
-//	components: [
-//        { id: "sw1",   type: obj_switch,    x: 100, y: 150 },
-//        { id: "bulb1", type: obj_lightBulb, x: 400, y: 150 }
-//    ],
-//    connections: [
-//        { from: "sw1",  to: "bulb1" }
-//    ]
-//};
-
-//// Level 2
-//level_1 = {
-//    components: [
-//        { id: "sw1",   type: obj_switch,    x: 100, y: 100 },
-//        { id: "sw2",   type: obj_switch,    x: 100, y: 200 },
-//        { id: "and1",  type: obj_logicGate, x: 300, y: 150, gate_type: logicGateType.AND },
-//        { id: "bulb1", type: obj_lightBulb, x: 500, y: 150 }
-//    ],
-//    connections: [
-//        { from: "sw1",  to: "and1" },
-//        { from: "sw2",  to: "and1" },
-//        { from: "and1", to: "bulb1" }
-//    ]
-//};
-
-//// Level 3
-//level_2 = {
-//    components: [
-//        { id: "sw1",   type: obj_switch,    x: 100, y: 100 },
-//        { id: "sw2",   type: obj_switch,    x: 100, y: 200 },
-//        { id: "or1",   type: obj_logicGate, x: 300, y: 150, gate_type: logicGateType.OR },
-//        { id: "bulb1", type: obj_lightBulb, x: 500, y: 150 },
-
-//    ],
-//    connections: [
-//        // Wire Top Circuit
-//        { from: "sw1",  to: "or1" },
-//        { from: "sw2",  to: "or1" },
-//        { from: "or1",  to: "bulb1" },
-//    ]
-//};
-
-//// Level 4
-//level_3 = {
-//    components: [
-//        // 4 Switches
-//        { id: "sw1",   type: obj_switch,    x: 100, y: 100 },
-//        { id: "sw2",   type: obj_switch,    x: 100, y: 200 },
-//        { id: "sw3",   type: obj_switch,    x: 100, y: 300 },
-//        { id: "sw4",   type: obj_switch,    x: 100, y: 400 },
-
-//        // The 2 OR Gates
-//        { id: "or1",   type: obj_logicGate, x: 300, y: 150, gate_type: logicGateType.OR },
-//        { id: "or2",   type: obj_logicGate, x: 300, y: 350, gate_type: logicGateType.OR },
-        
-//        // The Final AND Gate
-//        { id: "and1",  type: obj_logicGate, x: 500, y: 250, gate_type: logicGateType.AND },
-
-//        // The Final Bulb
-//        { id: "bulb1", type: obj_lightBulb, x: 700, y: 250 }
-//    ],
-//    connections: [
-//        // Wire Top Pair to OR 1
-//        { from: "sw1",  to: "or1" },
-//        { from: "sw2",  to: "or1" },
-
-//        // Wire Bottom Pair to OR 2
-//        { from: "sw3",  to: "or2" },
-//        { from: "sw4",  to: "or2" },
-
-//        // Wire both OR gates into the AND gate
-//        { from: "or1",  to: "and1" },
-//        { from: "or2",  to: "and1" },
-
-//        // Wire AND gate to Bulb
-//        { from: "and1", to: "bulb1" }
-//    ]
-//};
-
-//// STORE THEM IN THE MASTER ARRAY AT THE VERY END
-//levels = [level_0, level_1, level_2, level_3];
-
 // ==========================================
 // LEVEL 1: Introduction to OR
 // ==========================================
@@ -99,15 +16,32 @@ level_0 = {
 };
 
 // ==========================================
-// LEVEL 2: OR Cascade
+// LEVEL 2: Introduction to AND
 // ==========================================
 level_1 = {
+    components: [
+        { id: "sw1",   type: obj_switch,    x: 100, y: 100 },
+        { id: "sw2",   type: obj_switch,    x: 100, y: 200 },
+        { id: "and1",  type: obj_logicGate, x: 300, y: 150, gate_type: logicGateType.AND },
+        { id: "bulb1", type: obj_lightBulb, x: 500, y: 150 }
+    ],
+    connections: [
+        { from: "sw1",  to: "and1" },
+        { from: "sw2",  to: "and1" },
+        { from: "and1", to: "bulb1" }
+    ]
+};
+
+// ==========================================
+// LEVEL 3: OR Cascade
+// ==========================================
+level_2 = {
     components: [
         { id: "sw1",   type: obj_switch,    x: 0, y: 0 },
         { id: "sw2",   type: obj_switch,    x: 0, y: 100 },
         { id: "sw3",   type: obj_switch,    x: 0, y: 200 },
         
-        { id: "or1",   type: obj_logicGate, x: 150, y: 50, gate_type: logicGateType.OR },
+        { id: "or1",   type: obj_logicGate, x: 150, y: 50, gate_type: logicGateType.AND },
         { id: "or2",   type: obj_logicGate, x: 300, y: 125, gate_type: logicGateType.OR },
         { id: "bulb1", type: obj_lightBulb, x: 450, y: 125 }
     ],
@@ -122,22 +56,7 @@ level_1 = {
     ]
 };
 
-// ==========================================
-// LEVEL 3: Introduction to AND
-// ==========================================
-level_2 = {
-    components: [
-        { id: "sw1",   type: obj_switch,    x: 100, y: 100 },
-        { id: "sw2",   type: obj_switch,    x: 100, y: 200 },
-        { id: "and1",  type: obj_logicGate, x: 300, y: 150, gate_type: logicGateType.AND },
-        { id: "bulb1", type: obj_lightBulb, x: 500, y: 150 }
-    ],
-    connections: [
-        { from: "sw1",  to: "and1" },
-        { from: "sw2",  to: "and1" },
-        { from: "and1", to: "bulb1" }
-    ]
-};
+
 
 // ==========================================
 // LEVEL 4: AND Cascade
@@ -281,32 +200,37 @@ level_8 = {
 // ==========================================
 // LEVEL 10: The Masterboard
 // ==========================================
+// ==========================================
+// LEVEL 10: The Masterboard (Supersized & Wide)
+// ==========================================
 level_9 = {
     components: [
-        // Switches (Spaced only 50px apart on the Y axis)
+        // Switches (Expanded to 200px vertical gaps)
         { id: "sw1",   type: obj_switch,    x: 0, y: 0 },
-        { id: "sw2",   type: obj_switch,    x: 0, y: 50 },
-        { id: "sw3",   type: obj_switch,    x: 0, y: 100 },
-        { id: "sw4",   type: obj_switch,    x: 0, y: 150 },
-        { id: "sw5",   type: obj_switch,    x: 0, y: 200 },
-        { id: "sw6",   type: obj_switch,    x: 0, y: 250 },
+        { id: "sw2",   type: obj_switch,    x: 0, y: 200 },
+        { id: "sw3",   type: obj_switch,    x: 0, y: 400 },
+        { id: "sw4",   type: obj_switch,    x: 0, y: 600 },
+        { id: "sw5",   type: obj_switch,    x: 0, y: 800 },
+        { id: "sw6",   type: obj_switch,    x: 0, y: 1000 },
 
-        // Layer 1 (Inverters)
-        { id: "not1",  type: obj_logicGate, x: 80, y: 100, gate_type: logicGateType.INVERTER },
-        { id: "not2",  type: obj_logicGate, x: 80, y: 200, gate_type: logicGateType.INVERTER },
-        { id: "not3",  type: obj_logicGate, x: 80, y: 250, gate_type: logicGateType.INVERTER },
+        // Layer 1 (Inverters) - Aligned with their source switches
+        { id: "not1",  type: obj_logicGate, x: 300, y: 400, gate_type: logicGateType.INVERTER },
+        { id: "not2",  type: obj_logicGate, x: 300, y: 800, gate_type: logicGateType.INVERTER },
+        { id: "not3",  type: obj_logicGate, x: 300, y: 1000, gate_type: logicGateType.INVERTER },
 
-        // Layer 2 (Primary Logic)
-        { id: "and1",  type: obj_logicGate, x: 160, y: 25, gate_type: logicGateType.AND },
-        { id: "nor1",  type: obj_logicGate, x: 160, y: 125, gate_type: logicGateType.NOR },
-        { id: "nand1", type: obj_logicGate, x: 160, y: 225, gate_type: logicGateType.NAND },
+        // Layer 2 (Primary Logic) - Centered exactly between their inputs
+        { id: "and1",  type: obj_logicGate, x: 600, y: 100, gate_type: logicGateType.AND },
+        { id: "nor1",  type: obj_logicGate, x: 600, y: 500, gate_type: logicGateType.NOR },
+        { id: "nand1", type: obj_logicGate, x: 600, y: 900, gate_type: logicGateType.NAND },
 
-        // Layer 3 (Funneling down)
-        { id: "and2",  type: obj_logicGate, x: 240, y: 75, gate_type: logicGateType.AND },
+        // Layer 3 (Funneling down) - Centered between AND1 and NOR1
+        { id: "and2",  type: obj_logicGate, x: 900, y: 300, gate_type: logicGateType.AND },
 
-        // Final Output
-        { id: "and3",  type: obj_logicGate, x: 320, y: 150, gate_type: logicGateType.AND },
-        { id: "bulb1", type: obj_lightBulb, x: 400, y: 150 }
+        // Final Output - Centered between AND2 and NAND1
+        { id: "and3",  type: obj_logicGate, x: 1200, y: 600, gate_type: logicGateType.AND },
+        
+        // Final Bulb
+        { id: "bulb1", type: obj_lightBulb, x: 1500, y: 600 }
     ],
     connections: [
         // Top Path -> AND1

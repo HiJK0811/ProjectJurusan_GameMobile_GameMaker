@@ -1,5 +1,11 @@
 // if (instance_exists(o_functional_dialogue)) {exit}
 
+// BLOCK INTERACTIONS DURING CUTSCENES & DIALOGUE
+if (instance_exists(obj_cutscene) || instance_exists(obj_dialogBox)) {
+	can_interact = false;
+	exit; // This stops the rest of the Step event from running
+}
+
 if (instance_exists(obj_Player) && distance_to_object(obj_Player) < min_distance_to_player){
 	can_interact = true;
 	if(keyboard_check_pressed(input_key) || keyboard_check_pressed(vk_enter)){

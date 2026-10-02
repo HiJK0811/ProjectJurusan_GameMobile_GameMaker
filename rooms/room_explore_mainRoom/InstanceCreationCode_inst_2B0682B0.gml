@@ -1,3 +1,3 @@
-target_x = 106;
-target_y = 352;
+target_x = 87;
+target_y = 360;
 target_room = room_explore_office;

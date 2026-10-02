@@ -11,6 +11,8 @@ function scr_set_defaults_for_text(){
 	speaker_sprite[page_number] = noone;
 	speaker_side[page_number] = 1;
 	
+	speaker_name[page_number] = "";
+	
 }
 
 /// @param text
@@ -24,27 +26,126 @@ function scr_text(_text){
 	if(argument_count > 1){
 		switch(argument[1]){
 			case "Player":
+				speaker_name[page_number] = "Player";
 				speaker_sprite[page_number] = spr_portrait_player;
 				dialogBox_sprite[page_number] = spr_textBox_Purple;
 				break;
-			case "Happy Derp":
-				speaker_sprite[page_number] = spr_portrait_happyDerp;
-				dialogBox_sprite[page_number] = spr_textBox_Blue;
-				break;
-			case "Sad Derp":
-				speaker_sprite[page_number] = spr_portrait_sadDerp;
-				dialogBox_sprite[page_number] = spr_textBox_Blue;
-				break;
-			case "Derpy Derp":
-				speaker_sprite[page_number] = spr_portrait_derpyDerp;
+			
+			// NPC
+			case "Adhila":
+				speaker_name[page_number] = "Adhila";
+				speaker_sprite[page_number] = spr_Adhila_Portrait;
 				dialogBox_sprite[page_number] = spr_textBox_Purple;
 				break;
-			case "Adhila":
-				speaker_sprite[page_number] = spr_portrait_adhila_1;
-				dialogBox_sprite[page_number] = spr_textBox_Blue;
+				
+			case "Lylia":
+				speaker_name[page_number] = "Lylia"; 
+				speaker_sprite[page_number] = spr_Lylia_Portrait;
+				dialogBox_sprite[page_number] = spr_textBox_Purple;
+				break;
+				
+			case "Ami":
+				speaker_name[page_number] = "Ami"; 
+				speaker_sprite[page_number] = spr_Ami_Portrait;
+				dialogBox_sprite[page_number] = spr_textBox_Purple;
+				break;
+				
+			//case "Mike":
+			//	speaker_name[page_number] = "Mike"; 
+			//	speaker_sprite[page_number] = spr_Mike_Portrait;
+			//	dialogBox_sprite[page_number] = spr_textBox_Purple;
+			//	break;
+				
+			case "Morty":
+				speaker_name[page_number] = "Marty"; 
+				// speaker_sprite[page_number] = spr_Mike_Portrait;
+				dialogBox_sprite[page_number] = spr_textBox_Purple;
 				break;
 			
+			// Portraitless Characters
+			// Security Room
+			case "Security Officer":
+				speaker_name[page_number] = "Security Officer"; 
+				speaker_sprite[page_number] = noone;
+				break;
+				
+			case "Mike":
+				speaker_name[page_number] = "Male Security Guard"; 
+				speaker_sprite[page_number] = noone;
+				break;
+				
+			case "Sri Kaya":
+				speaker_name[page_number] = "Female Security Guard"; 
+				speaker_sprite[page_number] = noone;
+				break;
+			
+			// Cafe NPC
+			case "Aisyah":
+				speaker_name[page_number] = "Aisyah"; 
+				speaker_sprite[page_number] = noone;
+				break;
+				
+			case "Ali":
+				speaker_name[page_number] = "Ali"; 
+				speaker_sprite[page_number] = noone;
+				break;
+				
+			case "Andrun":
+				speaker_name[page_number] = "Andrun"; 
+				speaker_sprite[page_number] = noone;
+				break;
+				
+			case "Rise":
+				speaker_name[page_number] = "Rise"; 
+				speaker_sprite[page_number] = noone;
+				break;
+				
+			case "sCafe":
+				speaker_name[page_number] = "Staf Cafe"; 
+				speaker_sprite[page_number] = noone;
+				break;
+			
+			// Control Room
+			case "Gregory":
+				speaker_name[page_number] = "Gregory"; 
+				speaker_sprite[page_number] = noone;
+				break;
+				
+			case "Roy":
+				speaker_name[page_number] = "Gregory"; 
+				speaker_sprite[page_number] = noone;
+				break;
+				
+			// Meeting Room
+			case "Supervisor":
+				speaker_name[page_number] = "Supervisor Gotoh"; 
+				speaker_sprite[page_number] = noone;
+				break;
+				
+			case "Reynomn":
+				speaker_name[page_number] = "Reynomn"; 
+				speaker_sprite[page_number] = noone;
+				break;
+				
+			// Arcade
+			case "Yuna":
+				speaker_name[page_number] = "Yuna"; 
+				speaker_sprite[page_number] = noone;
+				break;
+				
+			case "Yuri":
+				speaker_name[page_number] = "Yuri"; 
+				speaker_sprite[page_number] = noone;
+				break;
+				
+			case "Bernard":
+				speaker_name[page_number] = "Bernard"; 
+				speaker_sprite[page_number] = noone;
+				break;
+			
+			
 			default:
+				speaker_name[page_number] = ""; // NEW: Fallback name
 				speaker_sprite[page_number] = noone;
 				break;
 		}
@@ -74,4 +175,3 @@ function create_textbox(_text_id){
 		scr_gameText(_text_id)
 	}
 }
-

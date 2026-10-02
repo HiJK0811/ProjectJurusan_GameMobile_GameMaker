@@ -9,7 +9,10 @@
     "name":"Objects",
     "path":"folders/Daniel_Hanoi/Objects.yy",
   },
-  "parentObjectId":null,
+  "parentObjectId":{
+    "name":"obj_Wall",
+    "path":"objects/obj_Wall/obj_Wall.yy",
+  },
   "persistent":false,
   "physicsAngularDamping":0.1,
   "physicsDensity":0.5,

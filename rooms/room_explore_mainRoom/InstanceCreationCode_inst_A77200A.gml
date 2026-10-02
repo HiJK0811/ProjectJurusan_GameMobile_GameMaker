@@ -1,1 +1,1 @@
-button_text = "Elevator / Boarding"
+button_text = "Boarding & End Credit (unlock after beating the game)"

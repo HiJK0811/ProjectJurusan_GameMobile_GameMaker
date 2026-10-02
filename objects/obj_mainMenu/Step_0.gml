@@ -102,14 +102,15 @@ if (_select) {
     audio_play_sound(snd_click_button, 1, false);
             
     switch(index) {
-        case 0:
-            roomGoToFade(room_explore_security);
+        case 0: // Start
+            // roomGoToFade(room_explore_mainRoom);
+			roomGoToFade(room_explore_checkIn);
             break;
-        case 1: 
+        case 1: // Tutorial
 			room_goto(room_tutorial)
             layer_set_visible("TutorialLayer_Main", true);
             break;
-        case 2: 
+        case 2: // Quit Game
             if (!instance_exists(obj_fade_quit)) {
                 // global.quitting = true;
                 fadeToQuit(room, 90, c_black);

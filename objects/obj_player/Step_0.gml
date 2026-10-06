@@ -28,6 +28,12 @@ else {
 	
 	// Only read keyboard if we aren't being moved by a path
 	if (!path_active) {
+		
+		var v_right = variable_global_exists("v_right") ? global.v_right : false;
+		var v_left  = variable_global_exists("v_left")  ? global.v_left  : false;
+		var v_up    = variable_global_exists("v_up")    ? global.v_up    : false;
+		var v_down  = variable_global_exists("v_down")  ? global.v_down  : false;
+		
 		right_key	= (keyboard_check(vk_right)	or keyboard_check(ord("D")));
 		left_key	= (keyboard_check(vk_left)	or keyboard_check(ord("A")));
 		up_key		= (keyboard_check(vk_up)	or keyboard_check(ord("W")));
@@ -92,3 +98,9 @@ if (global.transitioning) {
 }
 
 depth = -bbox_bottom;
+
+if (global.v_right || global.v_left || global.v_up || global.v_down) {
+    show_debug_message("PLAYER SEES JOYSTICK | obj:" + object_get_name(object_index)
+        + " input_x:" + string(input_x) + " input_y:" + string(input_y)
+        + " path_active:" + string(path_active));
+}

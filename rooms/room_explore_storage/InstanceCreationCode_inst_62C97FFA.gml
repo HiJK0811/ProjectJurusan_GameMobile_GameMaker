@@ -1,0 +1,14 @@
+min_distance_to_player = 4;
+
+// Default
+text_id = "Ami_default"
+
+// Cutscene
+post_cutscene_check = "ami_hanoi_intro_scene"; // cutscene name
+post_cutscene_text_id = "Ami_pre_hanoi"; 
+
+// Minigame
+post_hanoi_text_id = "Ami_post_hanoi"
+
+
+wander_range = 20 * 20

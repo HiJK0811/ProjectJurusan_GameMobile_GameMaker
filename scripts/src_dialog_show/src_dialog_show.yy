@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"src_dialog_show",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"src_dialog_show",
+  "parent":{
+    "name":"com.gamemaker",
+    "path":"com.gamemaker.yyp",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

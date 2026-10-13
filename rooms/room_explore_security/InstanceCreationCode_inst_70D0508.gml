@@ -1,0 +1,1 @@
+wander_range = 10 * 10

@@ -60,29 +60,27 @@ if (_select) {
     
     var _is_continue_present = (menu[0] == "Continue");
     
-    if (_is_continue_present && index == 0) {
-        // --- AKSI CONTINUE ---
-        load_game(); // Memuat data game dan otomatis berpindah ke room terakhir
-    } 
-    else {
-        var _adjusted_index = _is_continue_present ? (index - 1) : index;
-        
-        switch(_adjusted_index) {
-    case 0: // Play Game (New Game)
+     if (_is_continue_present && index == 0) {
+         // --- AKSI CONTINUE ---
+         load_game(); // Memuat data game dan otomatis berpindah ke room terakhir
+     } 
+     else {
+         var _adjusted_index = _is_continue_present ? (index - 1) : index;
+         
+         switch(_adjusted_index) {
+case 0: // Play Game (New Game)
             // 🔥 Hentikan semua suara/musik yang sedang diputar di game
             audio_stop_all(); 
-			// Tambahkan baris ini di fungsi New Game Anda
-audio_stop_all();
-if (instance_exists(obj_musicManager)) {
-    obj_musicManager.fadeOutInstances = [];
-    obj_musicManager.fadeOutInstanceVolume = [];
-    obj_musicManager.fadeOutInstanceTime = [];
-    obj_musicManager.songInstance = noone;
-    obj_musicManager.songAsset = noone;
-}
+            if (instance_exists(obj_musicManager)) {
+                obj_musicManager.fadeOutInstances = [];
+                obj_musicManager.fadeOutInstanceVolume = [];
+                obj_musicManager.fadeOutInstanceTime = [];
+                obj_musicManager.songInstance = noone;
+                obj_musicManager.songAsset = noone;
+            }
             if (file_exists("savegame.json")) {
-    file_delete("savegame.json");
-}
+                file_delete("savegame.json");
+            }
             roomGoToFade(Cutscene_Prolouge);
             break;
         

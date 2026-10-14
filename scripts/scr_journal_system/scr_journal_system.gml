@@ -88,6 +88,7 @@ function quest_complete(_id) {
         _q.steps[i].done = true;
     }
 
+    // Fixed: Ensure sound plays correctly by using the exact asset name
     if (audio_exists(snd_Quest_complete)) {
         audio_play_sound(snd_Quest_complete, 1, false);
     } else if (audio_exists(snd_Update_quest)) {

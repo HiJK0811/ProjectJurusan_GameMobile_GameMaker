@@ -3,7 +3,7 @@
 // ==========================================================
 
 // 🔥 Cek apakah objek minigame sorting benar-benar sedang ada di room saat ini
-var _sorting_index = asset_get_index("obj_sorting_minigame");
+var _sorting_index = asset_get_index("obj_minigame_sorting");
 var _is_sorting_active = (_sorting_index != -1 && instance_exists(_sorting_index));
 
 if (_is_sorting_active) {
@@ -12,6 +12,13 @@ if (_is_sorting_active) {
     
     with (obj_bekeners_parent) {
         if (!found) visible = false;
+    }
+    // Also hide bekener children if they exist and are not found
+    var _bek_child_index = asset_get_index("obj_bekeners_cs");
+    if (_bek_child_index != -1) {
+        with (_bek_child_index) {
+            if (!found) visible = false;
+        }
     }
     exit; 
 } else {
@@ -36,8 +43,12 @@ if (msg_timer > 0) msg_timer--;
 // Cooldown berjalan (tidak dijeda oleh dialog agar terasa natural)
 if (cooldown > 0) cooldown--;
 
-// Input toggle [F]
-if (keyboard_check_pressed(ord("F")) && !global.dialog_active && !global.egg_completed) {
+// Input toggle [F] - tetap bisa dipakai sebagai souvenir setelah egg_completed
+if (keyboard_check_pressed(ord("F")) && !global.dialog_active) {
+    if (variable_global_exists("egg_completed") && global.egg_completed && !active) {
+        msg_text = "Semua Bekeners sudah ditemukan! Kaca pembesar jadi souvenir.";
+        msg_timer = fps_ * 1.5;
+    }
     if (active) {
         // Matikan manual -> masuk cooldown
         active   = false;
@@ -63,16 +74,17 @@ if (active && !global.dialog_active) {
 }
 
 with (obj_bekeners_parent) {
-    // Pengaman: kalau Create parent tidak terwarisi, lengkapi di sini
     if (!variable_instance_exists(id, "discovered")) discovered = false;
     if (!variable_instance_exists(id, "found"))      found      = false;
-
-    if (!found) {
-        if (other.active
-        && (abs(x - other.x) <= other.zone_half)
-        && (abs(y - other.y) <= other.zone_half)) {
-            discovered = true;
-        }
-        visible = discovered;
+    if (variable_global_exists("bekeners_collected") && bek_index < array_length(global.bekeners_collected) && global.bekeners_collected[bek_index]) {
+        found = true;
     }
+    if (found || (variable_global_exists("egg_started") && !global.egg_started)) {
+        visible = false;
+        continue;
+    }
+    var _is_visible = (other.active
+        && (abs(x - other.x) <= other.zone_half)
+        && (abs(y - other.y) <= other.zone_half));
+    visible = _is_visible;
 }

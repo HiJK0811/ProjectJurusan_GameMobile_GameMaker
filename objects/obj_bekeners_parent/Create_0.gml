@@ -3,11 +3,13 @@ bek_index      = 0;        // di-override oleh anak (0..6)
 found          = false;
 visible        = false;    // hanya terlihat saat tersingkap kaca pembesar
 interact_range = 55;
+discovered     = false;
 
 /// @func mark_found()
 mark_found = function() {
     if (found) return;
     found = true;
+    visible = false; // Hide immediately when found
     
     // 🔥 Memutar suara saat easter egg ditemukan / diambil
     audio_play_sound(snd_pickup_easteregg, 10, false);

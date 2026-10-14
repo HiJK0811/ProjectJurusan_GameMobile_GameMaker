@@ -72,8 +72,12 @@ var _content_y = _by + 20;
 var _content_w = _bw - 40;
 var _content_h = _bh - 60; 
 
-// Aktifkan pembatas agar teks tidak keluar kotak buku
-gpu_set_scissor(_content_x, _content_y, _content_w, _content_h);
+// Aktifkan pembatas agar teks tidak keluar kotak buku - scale ke window untuk fullscreen
+var _win_w = window_get_width();
+var _win_h = window_get_height();
+var _sx = (_gw > 0) ? _win_w / _gw : 1;
+var _sy = (_gh > 0) ? _win_h / _gh : 1;
+gpu_set_scissor(_content_x * _sx, _content_y * _sy, _content_w * _sx, _content_h * _sy);
 
 var _ix = _content_x + 10;
 var _iy = _content_y + 15 - scroll;
@@ -134,7 +138,7 @@ if (tab == 0) {
 }
 
 // 🔥 RESET SCISSOR KEMBALI KE UKURAN LAYAR PENUH
-gpu_set_scissor(0, 0, display_get_gui_width(), display_get_gui_height());
+gpu_set_scissor(0, 0, window_get_width(), window_get_height());
 
 // ==========================================================
 

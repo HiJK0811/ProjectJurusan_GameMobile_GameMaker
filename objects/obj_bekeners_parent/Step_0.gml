@@ -1,5 +1,9 @@
 //========================= STEP EVENT (parent) =========================
-if (found || !visible) exit;
+if (variable_global_exists("bekeners_collected") && bek_index < array_length(global.bekeners_collected) && global.bekeners_collected[bek_index]) {
+    if (!found) { found = true; visible = false; }
+}
+if (found) { visible = false; instance_destroy(); exit; }
+if (!visible) exit;
 if (variable_global_exists("dialog_active") && global.dialog_active) exit;
 if (!variable_global_exists("egg_started") || !global.egg_started) { visible = false; exit; }
 if (!instance_exists(asset_get_index("obj_Player"))) exit;

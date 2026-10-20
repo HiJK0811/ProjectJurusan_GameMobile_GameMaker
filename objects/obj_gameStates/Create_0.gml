@@ -3,10 +3,15 @@ enum GameState{
 	MINIGAME,
 	CUTSCENE
 }
-
+global.archive_open = false;
+if (!variable_global_exists("played_cutscenes") || !is_struct(global.played_cutscenes)) {
+    global.played_cutscenes = {};
+}
+global.in_sorting_minigame = true;
 game_state = GameState.EXPLORE
 
-return_room = noone;
+// Tambahkan variabel return_room untuk memastikan save posisi benar-benar kembali ke room yang tepat
+return_room = room;
 return_x	= 0;
 return_y	= 0;
 

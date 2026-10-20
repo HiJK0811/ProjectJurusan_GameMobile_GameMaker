@@ -1,7 +1,10 @@
 {
   "$GMObject":"",
   "%Name":"obj_holograficboard_f",
-  "eventList":[],
+  "eventList":[
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+    {"$GMEvent":"v1","%Name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,"name":"","resourceType":"GMEvent","resourceVersion":"2.0",},
+  ],
   "managed":true,
   "name":"obj_holograficboard_f",
   "overriddenProperties":[],
@@ -10,8 +13,8 @@
     "path":"folders/Daniel_Hanoi/Objects.yy",
   },
   "parentObjectId":{
-    "name":"obj_Interactibles",
-    "path":"objects/obj_Interactibles/obj_Interactibles.yy",
+    "name":"obj_Wall",
+    "path":"objects/obj_Wall/obj_Wall.yy",
   },
   "persistent":false,
   "physicsAngularDamping":0.1,
@@ -29,7 +32,7 @@
   "properties":[],
   "resourceType":"GMObject",
   "resourceVersion":"2.0",
-  "solid":false,
+  "solid":true,
   "spriteId":{
     "name":"spr_holograficboard",
     "path":"sprites/spr_holograficboard/spr_holograficboard.yy",

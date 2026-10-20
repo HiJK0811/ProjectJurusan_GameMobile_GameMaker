@@ -36,6 +36,7 @@
     {"name":"inst_5FFCCD0D","path":"rooms/room_explore_meeting/room_explore_meeting.yy",},
     {"name":"inst_7F0875FF","path":"rooms/room_explore_meeting/room_explore_meeting.yy",},
     {"name":"inst_22E75575","path":"rooms/room_explore_meeting/room_explore_meeting.yy",},
+    {"name":"inst_2DA4E933","path":"rooms/room_explore_meeting/room_explore_meeting.yy",},
   ],
   "isDnd":false,
   "layers":[
@@ -72,6 +73,7 @@
         {"$GMRInstance":"v4","%Name":"inst_5DF6026","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_5DF6026","objectId":{"name":"obj_holograficboard_f","path":"objects/obj_holograficboard_f/obj_holograficboard_f.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":194.85301,"y":131.0,},
         {"$GMRInstance":"v4","%Name":"inst_5FFCCD0D","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_5FFCCD0D","objectId":{"name":"obj_NPC_Supervisor","path":"objects/obj_NPC_Supervisor/obj_NPC_Supervisor.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":283.0,"y":179.0,},
         {"$GMRInstance":"v4","%Name":"inst_7F0875FF","colour":4294967295,"frozen":false,"hasCreationCode":true,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_7F0875FF","objectId":{"name":"obj_NPC_Gregory","path":"objects/obj_NPC_Gregory/obj_NPC_Gregory.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":1.0,"scaleY":1.0,"x":152.0,"y":179.0,},
+        {"$GMRInstance":"v4","%Name":"inst_2DA4E933","colour":4294967295,"frozen":false,"hasCreationCode":false,"ignore":false,"imageIndex":0,"imageSpeed":1.0,"inheritCode":false,"inheritedItemId":null,"inheritItemSettings":false,"isDnd":false,"name":"inst_2DA4E933","objectId":{"name":"obj_bekeners_integers","path":"objects/obj_bekeners_integers/obj_bekeners_integers.yy",},"properties":[],"resourceType":"GMRInstance","resourceVersion":"2.0","rotation":0.0,"scaleX":0.0340909,"scaleY":0.0340909,"x":287.2,"y":305.6,},
       ],"layers":[],"name":"Instances","properties":[],"resourceType":"GMRInstanceLayer","resourceVersion":"2.0","userdefinedDepth":false,"visible":true,},
     {"$GMRTileLayer":"","%Name":"Tiles_Background","depth":200,"effectEnabled":true,"effectType":null,"gridX":32,"gridY":32,"hierarchyFrozen":false,"inheritLayerDepth":false,"inheritLayerSettings":false,"inheritSubLayers":true,"inheritVisibility":true,"layers":[],"name":"Tiles_Background","properties":[],"resourceType":"GMRTileLayer","resourceVersion":"2.0","tiles":{"SerialiseHeight":25,"SerialiseWidth":26,"TileCompressedData":[
           -4,-2147483648,-22,0,-4,-2147483648,-4,0,-11,25,-7,0,-3,-2147483648,-5,0,-11,25,-7,0,-3,-2147483648,

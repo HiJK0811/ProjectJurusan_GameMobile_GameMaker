@@ -1,1 +1,1 @@
-room_goto(room_a_mainMenu);
+room_goto(Cutscene_opening);

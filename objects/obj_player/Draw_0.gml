@@ -1,4 +1,4 @@
-if (obj_gameStates.game_state != GameState.EXPLORE) {
+if (instance_exists(obj_gameStates) && obj_gameStates.game_state != GameState.EXPLORE) {
 	exit;
 }
 

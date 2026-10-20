@@ -1,8 +1,16 @@
 title = "Binusian Space Lounge"
 
-menu[0] = "Play Game"
-menu[1] = "Tutorial"
-menu[2] = "Quit Game"
+// 🔥 Cek apakah save file ada
+var _has_save = check_save_exists();
+
+// Susun array menu secara dinamis berdasarkan keberadaan save file
+menu = [];
+if (_has_save) {
+    array_push(menu, "Continue"); // Index 0
+}
+array_push(menu, "Play Game");    // Index 1 (atau 0 jika tidak ada save)
+array_push(menu, "Tutorial");     // Index 2 (atau 1)
+array_push(menu, "Quit Game");    // Index 3 (atau 2)
 
 options_max = array_length(menu);
 

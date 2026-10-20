@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"src_draw_text_outline_ext",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"src_draw_text_outline_ext",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Reynold_Minigame/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

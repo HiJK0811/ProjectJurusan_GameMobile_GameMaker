@@ -1,6 +1,8 @@
 // Tutorial by Peyton Burnham
 // Branching Dialog System with Effects in GMS 2! (Part 1: Setup and Typing Effect)
 // https://www.youtube.com/watch?v=rEYSi0ahC5Q
+// Inisialisasi offset dialog box per halaman menggunakan array_create agar aman dari error indeks
+dialogBox_x_offset = array_create(20, 0); 
 
 // Episode 1
 // Dialog Box Parameters
@@ -16,13 +18,13 @@ dialogBox_image_speed = 0;
 
 // Episode 1
 // Text
-page = 0
+page = 0;
 page_number = 0;
-text[0] = ""
-text_length[0] = string_length(text[0])
+text[0] = "";
+text_length[0] = string_length(text[0]);
 
-draw_character = 0
-text_speed = 0.6
+draw_character = 0;
+text_speed = 0.6;
 
 // Episode 3
 // [number of characters in page, page number], x and y position
@@ -32,10 +34,10 @@ chara_y[0,0] = 0;
 
 // Episode 2
 // Options
-option[0] = ""
+option[0] = "";
 option_link_id[0] = -1;
 option_pos = 0;
-option_number = 0
+option_number = 0;
 
 // Episode 1
 setup = false;

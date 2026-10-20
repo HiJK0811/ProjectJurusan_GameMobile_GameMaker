@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_cutscene_go_to_input",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_cutscene_go_to_input",
+  "parent":{
+    "name":"com.gamemaker",
+    "path":"com.gamemaker.yyp",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

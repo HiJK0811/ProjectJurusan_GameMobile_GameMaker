@@ -10,6 +10,9 @@ if (instance_exists(obj_Player) && distance_to_object(obj_Player) < min_distance
 	can_interact = true;
 	if(keyboard_check_pressed(input_key) || keyboard_check_pressed(vk_enter)){
 		// create dialogue
+		obj_gameStates.return_room = room;
+		obj_gameStates.return_x = obj_Player.x;
+		obj_gameStates.return_y = obj_Player.y;
 		room_goto(target_minigame);
 		obj_gameStates.game_state = GameState.MINIGAME;
 	}

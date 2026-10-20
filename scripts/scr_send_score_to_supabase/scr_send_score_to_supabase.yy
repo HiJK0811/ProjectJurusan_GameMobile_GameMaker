@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_send_score_to_supabase",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_send_score_to_supabase",
+  "parent":{
+    "name":"Scripts",
+    "path":"folders/Reynold_Minigame/Scripts.yy",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

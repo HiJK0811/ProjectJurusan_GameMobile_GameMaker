@@ -1,0 +1,13 @@
+{
+  "$GMScript":"v1",
+  "%Name":"scr_quest_mq_orientasi",
+  "isCompatibility":false,
+  "isDnD":false,
+  "name":"scr_quest_mq_orientasi",
+  "parent":{
+    "name":"com.gamemaker",
+    "path":"com.gamemaker.yyp",
+  },
+  "resourceType":"GMScript",
+  "resourceVersion":"2.0",
+}

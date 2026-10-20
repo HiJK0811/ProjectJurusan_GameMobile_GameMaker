@@ -1,7 +1,10 @@
 //// Tutorial by Peyton Burnham
 //// Branching Dialog System with Effects in GMS 2
 //// https://www.youtube.com/playlist?list=PL14Yj-e2sgzzWFPozdX-HEjJFqjdIXQfF
-
+// Jangan gambar textbox jika jurnal sedang dibuka
+if (variable_global_exists("journal_open") && global.journal_open) {
+    exit; 
+}
 display_set_gui_size(640, 360)
 
 accept_key = keyboard_check_pressed(vk_space) || keyboard_check_pressed(vk_enter)
@@ -116,7 +119,13 @@ if (accept_key) {
 		}
 		else {
 			if (option_number > 0) {
-				create_textbox(option_link_id[option_pos]);
+				var _next = option_link_id[option_pos];
+				// "close" = tutup dialog, bukan text_id baru
+				if (_next == "close") {
+					instance_destroy();
+				} else {
+					create_textbox(_next);
+				}
 			}
 			instance_destroy();
 		}

@@ -5,6 +5,13 @@ if(o_game.game_state != GameState.EXPLORE){
 */
 
 // Stop movement 
+// 🔥 JIKA GAME DIPROGRAM PAUSE OLEH JURNAL, LANGSUNG HENTIKAN PLAYER!
+if (variable_global_exists("game_paused") && global.game_paused) {
+    input_x = 0;
+    input_y = 0;
+    exit;
+}
+
 // 1. Check Game State
 if (obj_gameStates.game_state != GameState.EXPLORE) {
 	input_x = 0;
@@ -12,8 +19,8 @@ if (obj_gameStates.game_state != GameState.EXPLORE) {
 	exit;
 }
 
-// 2. Cutscene / Dialogue Override
-if (instance_exists(obj_cutscene) || instance_exists(obj_dialogBox)) {
+// 2. Cutscene / Dialogue Override (DIKUNCI AGAR PLAYER TIDAK BERGERAK SAAT DIALOG/MENU AKTIF)
+if (instance_exists(obj_cutscene) || instance_exists(obj_dialogBox) || instance_exists(obj_dialog) || (variable_global_exists("dialog_active") && global.dialog_active)) {
 	
 	// Force the player to stop holding keyboard keys
 	// (We check !path_active so the cutscene scripts can still move the player!)
